@@ -10,7 +10,11 @@ namespace Weapons.Secondary
         
         Transform target;
 
-        public void Launch(Transform target) => this.target = target;
+        public void Launch(Transform target)
+        {
+            Debug.Log($"launched with target null? {target == null}");
+            this.target = target;
+        }
 
         void Update()
         {
@@ -24,10 +28,19 @@ namespace Weapons.Secondary
             var relativeTargetPosition = transform.InverseTransformPoint(target.position);
             var turnFactor = relativeTargetPosition.x > 0 ? 1f : -1f;
             
-            transform.Rotate(Vector3.up * TurnRate * turnFactor, Space.World);
+            transform.Rotate(Vector3.up * TurnRate * turnFactor);
             
             turnFactor = relativeTargetPosition.y > 0 ? 1f : -1f;
-            transform.Rotate(Vector3.right * TurnRate * turnFactor, Space.World);
+            transform.Rotate(Vector3.right * TurnRate * turnFactor);
+
+            Normalize();
+        }
+
+        void Normalize()
+        {
+            var eul = this.transform.eulerAngles;
+            eul.z = 0f;
+            this.transform.eulerAngles = eul;
         }
     }
 }

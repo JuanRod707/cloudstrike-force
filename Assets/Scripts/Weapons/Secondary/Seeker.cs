@@ -6,7 +6,7 @@ namespace Weapons.Secondary
     {
         public HomingProjectile Missile;
         public ParticleSystem Muzzle;
-        public float AimDistance;
+        public LayerMask TargetLayer;
         
         LockOnSystem lockOn;
         Transform lockedTarget;
@@ -18,8 +18,16 @@ namespace Weapons.Secondary
             missile.Launch(lockedTarget);
         }
         
-        void Start() => lockOn = new LockOnSystem(UnityEngine.Camera.main);
+        void Start() => lockOn = new LockOnSystem(UnityEngine.Camera.main, Stats.Range, TargetLayer);
 
-        void Update() => lockedTarget = lockOn.ScanForTarget();
+        void Update()
+        {
+            if (lockedTarget == null)
+            {
+                lockedTarget = lockOn.ScanForTarget();
+                if (lockedTarget != null)
+                    Debug.Log($"Target locked");
+            }
+        }
     }
 }

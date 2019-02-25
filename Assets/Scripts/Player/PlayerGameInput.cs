@@ -13,7 +13,10 @@ namespace Player
         void FixedUpdate()
         {
             if(Input.GetButton("Fire1"))
-                Ship.Weapons.Fire();
+                Ship.Weapons.FirePrimary();
+
+            if (Input.GetButton("Fire2"))
+                Ship.Weapons.FireSecondary();
 
             if (Input.GetKey(KeyCode.E))
                 Ship.Movement.IncreaseThrust();
