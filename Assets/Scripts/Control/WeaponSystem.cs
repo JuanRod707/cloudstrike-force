@@ -9,13 +9,10 @@ namespace Control
 
         private Weapon[] primaryWeapons;
         private Weapon[] secondaryWeapons;
-
+        
         private bool active = true;
 
-        public void Initialize()
-        {
-            primaryWeapons = PrimaryWeaponSpot.GetComponentsInChildren<Weapon>();
-        }
+        public void Initialize() => primaryWeapons = PrimaryWeaponSpot.GetComponentsInChildren<Weapon>();
 
         public void Fire()
         {

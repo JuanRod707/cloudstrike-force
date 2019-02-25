@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 8492695797913278561, guid: f3bc6369675ab4445838e51851989332,
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
 --- !u!1 &2346217914806437470
 GameObject:
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 8492695797913278561, guid: f3bc6369675ab4445838e51851989332,
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
 --- !u!1 &2542514668057573458
 GameObject:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 8492695797913278561, guid: f3bc6369675ab4445838e51851989332,
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
 --- !u!1 &2887536905673859591
 GameObject:
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 8492695797913278561, guid: f3bc6369675ab4445838e51851989332,
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
 --- !u!1 &2935209911941429122
 GameObject:
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 8492695797913278561, guid: f3bc6369675ab4445838e51851989332,
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
 --- !u!1 &6093382458043872418
 GameObject:
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 8492695797913278561, guid: f3bc6369675ab4445838e51851989332,
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
 --- !u!1 &7409859716625057935
 GameObject:

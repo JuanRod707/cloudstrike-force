@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df53423f-75a0-48af-b1b4-3f72532c63fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/HitBox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/HitBox.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/LockOnSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/LockOnSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/HomingProjectile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/HomingProjectile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cloudstrike/Carrier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cloudstrike/Carrier.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/DirtImpact.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/DirtImpact.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/WeaponSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/WeaponSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Checker.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Concrete.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4 Normal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4 Normal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_M4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/Assets/WFX_Demo_M_Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/WarFX Demo New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Demo/WarFX Demo New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete Lighted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete Lighted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Concrete.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Dirt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Dirt.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Sand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic Sand.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Generic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal Lighted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal Lighted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Wood Lighted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Wood Lighted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Bullet Holes/WFX_BulletHole Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_ExplosionFlames Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_ExplosionFlames Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameBig Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameBig Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameMine Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameMine Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall 4F Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall 4F Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameThrower Stream.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_FlameThrower Stream.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_StarFlames.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Flames/WFX_M_StarFlames.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact Debris.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact Debris.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact Smoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact Smoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact WoodDebris.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Impact WoodDebris.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Sparks Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Impacts/WFX_M_Sparks Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_GlowCircle Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_GlowCircle Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_GlowPalet Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_GlowPalet Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_GroundGlow Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_GroundGlow Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_SmallDots Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_SmallDots Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_SmallDotsInv Mult.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_SmallDotsInv Mult.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_StretchPalet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Misc/WFX_M_StretchPalet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Glow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Glow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_ExplosiveSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_ExplosiveSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_Smoke SoftMult.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_Smoke SoftMult.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_Smoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_Smoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeGrenade AB.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeGrenade AB.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeGrenadeWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeGrenadeWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeNoise.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeNoise.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeScroll Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeScroll Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeScroll SoftMult Average.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeScroll SoftMult Average.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeScroll SoftMult.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeScroll SoftMult.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Desktop/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Concrete Lighted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Concrete Lighted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Concrete.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Concrete.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Generic Dirt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Generic Dirt.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Generic Sand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Generic Sand.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Generic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Generic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Metal Lighted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Metal Lighted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Wood Lighted.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Wood Lighted.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Bullet Holes/WFXM_BulletHole Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_ExplosionFlames Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_ExplosionFlames Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameBig Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameBig Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameMine Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameMine Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall 4F Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall 4F Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall ScrollAdd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameSmall ScrollAdd.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameThrower Stream.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_FlameThrower Stream.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_NukeFlames ScrollAdd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_NukeFlames ScrollAdd.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_StarFlames.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Flames/WFXM_M_StarFlames.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Impact Debris.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Impact Debris.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Impact Smoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Impact Smoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Impact WoodDebris.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Impact WoodDebris.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Sparks Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Impacts/WFXM_M_Sparks Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_GlowCircle Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_GlowCircle Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_GlowPalet Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_GlowPalet Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_GroundGlow Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_GroundGlow Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_SmallDots Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_SmallDots Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_SmallDotsInv Mult.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_SmallDotsInv Mult.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_StretchPalet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Misc/WFXM_M_StretchPalet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF FrontRear RIFLE3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Glow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Glow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Side RIFLE3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/MuzzleFlashes/WFXM_M_MF Sparks RIFLE3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_ExplosiveSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_ExplosiveSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_Smoke SoftMult.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_Smoke SoftMult.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_Smoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_Smoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeGrenade AB.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeGrenade AB.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeGrenadeWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeGrenadeWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeNoise.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeNoise.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll SoftMult Average.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll SoftMult Average.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll SoftMult.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeScroll SoftMult.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeSpikeStretched.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/Mobile/Materials/Smoke/WFXM_M_SmokeSpikeStretched.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Concrete + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Concrete + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Concrete NoCollision + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Concrete NoCollision + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Metal + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Metal + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Wood + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Wood + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Wood NoCollision + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Lit/WFXMR_BImpact Wood NoCollision + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Concrete + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Concrete + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Concrete NoCollision + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Concrete NoCollision + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Metal + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Metal + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Wood + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Wood + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Wood NoCollision + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/Unlit/WFXMR_BImpact Wood NoCollision + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/WFXMR_BImpact Dirt + Hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/WFXMR_BImpact Dirt + Hole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/WFXMR_BImpact Sand + Hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/WFXMR_BImpact Sand + Hole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/WFXMR_BImpact SoftBody + Hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/+ Bullet Hole/WFXMR_BImpact SoftBody + Hole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Concrete NoCollision.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Concrete NoCollision.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Concrete.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Concrete.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Dirt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Metal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Metal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Sand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Sand.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact SoftBody.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact SoftBody.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Wood NoCollision.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Wood NoCollision.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Wood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Bullet Impacts/WFXMR_BImpact Wood.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion LandMine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion LandMine.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion Simple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion Simple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion Small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion StarSmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion StarSmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Explosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke Big Alt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke Big Alt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke Small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround Big Alt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround Big Alt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround Small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_ExplosiveSmokeGround.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Nuke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Explosions/WFXMR_Nuke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural Broad (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural Broad (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural Circle (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire Natural Circle (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire SmallFlame (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_Fire SmallFlame (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_GazFire (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_GazFire (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_GazFireBig (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Black Smoke/WFXMR_GazFireBig (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire Natural (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire Natural (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire Natural Broad (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire Natural Broad (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire Natural Circle (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire Natural Circle (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire SmallFlame (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_Fire SmallFlame (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_GazFire (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_GazFire (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_GazFireBig (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/Gray Smoke/WFXMR_GazFireBig (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural Broad (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural Broad (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural Circle (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire Natural Circle (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire SmallFlame (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_Fire SmallFlame (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_GazFire (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_GazFire (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_GazFireBig (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/No Smoke/WFXMR_GazFireBig (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Alt Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Alt Looped.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Alt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Alt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big Looped.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower Looped.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_FlameThrower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Blue).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Blue).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Green).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Green).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Purple).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Fire/WFXMR_GazFireBig (Purple).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/4Planes/WFXMR_MF 4P RIFLE3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/FPS/WFXMR_MF FPS RIFLE3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/Sprites/WFXMR_MF Spr RIFLE1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/Sprites/WFXMR_MF Spr RIFLE1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/Sprites/WFXMR_MF Spr RIFLE2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/Sprites/WFXMR_MF Spr RIFLE2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/Sprites/WFXMR_MF Spr RIFLE3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/MuzzleFlashes/Sprites/WFXMR_MF Spr RIFLE3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Blue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Purple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade AlphaBlend Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Blue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/Color Variants/WFXMR_SmokeGrenade Yellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Additive.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Additive.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade AlphaBlend Black.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade AlphaBlend Black.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade AlphaBlend Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade AlphaBlend Gray.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Black.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Black.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade Gray.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects (Mobile)/Smoke/WFXMR_SmokeGrenade White.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Concrete + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Concrete + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Concrete NoCollision + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Concrete NoCollision + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Metal + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Metal + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Wood + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Wood + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Wood NoCollision + Hole Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Lit/WFX_BImpact Wood NoCollision + Hole Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Concrete + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Concrete + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Concrete NoCollision + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Concrete NoCollision + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Metal + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Metal + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Wood + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Wood + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Wood NoCollision + Hole Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/Unlit/WFX_BImpact Wood NoCollision + Hole Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact Dirt + Hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact Dirt + Hole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact Sand + Hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact Sand + Hole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact SoftBody + Hole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/+ Bullet Hole/WFX_BImpact SoftBody + Hole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Concrete NoCollision.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Concrete NoCollision.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Concrete.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Concrete.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Dirt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Metal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Metal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Sand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Sand.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact SoftBody.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact SoftBody.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Wood NoCollision.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Wood NoCollision.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Wood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Bullet Impacts/WFX_BImpact Wood.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion LandMine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion LandMine.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Simple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Simple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion Small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion StarSmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion StarSmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Explosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big Alt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big Alt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big Alt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big Alt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Nuke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Explosions/WFX_Nuke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Broad (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Broad (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Circle (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire Natural Circle (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire SmallFlame (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_Fire SmallFlame (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_GazFire (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_GazFire (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_GazFireBig (Black Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Black Smoke/WFX_GazFireBig (Black Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural Broad (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural Broad (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural Circle (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire Natural Circle (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire SmallFlame (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_Fire SmallFlame (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_GazFire (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_GazFire (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_GazFireBig (Gray Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/Gray Smoke/WFX_GazFireBig (Gray Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire Natural (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire Natural (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire Natural Broad (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire Natural Broad (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire Natural Circle (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire Natural Circle (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire SmallFlame (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_Fire SmallFlame (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_GazFire (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_GazFire (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_GazFireBig (No Smoke).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/No Smoke/WFX_GazFireBig (No Smoke).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Alt Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Alt Looped.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Alt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Alt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big Looped.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Looped.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower Looped.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_FlameThrower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Blue).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Blue).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Green).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Green).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Purple).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Fire/WFX_GazFireBig (Purple).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Blue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Purple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Purple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Blue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Blue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Green.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Green.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Red.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Red.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Yellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/Color Variants/WFX_SmokeGrenade Yellow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade Additive.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade Additive.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade AlphaBlend Black.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade AlphaBlend Black.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade AlphaBlend Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade AlphaBlend Gray.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade Black.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade Black.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade Gray.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade Gray.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade White.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store/JMO Assets/WarFX/_Effects/Smoke/WFX_SmokeGrenade White.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1358299980">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="1340" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="1340" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+              <folding>
+                <marker date="1551112953646" expanded="true" signature="38:410" ph="{...}" />
+                <marker date="1551112953646" expanded="true" signature="80:408" ph="{...}" />
+                <marker date="1551112953646" expanded="true" signature="265:402" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding>
+                <marker date="1551112988096" expanded="true" signature="38:111" ph="{...}" />
+                <marker date="1551112988096" expanded="true" signature="88:109" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <marker date="1551114462473" expanded="true" signature="47:658" ph="{...}" />
+                <marker date="1551114462473" expanded="true" signature="82:656" ph="{...}" />
+                <marker date="1551114462473" expanded="true" signature="316:500" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/HomingProjectile.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+              <folding>
+                <marker date="1551114352119" expanded="true" signature="47:922" ph="{...}" />
+                <marker date="1551114352119" expanded="true" signature="99:920" ph="{...}" />
+                <marker date="1551114352119" expanded="true" signature="324:458" ph="{...}" />
+                <marker date="1551114352119" expanded="true" signature="480:914" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/HitBox.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <marker date="1551112953643" expanded="true" signature="38:213" ph="{...}" />
+                <marker date="1551112953643" expanded="true" signature="80:211" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Control/WeaponSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <marker date="1551113845426" expanded="false" signature="6:33" ph="..." />
+                <marker date="1551113845426" expanded="true" signature="52:674" ph="{...}" />
+                <marker date="1551113845426" expanded="true" signature="100:672" ph="{...}" />
+                <marker date="1551113845426" expanded="true" signature="416:568" ph="{...}" />
+                <marker date="1551113845426" expanded="true" signature="450:558" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/HomingProjectile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/LockOnSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entities/HitBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Control/WeaponSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/HitBox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/LockOnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Control/WeaponSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/HomingProjectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1832" />
+    <option name="y" value="58" />
+    <option name="width" value="1683" />
+    <option name="height" value="1028" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Control" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Entities" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Vehicles" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Weapons" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Weapons" type="1045f7f1:UnityExplorerNode" />
+              <item name="Secondary" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df53423f-75a0-48af-b1b4-3f72532c63fe" name="Default Changelist" comment="" />
+      <created>1551112074702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551112074702</updated>
+      <workItem from="1551112078317" duration="2780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2780000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22044729" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/LockOnSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <marker date="1551113666199" expanded="true" signature="6:34" ph="..." />
+            <marker date="1551113666199" expanded="true" signature="53:724" ph="{...}" />
+            <marker date="1551113666199" expanded="true" signature="85:722" ph="{...}" />
+            <marker date="1551113666199" expanded="true" signature="190:244" ph="{...}" />
+            <marker date="1551113666199" expanded="true" signature="294:716" ph="{...}" />
+            <marker date="1551113666199" expanded="true" signature="461:680" ph="{...}" />
+            <marker date="1551113666199" expanded="true" signature="585:666" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/HitBox.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <marker date="1551112953643" expanded="true" signature="38:213" ph="{...}" />
+            <marker date="1551112953643" expanded="true" signature="80:211" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <marker date="1551112988096" expanded="true" signature="38:111" ph="{...}" />
+            <marker date="1551112988096" expanded="true" signature="88:109" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="76" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+          <folding>
+            <marker date="1551112953646" expanded="true" signature="38:410" ph="{...}" />
+            <marker date="1551112953646" expanded="true" signature="80:408" ph="{...}" />
+            <marker date="1551112953646" expanded="true" signature="265:402" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Control/WeaponSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <marker date="1551113845426" expanded="false" signature="6:33" ph="..." />
+            <marker date="1551113845426" expanded="true" signature="52:674" ph="{...}" />
+            <marker date="1551113845426" expanded="true" signature="100:672" ph="{...}" />
+            <marker date="1551113845426" expanded="true" signature="416:568" ph="{...}" />
+            <marker date="1551113845426" expanded="true" signature="450:558" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/HomingProjectile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+          <folding>
+            <marker date="1551114352119" expanded="true" signature="47:922" ph="{...}" />
+            <marker date="1551114352119" expanded="true" signature="99:920" ph="{...}" />
+            <marker date="1551114352119" expanded="true" signature="324:458" ph="{...}" />
+            <marker date="1551114352119" expanded="true" signature="480:914" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <marker date="1551114462473" expanded="true" signature="47:658" ph="{...}" />
+            <marker date="1551114462473" expanded="true" signature="82:656" ph="{...}" />
+            <marker date="1551114462473" expanded="true" signature="316:500" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

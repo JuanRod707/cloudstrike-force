@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Materials" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Water.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraAnchors.cs" t="Include" />
+            <e p="ChaseCamera.cs" t="Include" />
+          </e>
+          <e p="Control" t="Include">
+            <e p="PlaneMovement.cs" t="Include" />
+            <e p="WeaponSystem.cs" t="Include" />
+          </e>
+          <e p="CursorSet.cs" t="Include" />
+          <e p="Effects" t="Include">
+            <e p="AutoRotate.cs" t="Include" />
+            <e p="ColliderImpact.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="Health.cs" t="Include" />
+            <e p="HitBox.cs" t="Include" />
+            <e p="LockableTarget.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="LaunchTrigger.cs" t="Include" />
+            <e p="PlayerGameInput.cs" t="Include" />
+            <e p="PlayerInitializer.cs" t="Include" />
+          </e>
+          <e p="Vehicles" t="Include">
+            <e p="DestroyOnCrash.cs" t="Include" />
+            <e p="Vehicle.cs" t="Include" />
+            <e p="VehicleStats.cs" t="Include" />
+          </e>
+          <e p="Weapons" t="Include">
+            <e p="Data" t="Include">
+              <e p="WeaponStats.cs" t="Include" />
+            </e>
+            <e p="LockOnSystem.cs" t="Include" />
+            <e p="Primary" t="Include">
+              <e p="GatlingGun.cs" t="Include" />
+            </e>
+            <e p="Secondary" t="Include">
+              <e p="HomingProjectile.cs" t="Include" />
+              <e p="Seeker.cs" t="Include" />
+            </e>
+            <e p="Weapon.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Standard Assets" t="Include">
+          <e p="Environment" t="Include">
+            <e p="Water (Basic)" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="WaterBasic.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="FXWaterBasic.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Store" t="Include">
+          <e p="JMO Assets" t="Include">
+            <e p="!JMO Assets Readme.txt" t="Include" />
+            <e p="Cartoon FX Easy Editor" t="Include">
+              <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CFXEasyEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="WarFX" t="Include">
+              <e p="!WarFX Readme.txt" t="Include" />
+              <e p="_Effects" t="Include">
+                <e p="MuzzleFlashes" t="Include">
+                  <e p="!MuzzleFlash Differences.txt" t="Include" />
+                </e>
+              </e>
+              <e p="_Effects (Mobile)" t="Include">
+                <e p="MuzzleFlashes" t="Include">
+                  <e p="!MuzzleFlash Differences.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Demo" t="Include">
+                <e p="Assets" t="Include">
+                  <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                  <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                  <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                  <e p="CFX_Demo_Translate.cs" t="Include" />
+                  <e p="WFX_Demo.cs" t="Include" />
+                  <e p="WFX_Demo_DeleteAfterDelay.cs" t="Include" />
+                  <e p="WFX_Demo_New.cs" t="Include" />
+                  <e p="WFX_Demo_RandomDir.cs" t="Include" />
+                  <e p="WFX_Demo_Wall.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Editor" t="Include">
+                <e p="CFX_SpawnSystemEditor.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+                <e p="CFX_LightIntensityFade.cs" t="Include" />
+                <e p="WFX_BulletHoleDecal.cs" t="Include" />
+                <e p="WFX_LightFlicker.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="WFX_S Add Scroll.shader" t="Include" />
+                <e p="WFX_S Alpha-Diffuse TintColor.shader" t="Include" />
+                <e p="WFX_S Alpha-Specular TintColor.shader" t="Include" />
+                <e p="WFX_S AlphaBlend NoSoftParticles.shader" t="Include" />
+                <e p="WFX_S AlphaBlend Scroll.shader" t="Include" />
+                <e p="WFX_S Multiply Soft Scroll.shader" t="Include" />
+                <e p="WFX_S Multiply Soft.shader" t="Include" />
+                <e p="WFX_S Particle Add A8.shader" t="Include" />
+                <e p="WFX_S Particle AddSoft A8.shader" t="Include" />
+                <e p="WFX_S Particle Multiply A8.shader" t="Include" />
+                <e p="WFX_S Smoke Scroll.shader" t="Include" />
+              </e>
+              <e p="Spawn System" t="Include">
+                <e p="CFX_SpawnSystem.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="TerrainStratumPainter" t="Include">
+          <e p="Editor" t="Include">
+            <e p="TerrainStratumPainter.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="cloudstrike-force.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_cloudstrike-force.-71576152.00" t="ExcludeRecursive" />
+  </component>
+</project>
