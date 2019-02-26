@@ -1,0 +1,18 @@
+﻿using UnityEngine;
+using Weapons.Secondary;
+
+namespace AI
+{
+    public class DroneCoordinator : MonoBehaviour
+    {
+        public Transform DroneContainer;
+        public NavigationPoints DronePatrol;
+
+        void Start()
+        {
+            var drones = DroneContainer.GetComponentsInChildren<PatrolDroneAI>();
+            foreach(var d in drones)
+                d.Initialize(DronePatrol);
+        }
+    }
+}
