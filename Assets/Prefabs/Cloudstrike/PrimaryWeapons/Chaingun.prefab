@@ -86,6 +86,9 @@ MonoBehaviour:
   Cannon: {fileID: 3695215068457242927}
   AimDistance: 200
   Inaccuracy: 5
+  HitLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &3695215068132122341
 GameObject:
   m_ObjectHideFlags: 0

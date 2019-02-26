@@ -9,14 +9,31 @@ namespace Weapons
         private readonly float targetDistance;
         private readonly LayerMask targetLayer;
 
-        public LockOnSystem(UnityEngine.Camera camera, float targetDistance, LayerMask targetLayer)
+        private Transform previousLock;
+        private Transform currentLock;
+        private Transform definitiveLock;
+
+        private float elapsedLockTime;
+        private float lockTime;
+
+        public LockOnSystem(UnityEngine.Camera camera, float lockTime, float targetDistance, LayerMask targetLayer)
         {
             this.camera = camera;
             this.targetDistance = targetDistance;
             this.targetLayer = targetLayer;
+            this.lockTime = lockTime;
         }
         
         public Transform ScanForTarget()
+        {
+            previousLock = currentLock;
+            Scan();
+            Process();
+
+            return definitiveLock;
+        }
+
+        void Scan()
         {
             var scanRay = camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -25,11 +42,27 @@ namespace Weapons
                 var target = hit.collider.GetComponent<LockableTarget>();
                 if (target != null)
                 {
-                    return target.transform;
+                    currentLock = target.transform;
                 }
+                else
+                    currentLock = null;
             }
+            else
+                currentLock = null;
+        }
 
-            return null;
+        void Process()
+        {
+            if (previousLock == currentLock)
+            {
+                elapsedLockTime += Time.fixedDeltaTime;
+                if (elapsedLockTime > lockTime)
+                    definitiveLock = currentLock;
+            }
+            else
+            {
+                elapsedLockTime = 0;
+            }
         }
     }
 }

@@ -2,37 +2,34 @@
 
 namespace Weapons.Secondary
 {
-    public class HomingProjectile : MonoBehaviour
+    public class HomingProjectile : Rocket
     {
-        public float Speed;
         public float TurnRate;
-        public float Lifetime;
         
         Transform target;
 
-        public void Launch(Transform target)
+        public void Launch(Transform lockedTarget, int damage)
         {
-            Debug.Log($"launched with target null? {target == null}");
-            this.target = target;
+            base.Launch(damage);
+            target = lockedTarget;
         }
 
-        void Update()
+        protected override void FixedUpdate()
         {
-            transform.Translate(Vector3.forward * Speed);
-            if(target != null)
+            base.FixedUpdate();
+            if (target != null)
                 Steer();
         }
 
         void Steer()
         {
             var relativeTargetPosition = transform.InverseTransformPoint(target.position);
-            var turnFactor = relativeTargetPosition.x > 0 ? 1f : -1f;
-            
-            transform.Rotate(Vector3.up * TurnRate * turnFactor);
-            
-            turnFactor = relativeTargetPosition.y > 0 ? 1f : -1f;
-            transform.Rotate(Vector3.right * TurnRate * turnFactor);
 
+            var turnFactor = relativeTargetPosition.x > 0 ? 1f : -1f;
+            transform.Rotate(transform.up * TurnRate * turnFactor, Space.World);
+
+            var pitchFactor = relativeTargetPosition.y > 0 ? -1f : 1f;
+            transform.Rotate(transform.right * TurnRate * pitchFactor, Space.World);
             Normalize();
         }
 

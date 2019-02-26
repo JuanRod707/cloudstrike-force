@@ -14,6 +14,9 @@ namespace Entities
         {
             currentHitPoints -= damage;
             Debug.Log($"Received {damage}, current hp: {currentHitPoints}");
+
+            if(currentHitPoints <= 0)
+                Debug.Log("Target destroyed!");
         }
     }
 }

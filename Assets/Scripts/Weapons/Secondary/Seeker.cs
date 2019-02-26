@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using UI;
+using UnityEngine;
+using Camera = UnityEngine.Camera;
 
 namespace Weapons.Secondary
 {
@@ -7,6 +9,9 @@ namespace Weapons.Secondary
         public HomingProjectile Missile;
         public ParticleSystem Muzzle;
         public LayerMask TargetLayer;
+        public float LockTime;
+
+        LockOnCrosshair LockOnTarget;
         
         LockOnSystem lockOn;
         Transform lockedTarget;
@@ -15,19 +20,23 @@ namespace Weapons.Secondary
         {
             Muzzle.Play();
             var missile = Instantiate(Missile, Muzzle.transform.position, transform.rotation);
-            missile.Launch(lockedTarget);
+            missile.Launch(lockedTarget, Stats.Damage);
         }
         
-        void Start() => lockOn = new LockOnSystem(UnityEngine.Camera.main, Stats.Range, TargetLayer);
+        void Start()
+        {
+            LockOnTarget = GameObject.Find("LockOnCrosshair").GetComponent<LockOnCrosshair>();
+            lockOn = new LockOnSystem(UnityEngine.Camera.main, LockTime, Stats.Range, TargetLayer);
+        }
 
         void Update()
         {
-            if (lockedTarget == null)
-            {
-                lockedTarget = lockOn.ScanForTarget();
-                if (lockedTarget != null)
-                    Debug.Log($"Target locked");
-            }
+            lockedTarget = lockOn.ScanForTarget();
+
+            if (lockedTarget != null)
+                LockOnTarget.LockOn(lockedTarget);
+            else
+                LockOnTarget.Disengage();
         }
     }
 }
