@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Entities
@@ -7,16 +8,21 @@ namespace Entities
         public int BaseHitPoints;
 
         int currentHitPoints;
+        private Action doOnDestroy;
 
-        void Start() => currentHitPoints = BaseHitPoints;
-        
+        public void Initialize(Action doOnDestroy)
+        {
+            this.doOnDestroy = doOnDestroy;
+            currentHitPoints = BaseHitPoints;
+        }
+
         public void ReceiveDamage(int damage)
         {
             currentHitPoints -= damage;
             Debug.Log($"Received {damage}, current hp: {currentHitPoints}");
 
-            if(currentHitPoints <= 0)
-                Debug.Log("Target destroyed!");
+            if (currentHitPoints <= 0)
+                doOnDestroy?.Invoke();
         }
     }
 }

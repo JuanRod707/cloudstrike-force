@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515763644143113266}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.6}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4733701592838830435}
@@ -4916,7 +4916,7 @@ MonoBehaviour:
     ReloadTime: 3
     Ammo: 1
     Damage: 50
-    Range: 2000
+    Range: 1000
   FireSfx: {fileID: 1246229264141802924}
   Missile: {fileID: 7236927757530227759, guid: 094d9718f62ed44fd8e91a75a0d29edf, type: 3}
   Muzzle: {fileID: 8835999996311882699}

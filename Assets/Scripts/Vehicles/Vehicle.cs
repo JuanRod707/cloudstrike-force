@@ -1,4 +1,5 @@
 ﻿using Control;
+using Entities;
 using UnityEngine;
 
 namespace Vehicles
@@ -10,8 +11,13 @@ namespace Vehicles
         public VehicleStats Stats;
         public GameObject View;
         public GameObject DeathExplosion;
+        public Health VehicleHealth;
 
-        void Start() => Weapons.Initialize();
+        void Start()
+        {
+            VehicleHealth.Initialize(Destroy);
+            Weapons.Initialize();
+        }
 
         public void Undock()
         {

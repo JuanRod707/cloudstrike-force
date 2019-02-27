@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Player
+namespace Cloudstrike
 {
     public class LaunchTrigger : MonoBehaviour
     {

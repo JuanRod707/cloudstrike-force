@@ -11,9 +11,9 @@ namespace Weapons.Primary
         public float Inaccuracy;
         public LayerMask HitLayer;
 
-        protected override void FireRound()
+        protected override void FireRound(Vector3 target)
         {
-            Cannon.transform.LookAt(AimPoint(Input.mousePosition));
+            Cannon.transform.LookAt(AimAt(target));
             RaycastHit hit;
 
             if (Physics.Raycast(Cannon.transform.position, Cannon.transform.forward, out hit, Stats.Range, HitLayer))
@@ -30,11 +30,6 @@ namespace Weapons.Primary
             Cannon.Emit(1);
         }
 
-        Vector3 AimPoint(Vector2 mousePoistion)
-        {
-            var viewRay = UnityEngine.Camera.main.ScreenPointToRay(mousePoistion);
-            var range = viewRay.GetPoint(AimDistance);
-            return range + (Random.insideUnitSphere * Inaccuracy);
-        }
+        Vector3 AimAt(Vector3 target) => target + (Random.insideUnitSphere * Inaccuracy);
     }
 }

@@ -1,43 +1,45 @@
-using Entities;
+﻿using Entities;
 using UnityEngine;
 
-namespace Weapons
+namespace Control
 {
-    public class LockOnSystem
+    public class TargetSystem
     {
-        UnityEngine.Camera camera;
-        private readonly float targetDistance;
-        private readonly LayerMask targetLayer;
+        private UnityEngine.Camera camera;
+        private readonly LayerMask lockingLayer;
 
         private Transform previousLock;
         private Transform currentLock;
         private Transform definitiveLock;
 
         private float elapsedLockTime;
-        private float lockTime;
 
-        public LockOnSystem(UnityEngine.Camera camera, float lockTime, float targetDistance, LayerMask targetLayer)
+        public TargetSystem(UnityEngine.Camera camera, LayerMask lockingLayer)
         {
             this.camera = camera;
-            this.targetDistance = targetDistance;
-            this.targetLayer = targetLayer;
-            this.lockTime = lockTime;
+            this.lockingLayer = lockingLayer;
         }
-        
-        public Transform ScanForTarget()
+
+        public Vector3 AimMouseTo(Vector2 mousePoistion, float  aimDistance)
+        {
+            var viewRay = camera.ScreenPointToRay(mousePoistion);
+            return viewRay.GetPoint(aimDistance);
+        }
+
+        public Transform ScanForTarget(float targetDistance, float lockTime)
         {
             previousLock = currentLock;
-            Scan();
-            Process();
+            Scan(targetDistance);
+            Process(lockTime);
 
             return definitiveLock;
         }
 
-        void Scan()
+        void Scan(float targetDistance)
         {
             var scanRay = camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(scanRay, out hit, targetDistance, targetLayer))
+            if (Physics.Raycast(scanRay, out hit, targetDistance, lockingLayer))
             {
                 var target = hit.collider.GetComponent<LockableTarget>();
                 if (target != null)
@@ -51,7 +53,7 @@ namespace Weapons
                 currentLock = null;
         }
 
-        void Process()
+        void Process(float lockTime)
         {
             if (previousLock == currentLock)
             {

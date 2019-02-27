@@ -1,7 +1,7 @@
 ﻿using Camera;
 using UnityEngine;
 
-namespace Player
+namespace Cloudstrike
 {
     public class PlayerInitializer: MonoBehaviour
     {

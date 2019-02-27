@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cloudstrike;
+using UnityEngine;
 using Weapons.Secondary;
 
 namespace AI
@@ -10,9 +11,10 @@ namespace AI
 
         void Start()
         {
+            var cloudstrike = GameObject.FindObjectOfType<CloudstrikeReferences>();
             var drones = DroneContainer.GetComponentsInChildren<PatrolDroneAI>();
             foreach(var d in drones)
-                d.Initialize(DronePatrol);
+                d.Initialize(DronePatrol, cloudstrike.ControlledPlane);
         }
     }
 }

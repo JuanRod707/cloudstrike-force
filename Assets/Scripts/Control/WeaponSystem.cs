@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using Weapons;
+using Weapons.Data;
 
 namespace Control
 {
@@ -10,30 +12,37 @@ namespace Control
 
         private Weapon[] primaryWeapons;
         private Weapon[] secondaryWeapons;
-        
+
+        private int secondaryIndex;
         private bool active = true;
+        private int primaryIndex;
+
+        public WeaponStats PrimaryStats => primaryWeapons.First().Stats;
+        public WeaponStats SecondaryStats => secondaryWeapons?.First().Stats;
 
         public void Initialize()
         {
             primaryWeapons = PrimaryWeaponSpot.GetComponentsInChildren<Weapon>();
-            secondaryWeapons = SecondaryWeaponSpot.GetComponentsInChildren<Weapon>();
+            secondaryWeapons = SecondaryWeaponSpot == null ? null : SecondaryWeaponSpot.GetComponentsInChildren<Weapon>();
         }
 
-        public void FirePrimary()
+        public void FirePrimary(Vector3 target)
         {
             if (active)
             {
-                foreach (var w in primaryWeapons)
-                    w.Fire();
+                primaryWeapons[primaryIndex].Fire(target);
+                primaryIndex++;
+                primaryIndex = primaryIndex >= primaryWeapons.Length ? 0 : primaryIndex;
             }
         }
 
-        public void FireSecondary()
+        public void FireSecondary(Transform target)
         {
             if (active)
             {
-                foreach (var w in secondaryWeapons)
-                    w.Fire();
+                secondaryWeapons[secondaryIndex].Fire(target);
+                secondaryIndex++;
+                secondaryIndex = secondaryIndex >= secondaryWeapons.Length ? 0 : secondaryIndex;
             }
         }
 

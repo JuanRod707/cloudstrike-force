@@ -2,7 +2,7 @@
 
 namespace UI
 {
-    class LockOnCrosshair : MonoBehaviour
+    public class LockOnCrosshair : MonoBehaviour
     {
         public AudioSource Notification;
 

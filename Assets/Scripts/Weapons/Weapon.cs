@@ -12,17 +12,31 @@ namespace Weapons
         bool isCycling;
         int currentAmmo;
 
-        public void Fire()
+        public void Fire(Vector3 target)
         {
             if (!isCycling)
             {
-                FireRound();
-                FireSfx.Play();
-                StartCoroutine(Cycle());
-                currentAmmo--;
-                if(currentAmmo <= 0)
-                    Reload();
+                FireRound(target);
+                PostFire();
             }
+        }
+
+        public void Fire(Transform target)
+        {
+            if (!isCycling)
+            {
+                FireRound(target);
+                PostFire();
+            }
+        }
+
+        void PostFire()
+        {
+            FireSfx.Play();
+            StartCoroutine(Cycle());
+            currentAmmo--;
+            if (currentAmmo <= 0)
+                Reload();
         }
 
         public void Reload()
@@ -30,7 +44,9 @@ namespace Weapons
             StartCoroutine(WaitForReload());
         }
 
-        protected virtual void FireRound() { }
+        protected virtual void FireRound(Vector3 target) { }
+
+        protected virtual void FireRound(Transform target) { }
 
         IEnumerator Cycle()
         {
