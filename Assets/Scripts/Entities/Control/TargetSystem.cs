@@ -1,7 +1,6 @@
-﻿using Entities;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Control
+namespace Entities.Control
 {
     public class TargetSystem
     {

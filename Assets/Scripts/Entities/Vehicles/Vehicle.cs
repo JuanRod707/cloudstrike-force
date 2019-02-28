@@ -1,8 +1,7 @@
-﻿using Control;
-using Entities;
+﻿using Entities.Control;
 using UnityEngine;
 
-namespace Vehicles
+namespace Entities.Vehicles
 {
     public class Vehicle : MonoBehaviour
     {

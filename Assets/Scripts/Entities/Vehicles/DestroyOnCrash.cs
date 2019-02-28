@@ -1,7 +1,7 @@
 ﻿using Effects;
 using UnityEngine;
 
-namespace Vehicles
+namespace Entities.Vehicles
 {
     public class DestroyOnCrash : MonoBehaviour
     {

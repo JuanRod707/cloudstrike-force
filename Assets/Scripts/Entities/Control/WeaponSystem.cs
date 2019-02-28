@@ -3,7 +3,7 @@ using UnityEngine;
 using Weapons;
 using Weapons.Data;
 
-namespace Control
+namespace Entities.Control
 {
     public class WeaponSystem : MonoBehaviour
     {

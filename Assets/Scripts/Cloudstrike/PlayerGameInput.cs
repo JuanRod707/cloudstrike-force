@@ -1,7 +1,7 @@
-﻿using Control;
+﻿using Entities.Control;
+using Entities.Vehicles;
 using UI;
 using UnityEngine;
-using Vehicles;
 
 namespace Cloudstrike
 {

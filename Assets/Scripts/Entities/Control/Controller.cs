@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Control
+﻿namespace Entities.Control
 {
     public interface Controller
     {

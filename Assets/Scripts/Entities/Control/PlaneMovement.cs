@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-using Vehicles;
+﻿using Entities.Vehicles;
+using UnityEngine;
 
-namespace Control
+namespace Entities.Control
 {
     public class PlaneMovement : MonoBehaviour
     {

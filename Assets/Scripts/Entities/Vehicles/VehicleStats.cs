@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vehicles
+namespace Entities.Vehicles
 {
     [Serializable]
     public class VehicleStats

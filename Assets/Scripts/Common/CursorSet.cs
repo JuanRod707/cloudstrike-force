@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 
-public class CursorSet : MonoBehaviour
+namespace Common
 {
-    public Texture2D CursorSprite;
-    public Vector2 CursorHotSpot;
-
-    void Start()
+    public class CursorSet : MonoBehaviour
     {
-        Cursor.SetCursor(CursorSprite, CursorHotSpot, CursorMode.ForceSoftware);
+        public Texture2D CursorSprite;
+        public Vector2 CursorHotSpot;
+
+        void Start()
+        {
+            Cursor.SetCursor(CursorSprite, CursorHotSpot, CursorMode.ForceSoftware);
+        }
     }
 }

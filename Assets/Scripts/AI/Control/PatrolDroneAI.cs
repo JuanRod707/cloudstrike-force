@@ -1,8 +1,8 @@
-﻿using Control;
+﻿using Entities.Control;
+using Entities.Vehicles;
 using UnityEngine;
-using Vehicles;
 
-namespace AI
+namespace AI.Control
 {
     public class PatrolDroneAI : MonoBehaviour, Controller
     {

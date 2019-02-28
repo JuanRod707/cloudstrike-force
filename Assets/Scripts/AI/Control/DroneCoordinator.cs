@@ -1,8 +1,7 @@
 ﻿using Cloudstrike;
 using UnityEngine;
-using Weapons.Secondary;
 
-namespace AI
+namespace AI.Control
 {
     public class DroneCoordinator : MonoBehaviour
     {

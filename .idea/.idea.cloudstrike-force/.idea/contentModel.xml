@@ -12,45 +12,67 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="Control" t="Include">
+              <e p="DroneCoordinator.cs" t="Include" />
+              <e p="PatrolDroneAI.cs" t="Include" />
+              <e p="TurretAI.cs" t="Include" />
+              <e p="TurretCoordinator.cs" t="Include" />
+            </e>
+            <e p="NavigationPoints.cs" t="Include" />
+          </e>
           <e p="Camera" t="Include">
             <e p="CameraAnchors.cs" t="Include" />
             <e p="ChaseCamera.cs" t="Include" />
           </e>
-          <e p="Control" t="Include">
-            <e p="PlaneMovement.cs" t="Include" />
-            <e p="WeaponSystem.cs" t="Include" />
+          <e p="Cloudstrike" t="Include">
+            <e p="CloudstrikeReferences.cs" t="Include" />
+            <e p="LaunchTrigger.cs" t="Include" />
+            <e p="PlayerGameInput.cs" t="Include" />
+            <e p="PlayerInitializer.cs" t="Include" />
           </e>
-          <e p="CursorSet.cs" t="Include" />
+          <e p="Common" t="Include">
+            <e p="CursorSet.cs" t="Include" />
+            <e p="ExtensionMethods.cs" t="Include" />
+          </e>
           <e p="Effects" t="Include">
             <e p="AutoRotate.cs" t="Include" />
             <e p="ColliderImpact.cs" t="Include" />
           </e>
           <e p="Entities" t="Include">
+            <e p="Control" t="Include">
+              <e p="Controller.cs" t="Include" />
+              <e p="PlaneMovement.cs" t="Include" />
+              <e p="TargetSystem.cs" t="Include" />
+              <e p="TurretAiming.cs" t="Include" />
+              <e p="WeaponSystem.cs" t="Include" />
+            </e>
             <e p="Health.cs" t="Include" />
             <e p="HitBox.cs" t="Include" />
             <e p="LockableTarget.cs" t="Include" />
-          </e>
-          <e p="Player" t="Include">
-            <e p="LaunchTrigger.cs" t="Include" />
-            <e p="PlayerGameInput.cs" t="Include" />
-            <e p="PlayerInitializer.cs" t="Include" />
-          </e>
-          <e p="Vehicles" t="Include">
-            <e p="DestroyOnCrash.cs" t="Include" />
-            <e p="Vehicle.cs" t="Include" />
+            <e p="Turret.cs" t="Include" />
+            <e p="Vehicles" t="Include">
+              <e p="DestroyOnCrash.cs" t="Include" />
+              <e p="Vehicle.cs" t="Include" />
+              <e p="VehicleStats.cs" t="Include" />
+            </e>
             <e p="VehicleStats.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="LockOnCrosshair.cs" t="Include" />
           </e>
           <e p="Weapons" t="Include">
             <e p="Data" t="Include">
               <e p="WeaponStats.cs" t="Include" />
             </e>
-            <e p="LockOnSystem.cs" t="Include" />
             <e p="Primary" t="Include">
               <e p="GatlingGun.cs" t="Include" />
             </e>
             <e p="Secondary" t="Include">
               <e p="HomingProjectile.cs" t="Include" />
+              <e p="Rocket.cs" t="Include" />
               <e p="Seeker.cs" t="Include" />
+              <e p="Warhead.cs" t="Include" />
             </e>
             <e p="Weapon.cs" t="Include" />
           </e>
