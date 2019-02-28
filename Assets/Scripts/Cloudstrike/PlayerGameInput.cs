@@ -5,7 +5,7 @@ using Vehicles;
 
 namespace Cloudstrike
 {
-    public class PlayerGameInput : MonoBehaviour
+    public class PlayerGameInput : MonoBehaviour, Controller
     {
         public Vehicle Ship;
         public float DeadZone;
@@ -45,6 +45,7 @@ namespace Cloudstrike
         {
             screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
             targetSystem = new TargetSystem(UnityEngine.Camera.main, LockingLayer);
+            Ship.Initialize(this);
         }
 
         public void Dock(Transform hangar)
@@ -68,5 +69,15 @@ namespace Cloudstrike
             else
                 LockOnTarget.Disengage();
         }
+
+        public void Disable() => enabled = false;
+
+        public void ShootDown()
+        {
+            Disable();
+            Ship.Destroy();
+        }
+
+        public void Enable() => enabled = true;
     }
 }

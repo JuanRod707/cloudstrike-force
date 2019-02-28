@@ -13,10 +13,13 @@ namespace Vehicles
         public GameObject DeathExplosion;
         public Health VehicleHealth;
 
-        void Start()
+        private Controller controller;
+
+        public void Initialize(Controller controller)
         {
-            VehicleHealth.Initialize(Destroy);
+            VehicleHealth.Initialize(controller.ShootDown);
             Weapons.Initialize();
+            this.controller = controller;
         }
 
         public void Undock()
@@ -25,11 +28,13 @@ namespace Vehicles
             Movement.Launch();
         }
 
-        internal void Destroy()
+        public void Launch() => Movement.Launch();
+
+        public void Destroy()
         {
             Movement.Stop();
-            Weapons.Disable();
             View.SetActive(false);
+            controller.Disable();
             Instantiate(DeathExplosion, transform.position, Quaternion.identity);
         }
 

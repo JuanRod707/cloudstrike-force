@@ -14,7 +14,6 @@ namespace Control
         private Weapon[] secondaryWeapons;
 
         private int secondaryIndex;
-        private bool active = true;
         private int primaryIndex;
 
         public WeaponStats PrimaryStats => primaryWeapons.First().Stats;
@@ -28,26 +27,16 @@ namespace Control
 
         public void FirePrimary(Vector3 target)
         {
-            if (active)
-            {
-                primaryWeapons[primaryIndex].Fire(target);
-                primaryIndex++;
-                primaryIndex = primaryIndex >= primaryWeapons.Length ? 0 : primaryIndex;
-            }
+            primaryWeapons[primaryIndex].Fire(target);
+            primaryIndex++;
+            primaryIndex = primaryIndex >= primaryWeapons.Length ? 0 : primaryIndex;
         }
 
         public void FireSecondary(Transform target)
         {
-            if (active)
-            {
-                secondaryWeapons[secondaryIndex].Fire(target);
-                secondaryIndex++;
-                secondaryIndex = secondaryIndex >= secondaryWeapons.Length ? 0 : secondaryIndex;
-            }
+            secondaryWeapons[secondaryIndex].Fire(target);
+            secondaryIndex++;
+            secondaryIndex = secondaryIndex >= secondaryWeapons.Length ? 0 : secondaryIndex;
         }
-
-        public void Disable() => active = false;
-
-        public void Enable() => active = true;
     }
 }

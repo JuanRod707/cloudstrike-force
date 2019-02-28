@@ -4869,7 +4869,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 1, z: 3.8}
+  m_Size: {x: 1.4, y: 1, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2037543008328625901
 MonoBehaviour:
@@ -4986,6 +4986,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3732526508417990071}
+  - {fileID: 3687653783555726359}
   m_Father: {fileID: 4203210144726894777}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5017,7 +5018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e9a36332bf90247a2901a757e82eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttachedVehicle: {fileID: 0}
+  AttachedVehicle: {fileID: 4778812545965344959}
 --- !u!1 &1522652810473836778
 GameObject:
   m_ObjectHideFlags: 0
@@ -14565,6 +14566,8 @@ GameObject:
   - component: {fileID: 4203210144726894777}
   - component: {fileID: 3401664449818845783}
   - component: {fileID: 2060241121014487235}
+  - component: {fileID: 4778812545965344959}
+  - component: {fileID: 944095022287608508}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -14601,18 +14604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f7ca401cbe4dd4e99f722b68e40ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weapons: {fileID: 3588373096129081661}
-  Stats:
-    MaxSpeed: 0.8
-    MinSpeed: 0.8
-    Acceleration: 0.5
-    TurnRate: 1.2
-    MaxClimbAngle: 45
-    MaxDiveAngle: -45
-  View: {fileID: 5172788985475847081}
-  DeathExplosion: {fileID: 6869880017225604317, guid: 82c1524f0878f7e419d6ab16e8764192,
-    type: 3}
-  VehicleHealth: {fileID: 2060241121014487235}
+  Vehicle: {fileID: 4778812545965344959}
   DistanceToReachNavPoint: 10
   DistanceToEngage: 400
   DistanceToDisengage: 500
@@ -14630,6 +14622,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseHitPoints: 40
+--- !u!114 &4778812545965344959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2634919019786202090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49d8e8361d5e374282b7f7cc54f6584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapons: {fileID: 3588373096129081661}
+  Movement: {fileID: 944095022287608508}
+  Stats:
+    MaxSpeed: 0.9
+    MinSpeed: 0.9
+    Acceleration: 0.5
+    TurnRate: 0.05
+    MaxClimbAngle: 60
+    MaxDiveAngle: -60
+  View: {fileID: 5172788985475847081}
+  DeathExplosion: {fileID: 6869880017225604317, guid: 82c1524f0878f7e419d6ab16e8764192,
+    type: 3}
+  VehicleHealth: {fileID: 2060241121014487235}
+--- !u!114 &944095022287608508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2634919019786202090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ff194a0668b284a9fad4e07e6f7007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttachedVehicle: {fileID: 4778812545965344959}
+  RollFactor: 8
+  Model: {fileID: 2296471619246774638}
 --- !u!1 &3531607601642509885
 GameObject:
   m_ObjectHideFlags: 0
@@ -14789,6 +14821,79 @@ Transform:
   m_Father: {fileID: 844468000090512310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4409033599508348867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3687653783555726359}
+  - component: {fileID: 4773304141932813232}
+  - component: {fileID: 7121801312945723046}
+  - component: {fileID: 1761397434147694279}
+  m_Layer: 0
+  m_Name: Wings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3687653783555726359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4409033599508348867}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8220346921532480141}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4773304141932813232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4409033599508348867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 0.3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7121801312945723046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4409033599508348867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
+    type: 3}
+--- !u!114 &1761397434147694279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4409033599508348867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb04352c21eb456194cd44e8ddd23df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttachedHealth: {fileID: 2060241121014487235}
 --- !u!1 &4454970237417146136
 GameObject:
   m_ObjectHideFlags: 0

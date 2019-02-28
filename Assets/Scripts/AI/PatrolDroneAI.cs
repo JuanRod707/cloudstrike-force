@@ -1,18 +1,13 @@
 ﻿using Control;
-using Entities;
 using UnityEngine;
 using Vehicles;
 
 namespace AI
 {
-    public class PatrolDroneAI : MonoBehaviour
+    public class PatrolDroneAI : MonoBehaviour, Controller
     {
-        public WeaponSystem Weapons;
-        public VehicleStats Stats;
-        public GameObject View;
-        public GameObject DeathExplosion;
-        public Health VehicleHealth;
-
+        public Vehicle Vehicle;
+     
         public float DistanceToReachNavPoint;
         public float DistanceToEngage;
         public float DistanceToDisengage;
@@ -31,28 +26,34 @@ namespace AI
         private bool PlayerIsTooFar =>
             Vector3.Distance(player.position, transform.position) > DistanceToDisengage;
 
-        private bool PlayerIsInRange =>
+        private bool PlayerIsInAttackRange =>
             Vector3.Distance(player.position, transform.position) < DistanceToAttack;
+
+        private bool PlayerIsInFront => SteeringToTarget.z > 5;
+
+        private Vector3 SteeringToTarget => transform.InverseTransformPoint(target.position);
 
         private bool PlayerIsTarget => target == player;
 
         public void Initialize(NavigationPoints patrol, Transform player)
         {
-            Weapons.Initialize();
             this.player = player;
             patrolPoints = patrol;
             GetNewNavPoint();
+            Vehicle.Initialize(this);
+            Vehicle.Launch();
         }
 
         private void GetNewNavPoint() => target = patrolPoints.GetRandomNavPoint;
 
         void FixedUpdate()
         {
-            transform.Translate(Vector3.forward * Stats.MaxSpeed);
             if (target != null)
             {
-                Steer();
-                if(ReachedTarget)
+                var steerVector = NormalizeSteering(SteeringToTarget);
+                Vehicle.Movement.Steer(steerVector);
+
+                if (ReachedTarget)
                     GetNewNavPoint();
             }
 
@@ -60,10 +61,16 @@ namespace AI
             AttackPlayer();
         }
 
+        private Vector3 NormalizeSteering(Vector3 steering)
+        {
+            steering.y *= -1;
+            return steering * Vehicle.Stats.TurnRate;
+        }
+
         private void AttackPlayer()
         {
-            if (PlayerIsInRange)
-                Weapons.FirePrimary(player.transform.position);
+            if (PlayerIsInAttackRange && PlayerIsInFront)
+                Vehicle.Weapons.FirePrimary(player.transform.position);
         }
 
         private void ScanForPlayer()
@@ -75,27 +82,18 @@ namespace AI
                 DisengagePlayer();
         }
 
-        void Steer()
-        {
-            var relativeTargetPosition = transform.InverseTransformPoint(target.position);
-
-            var turnFactor = relativeTargetPosition.x > 0 ? 1f : -1f;
-            transform.Rotate(transform.up * Stats.TurnRate * turnFactor, Space.World);
-
-            var pitchFactor = relativeTargetPosition.y > 0 ? -1f : 1f;
-            transform.Rotate(transform.right * Stats.TurnRate * pitchFactor, Space.World);
-            Normalize();
-        }
-
-        void Normalize()
-        {
-            var eul = this.transform.eulerAngles;
-            eul.z = 0f;
-            this.transform.eulerAngles = eul;
-        }
-
         void EngagePlayer() => target = player;
 
         void DisengagePlayer() => GetNewNavPoint();
+
+        public void Disable() => enabled = false;
+
+        public void ShootDown()
+        {
+            Disable();
+            Vehicle.Destroy();
+        }
+
+        public void Enable() => enabled = true;
     }
 }

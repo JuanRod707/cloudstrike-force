@@ -8,6 +8,8 @@ namespace Weapons.Secondary
         
         Transform target;
 
+        private Vector3 SteeringToTarget => transform.InverseTransformPoint(target.position);
+
         public void Launch(Transform lockedTarget, int damage)
         {
             base.Launch(damage);
@@ -18,18 +20,26 @@ namespace Weapons.Secondary
         {
             base.FixedUpdate();
             if (target != null)
-                Steer();
+            {
+                var steerVector = NormalizeSteering(SteeringToTarget);
+                Steer(steerVector);
+            }
         }
 
-        void Steer()
+        private Vector3 NormalizeSteering(Vector3 steering)
         {
-            var relativeTargetPosition = transform.InverseTransformPoint(target.position);
+            steering.y *= -1;
+            if (steering.magnitude > 1)
+                steering = steering.normalized;
 
-            var turnFactor = relativeTargetPosition.x > 0 ? 1f : -1f;
-            transform.Rotate(transform.up * TurnRate * turnFactor, Space.World);
+            return steering * TurnRate;
+        }
 
-            var pitchFactor = relativeTargetPosition.y > 0 ? -1f : 1f;
-            transform.Rotate(transform.right * TurnRate * pitchFactor, Space.World);
+        public void Steer(Vector3 steer)
+        {
+            var steerVector = steer * TurnRate;
+            this.transform.Rotate(0f, steerVector.x, 0f);
+            this.transform.Rotate(steerVector.y, 0f, 0f);
             Normalize();
         }
 

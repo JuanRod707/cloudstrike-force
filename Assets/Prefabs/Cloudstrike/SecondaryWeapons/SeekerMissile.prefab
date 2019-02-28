@@ -46,14 +46,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209ce167b37743a68ced24017bc5c553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3.5
+  Speed: 3.2
   Lifetime: 20
   Warhead: {fileID: 8419995195414830595}
   Explosion: {fileID: 6869880017225604317, guid: 82c1524f0878f7e419d6ab16e8764192,
     type: 3}
   View: {fileID: 2399163375458495502}
   ClearTime: 4
-  TurnRate: 0.6
+  TurnRate: 4
 --- !u!1 &2399163374654096718
 GameObject:
   m_ObjectHideFlags: 0

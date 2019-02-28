@@ -32,11 +32,14 @@ namespace Weapons
 
         void PostFire()
         {
-            FireSfx.Play();
-            StartCoroutine(Cycle());
-            currentAmmo--;
-            if (currentAmmo <= 0)
-                Reload();
+            if (gameObject.activeInHierarchy)
+            {
+                FireSfx.Play();
+                StartCoroutine(Cycle());
+                currentAmmo--;
+                if (currentAmmo <= 0)
+                    Reload();
+            }
         }
 
         public void Reload()

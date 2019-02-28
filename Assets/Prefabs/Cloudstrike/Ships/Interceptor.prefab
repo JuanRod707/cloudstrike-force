@@ -4739,6 +4739,7 @@ GameObject:
   - component: {fileID: 2474953197788470257}
   - component: {fileID: 2364641932034677189}
   - component: {fileID: 8066790422560676408}
+  - component: {fileID: 1984390961841548220}
   m_Layer: 0
   m_Name: Wings
   m_TagString: Untagged
@@ -4786,6 +4787,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 3479038624680881862}
+--- !u!114 &1984390961841548220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740922705374249712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
+    type: 3}
 --- !u!1 &3351224050058115550
 GameObject:
   m_ObjectHideFlags: 0
@@ -4969,7 +4984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5082737237639339845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.75140905, y: -4.375049, z: 5.7237616}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6414427910535878435}
@@ -19331,6 +19346,7 @@ GameObject:
   - component: {fileID: 8299287150396558784}
   - component: {fileID: 7691286735085004136}
   - component: {fileID: 8579513628930177430}
+  - component: {fileID: 1932892124466918445}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -19362,10 +19378,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.86
-  m_Height: 5.7
+  m_Radius: 0.6
+  m_Height: 5.13
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!114 &8579513628930177430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19379,6 +19395,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 3479038624680881862}
+--- !u!114 &1932892124466918445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8018342739956945765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd289a5ea3c6de044885774aa7aee51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
+    type: 3}
 --- !u!1 &8160878764450905044
 GameObject:
   m_ObjectHideFlags: 0

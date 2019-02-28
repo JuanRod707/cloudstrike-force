@@ -19,7 +19,7 @@ namespace Entities
         public void ReceiveDamage(int damage)
         {
             currentHitPoints -= damage;
-            Debug.Log($"Received {damage}, current hp: {currentHitPoints}");
+            Debug.Log($"{gameObject.name} Received {damage}, current hp: {currentHitPoints}");
 
             if (currentHitPoints <= 0)
                 doOnDestroy?.Invoke();
