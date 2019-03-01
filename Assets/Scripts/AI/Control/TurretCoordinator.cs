@@ -23,7 +23,7 @@ namespace AI.Control
         void FixedUpdate()
         {
             foreach (var t in turrets)
-                t.AimToTarget(cloudstrike.ControlledPlane.position);
+                t.AimToTarget(cloudstrike.ControlledPlane);
         }
     }
 }

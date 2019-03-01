@@ -10,40 +10,27 @@ namespace AI.Control
         public float DistanceToEngage;
         public Turret Turret;
      
-        bool TargetIsNearby(Vector3 target) =>
-            Vector3.Distance(target, transform.position) < DistanceToAim;
-        
-        bool TargetIsInRange(Vector3 target) =>
-            Vector3.Distance(target, transform.position) < DistanceToEngage;
+        bool TargetIsNearby(Transform target) =>
+            Vector3.Distance(target.position, transform.position) < DistanceToAim;
 
-        bool TargetIsInFront(Vector3 target) => SteeringToTarget(target).z > 5;
-
-        Vector3 SteeringToTarget(Vector3 target) => transform.InverseTransformPoint(target);
+        bool TargetIsInRange(Transform target) =>
+            Vector3.Distance(target.position, transform.position) < DistanceToEngage;
 
         public void Initialize() => Turret.Initialize(this);
 
-        public void AimToTarget(Vector3 target)
+        public void AimToTarget(Transform target)
         {
             if (enabled)
             {
                 if (TargetIsNearby(target))
-                {
-                    var steerVector = NormalizeSteering(SteeringToTarget(target));
-                    Turret.Aiming.Steer(steerVector);
-                }
+                    Turret.Aiming.AimTo(target);
 
-                if (TargetIsInRange(target) && TargetIsInFront(target))
+                if (TargetIsInRange(target) && Turret.Aiming.TargetIsInFront(target))
                     Attack(target);
             }
         }
 
-        Vector3 NormalizeSteering(Vector3 steering)
-        {
-            steering.y *= -1;
-            return steering * Turret.Stats.TurnRate;
-        }
-
-        void Attack(Vector3 target) => Turret.Weapons.FirePrimary(target);
+        void Attack(Transform target) => Turret.Weapons.FirePrimary(target.position);
 
         public void Disable() => enabled = false;
 

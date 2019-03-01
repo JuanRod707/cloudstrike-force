@@ -9,7 +9,11 @@ namespace Entities.Control
         private float turn;
         private float amountTurned;
 
-        public void Steer(Vector3 steer)
+        public bool TargetIsInFront(Transform target) => SteeringToTarget(target.position).z > 5;
+
+        Vector3 SteeringToTarget(Vector3 target) => transform.InverseTransformPoint(target);
+
+        void Steer(Vector3 steer)
         {
             var steerVector = steer * Turret.Stats.TurnRate;
             this.transform.Rotate(0f, steerVector.x, 0f);
@@ -33,6 +37,18 @@ namespace Entities.Control
             var eul = this.transform.eulerAngles;
             eul.z = 0f;
             this.transform.eulerAngles = eul;
+        }
+
+        public void AimTo(Transform target)
+        {
+            var steerVector = NormalizeSteering(SteeringToTarget(target.position));
+            Steer(steerVector);
+        }
+
+        Vector3 NormalizeSteering(Vector3 steering)
+        {
+            steering.y *= -1;
+            return steering * Turret.Stats.TurnRate;
         }
     }
 }
