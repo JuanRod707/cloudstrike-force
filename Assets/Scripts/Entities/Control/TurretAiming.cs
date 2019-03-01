@@ -5,11 +5,15 @@ namespace Entities.Control
     public class TurretAiming : MonoBehaviour
     {
         public Turret Turret;
-        
+        public float FrontAngleThreshold;
+
         private float turn;
         private float amountTurned;
 
-        public bool TargetIsInFront(Transform target) => SteeringToTarget(target.position).z > 5;
+        public bool TargetIsInFront(Transform target) => 
+            SteeringToTarget(target.position).z > 5 &&
+            Mathf.Abs(SteeringToTarget(target.position).y) < FrontAngleThreshold &&
+            Mathf.Abs(SteeringToTarget(target.position).x) < FrontAngleThreshold;
 
         Vector3 SteeringToTarget(Vector3 target) => transform.InverseTransformPoint(target);
 
