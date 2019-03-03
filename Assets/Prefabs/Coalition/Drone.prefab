@@ -4837,6 +4837,7 @@ GameObject:
   - component: {fileID: 777060548971388042}
   - component: {fileID: 2037543008328625901}
   - component: {fileID: 3411783980692221494}
+  - component: {fileID: 6272519790339385983}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -4898,6 +4899,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 2060241121014487235}
+  DamageMultiplier: 1
+--- !u!65 &6272519790339385983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978977930573988726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1049328847608350784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,7 +4966,6 @@ MonoBehaviour:
     Range: 200
   FireSfx: {fileID: 2185214574061796330}
   Cannon: {fileID: 5463486647823772670}
-  AimDistance: 200
   Inaccuracy: 5
   HitLayer:
     serializedVersion: 2
@@ -14894,6 +14908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 2060241121014487235}
+  DamageMultiplier: 1
 --- !u!1 &4454970237417146136
 GameObject:
   m_ObjectHideFlags: 0
@@ -29372,7 +29387,6 @@ MonoBehaviour:
     Range: 200
   FireSfx: {fileID: 1210710360809453971}
   Cannon: {fileID: 7957424981864227515}
-  AimDistance: 200
   Inaccuracy: 5
   HitLayer:
     serializedVersion: 2

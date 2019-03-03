@@ -4,7 +4,7 @@ namespace Entities.Control
 {
     public class TargetSystem
     {
-        private UnityEngine.Camera camera;
+        private Camera camera;
         private readonly LayerMask lockingLayer;
 
         private Transform previousLock;
@@ -13,7 +13,7 @@ namespace Entities.Control
 
         private float elapsedLockTime;
 
-        public TargetSystem(UnityEngine.Camera camera, LayerMask lockingLayer)
+        public TargetSystem(Camera camera, LayerMask lockingLayer)
         {
             this.camera = camera;
             this.lockingLayer = lockingLayer;

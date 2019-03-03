@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 8ea8178a8a3ed9249878e3bad724dbdc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: block_default_0
+    100002: block_default_14
+    100004: block_rounded_16
+    100006: block_rounded_7
+    100008: detail_airSmall_12
+    100010: detail_antenna_13
+    100012: roof_point_rounded_10
+    100014: roof_point_rounded_11
+    100016: roof_point_rounded_8
+    100018: roof_point_rounded_9
+    100020: slope_default_1
+    100022: //RootNode
+    100024: wall_skyscraperDoor%_15
+    100026: wall_skyscraperGlassDivider%_2
+    100028: wall_skyscraperGlassDivider%_3
+    100030: wall_skyscraperGlassDivider%_4
+    100032: wall_skyscraperGlassDivider%_5
+    400000: block_default_0
+    400002: block_default_14
+    400004: block_rounded_16
+    400006: block_rounded_7
+    400008: detail_airSmall_12
+    400010: detail_antenna_13
+    400012: roof_point_rounded_10
+    400014: roof_point_rounded_11
+    400016: roof_point_rounded_8
+    400018: roof_point_rounded_9
+    400020: slope_default_1
+    400022: //RootNode
+    400024: wall_skyscraperDoor%_15
+    400026: wall_skyscraperGlassDivider%_2
+    400028: wall_skyscraperGlassDivider%_3
+    400030: wall_skyscraperGlassDivider%_4
+    400032: wall_skyscraperGlassDivider%_5
+    2100000: glass
+    2100002: _defaultMat
+    2100004: stone
+    2100006: roofJade
+    2300000: block_default_0
+    2300002: block_default_14
+    2300004: block_rounded_16
+    2300006: block_rounded_7
+    2300008: detail_airSmall_12
+    2300010: detail_antenna_13
+    2300012: roof_point_rounded_10
+    2300014: roof_point_rounded_11
+    2300016: roof_point_rounded_8
+    2300018: roof_point_rounded_9
+    2300020: slope_default_1
+    2300022: wall_skyscraperDoor%_15
+    2300024: wall_skyscraperGlassDivider%_2
+    2300026: wall_skyscraperGlassDivider%_3
+    2300028: wall_skyscraperGlassDivider%_4
+    2300030: wall_skyscraperGlassDivider%_5
+    3300000: block_default_0
+    3300002: block_default_14
+    3300004: block_rounded_16
+    3300006: block_rounded_7
+    3300008: detail_airSmall_12
+    3300010: detail_antenna_13
+    3300012: roof_point_rounded_10
+    3300014: roof_point_rounded_11
+    3300016: roof_point_rounded_8
+    3300018: roof_point_rounded_9
+    3300020: slope_default_1
+    3300022: wall_skyscraperDoor%_15
+    3300024: wall_skyscraperGlassDivider%_2
+    3300026: wall_skyscraperGlassDivider%_3
+    3300028: wall_skyscraperGlassDivider%_4
+    3300030: wall_skyscraperGlassDivider%_5
+    4300000: block_default_0
+    4300002: slope_default_1
+    4300004: wall_skyscraperGlassDivider%_2
+    4300006: wall_skyscraperGlassDivider%_3
+    4300008: wall_skyscraperGlassDivider%_4
+    4300010: wall_skyscraperGlassDivider%_5
+    4300012: block_rounded_7
+    4300014: roof_point_rounded_8
+    4300016: roof_point_rounded_9
+    4300018: roof_point_rounded_10
+    4300020: roof_point_rounded_11
+    4300022: detail_airSmall_12
+    4300024: detail_antenna_13
+    4300026: block_default_14
+    4300028: wall_skyscraperDoor%_15
+    4300030: block_rounded_16
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

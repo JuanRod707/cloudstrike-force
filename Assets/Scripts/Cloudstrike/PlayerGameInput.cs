@@ -44,7 +44,7 @@ namespace Cloudstrike
         void Start()
         {
             screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
-            targetSystem = new TargetSystem(UnityEngine.Camera.main, LockingLayer);
+            targetSystem = new TargetSystem(Camera.main, LockingLayer);
             Ship.Initialize(this);
         }
 

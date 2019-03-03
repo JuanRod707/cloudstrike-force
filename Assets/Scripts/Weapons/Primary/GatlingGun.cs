@@ -7,7 +7,6 @@ namespace Weapons.Primary
     public class GatlingGun : Weapon
     {
         public ParticleSystem Cannon;
-        public float AimDistance;
         public float Inaccuracy;
         public LayerMask HitLayer;
 
