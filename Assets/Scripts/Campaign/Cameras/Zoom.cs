@@ -9,9 +9,9 @@ namespace Campaign.Cameras
 
         void Update()
         {
-            if (Input.mouseScrollDelta.magnitude > 0)
+            if (Input.mouseScrollDelta.y > 0)
                 Camera.fieldOfView += ZoomSensitivity;
-            else if (Input.mouseScrollDelta.magnitude < 0)
+            else if (Input.mouseScrollDelta.y < 0)
                 Camera.fieldOfView -= ZoomSensitivity;
         }
     }
