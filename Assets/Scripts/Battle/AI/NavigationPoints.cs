@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Battle.Common;
+using Common;
 using UnityEngine;
 
 namespace Battle.AI

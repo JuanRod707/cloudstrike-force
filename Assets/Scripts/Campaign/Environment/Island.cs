@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Common;
 using UnityEngine;
 
 namespace Campaign.Environment
@@ -20,9 +21,14 @@ namespace Campaign.Environment
 
         void Start()
         {
+            Name = NameProvider.GetIslandName();
+            Alignment = Alignment.Coalition;
+            level = RandomService.GetRandom(1, 10);
+
             Display.SetName(Name);    
             Display.SetLevel(level);
             Display.SetResourceBars(SiloCount, SiloCapacity);
+            Display.SetAlignment(Alignment);
             StartCoroutine(ProduceResources());
         }
 

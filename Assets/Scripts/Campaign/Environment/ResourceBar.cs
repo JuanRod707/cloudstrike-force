@@ -8,5 +8,7 @@ namespace Campaign.Environment
         public Image Fill;
 
         public void SetFill(float amount) => Fill.fillAmount = amount;
+
+        public void SetColor(Color color) => Fill.color = color;
     }
 }

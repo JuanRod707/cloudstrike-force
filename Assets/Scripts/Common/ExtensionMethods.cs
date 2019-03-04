@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Battle.Common
+namespace Common
 {
     public static class ExtensionMethods
     {

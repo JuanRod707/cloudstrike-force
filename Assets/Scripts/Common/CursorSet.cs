@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Battle.Common
+namespace Common
 {
     public class CursorSet : MonoBehaviour
     {

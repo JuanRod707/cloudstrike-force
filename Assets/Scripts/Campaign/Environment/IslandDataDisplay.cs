@@ -13,7 +13,8 @@ namespace Campaign.Environment
         public ResourceBar ResourceBarPrefab;
         public Transform ResourceContainer;
 
-        List<ResourceBar> Resources;
+        List<ResourceBar> resources;
+        private GlobalValues globalValues;
         private int maxPerBar;
 
         public void SetName(string name) => Name.text = name;
@@ -22,20 +23,46 @@ namespace Campaign.Environment
 
         public void UpdateRsources(int amount)
         {
-            for (int i = 0; i < Resources.Count; i++)
+            for (int i = 0; i < resources.Count; i++)
             {
                 var siloFill = amount - (maxPerBar * i);
-                Resources[i].SetFill((float)siloFill/maxPerBar);
+                resources[i].SetFill((float)siloFill/maxPerBar);
             }
         }
 
         public void SetResourceBars(int siloCount, int siloCapacity)
         {
-            Resources = new List<ResourceBar>();
+            resources = new List<ResourceBar>();
             maxPerBar = siloCapacity;
 
             foreach (var _ in Enumerable.Range(0, siloCount))
-                Resources.Add(Instantiate(ResourceBarPrefab, ResourceContainer));
+                resources.Add(Instantiate(ResourceBarPrefab, ResourceContainer));
+        }
+
+        public void SetAlignment(Alignment alignment)
+        {
+            globalValues = FindObjectOfType<GlobalValues>();
+
+            switch (alignment)
+            {
+                case Alignment.CloudStrike:
+                    SetColor(globalValues.CloudstrikeColor);
+                    break;
+                case Alignment.Coalition:
+                    SetColor(globalValues.CoalitionColor);
+                    break;
+                case Alignment.Neutral:
+                    SetColor(globalValues.NeutralColor);
+                    break;
+            }
+        }
+
+        void SetColor(Color color)
+        {
+            Name.color = color;
+            Shield.color = color;
+            foreach (var r in resources)
+                r.SetColor(color);
         }
     }
 }
