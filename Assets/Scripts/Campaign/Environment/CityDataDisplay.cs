@@ -8,6 +8,7 @@ namespace Campaign.Environment
     public class CityDataDisplay : MonoBehaviour
     {
         public Text Name;
+        public SpriteRenderer MinimapPing;
 
         private GlobalValues globalValues;
         
@@ -31,6 +32,10 @@ namespace Campaign.Environment
             }
         }
 
-        void SetColor(Color color) => Name.color = color;
+        void SetColor(Color color)
+        {
+            MinimapPing.color = color;
+            Name.color = color;
+        }
     }
 }

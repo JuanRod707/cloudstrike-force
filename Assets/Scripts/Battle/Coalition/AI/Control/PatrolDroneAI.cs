@@ -2,7 +2,7 @@
 using Battle.Entities.Vehicles;
 using UnityEngine;
 
-namespace Battle.AI.Control
+namespace Battle.Coalition.AI.Control
 {
     public class PatrolDroneAI : MonoBehaviour, Controller
     {

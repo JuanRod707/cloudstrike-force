@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using Campaign.Environment.Generation;
 using Common;
+using Data.Dtos;
 using UnityEngine;
 
 namespace Campaign.Environment
@@ -19,13 +21,27 @@ namespace Campaign.Environment
         private int level;
         private int resources;
 
-        void Start()
+        public void Initialize()
         {
             Name = NameProvider.GetIslandName();
             Alignment = Alignment.Coalition;
             level = RandomService.GetRandom(1, 10);
 
-            Display.SetName(Name);    
+            Startup();
+        }
+
+        public void Initialize(IslandData source)
+        {
+            Name = source.Name;
+            Alignment = source.Alignment;
+            level = source.Level;
+
+            Startup();
+        }
+
+        void Startup()
+        {
+            Display.SetName(Name);
             Display.SetLevel(level);
             Display.SetResourceBars(SiloCount, SiloCapacity);
             Display.SetAlignment(Alignment);
@@ -49,7 +65,7 @@ namespace Campaign.Environment
             Display.UpdateRsources(resources);
         }
 
-        void Upgrade()
+        public void Upgrade()
         {
             resources -= SiloCapacity;
             level++;

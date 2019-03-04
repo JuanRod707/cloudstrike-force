@@ -4,23 +4,19 @@ using System.Linq;
 using Common;
 using UnityEngine;
 
-namespace Campaign.Environment
+namespace Campaign.Environment.Generation
 {
     public class WorldGenerator : MonoBehaviour
     {
-        public Transform IslandContainer;
-        public GameObject IslandPrefab;
-        public GameObject CityPrefab;
         public IslandRing[] Rings;
         public float MinimumSeparation;
         public int CityChance;
         public int MaxCities;
+        public IslandPlacer Placer;
 
         private List<Transform> Islands;
-
-        void Start() => GenerateIslands();
-
-        private void GenerateIslands()
+        
+        public void GenerateIslands()
         {
             Islands = new List<Transform>();
             foreach (var r in Rings)
@@ -32,26 +28,25 @@ namespace Campaign.Environment
             foreach (var _ in Enumerable.Range(0, ring.MaxIslands))
             {
                 var position = GetPositionInRing(ring.RingDistance);
-                
-                var island = Instantiate(RandomizeIsland(), position, Quaternion.identity);
-                island.transform.SetParent(IslandContainer);
+
+                var island = RandomizeIsland(position);
                 CheckPosition(island.transform, ring.RingDistance);
                 Islands.Add(island.transform);
             }
         }
 
-        private GameObject RandomizeIsland()
+        private GameObject RandomizeIsland(Vector2 position)
         {
             if (MaxCities > 0)
             {
                 if (RandomService.RollD100(CityChance))
                 {
                     MaxCities--;
-                    return CityPrefab;
+                    return Placer.PlaceCity(position).gameObject;
                 }
             }
 
-            return IslandPrefab;
+            return Placer.PlaceIsland(position).gameObject;
         }
 
         private void CheckPosition(Transform island, float ringDistance)

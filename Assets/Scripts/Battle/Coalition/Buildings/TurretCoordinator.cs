@@ -1,21 +1,22 @@
 ﻿using System.Collections.Generic;
 using Battle.Cloudstrike;
+using Battle.Coalition.AI.Control;
 using Battle.Entities;
 using UnityEngine;
 
-namespace Battle.AI.Control
+namespace Battle.Coalition.Buildings
 {
-    public class TurretCoordinator : MonoBehaviour
+    public class TurretCoordinator : Building
     {
         public Transform TurretContainer;
-        public Health Health;
-        public GameObject View;
-         
+   
+        
         CloudstrikeReferences cloudstrike;
         IEnumerable<TurretAI> turrets;
 
-        void Start()
+        public override void Initialize(IslandBase faction)
         {
+            islandBase = faction;
             cloudstrike = FindObjectOfType<CloudstrikeReferences>();
             turrets = TurretContainer.GetComponentsInChildren<TurretAI>();
             Health.Initialize(Destroy);
@@ -28,12 +29,6 @@ namespace Battle.AI.Control
         {
             foreach (var t in turrets)
                 t.AimToTarget(cloudstrike.ControlledPlane);
-        }
-
-        void Destroy()
-        {
-            View.SetActive(false);
-            enabled = false;
         }
     }
 }

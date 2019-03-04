@@ -5,14 +5,22 @@ namespace Campaign.Cloudstrike
 {
     public class CarrierProximity : MonoBehaviour
     {
+        public CarrierInteractions Carrier;
+
         private void OnTriggerEnter(Collider other)
         {
             var island = other.GetComponent<IslandProximity>();
 
             if (island)
-            {
-                Debug.Log($"Entered proximity with {island.Island.Name}, currently aligned to {island.Island.Alignment}");
-            }
+                Carrier.ArriveOnIsland(island.Island);
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            var island = other.GetComponent<IslandProximity>();
+
+            if (island)
+                Carrier.DepartFromIsland();
         }
     }
 }

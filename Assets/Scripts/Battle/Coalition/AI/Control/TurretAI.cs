@@ -2,7 +2,7 @@
 using Battle.Entities.Control;
 using UnityEngine;
 
-namespace Battle.AI.Control
+namespace Battle.Coalition.AI.Control
 {
     public class TurretAI : MonoBehaviour, Controller
     {

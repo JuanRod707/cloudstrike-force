@@ -12,6 +12,7 @@ namespace Campaign.Environment
         public Image Shield;
         public ResourceBar ResourceBarPrefab;
         public Transform ResourceContainer;
+        public SpriteRenderer MinimapPing;
 
         List<ResourceBar> resources;
         private GlobalValues globalValues;
@@ -59,6 +60,7 @@ namespace Campaign.Environment
 
         void SetColor(Color color)
         {
+            MinimapPing.color = color;
             Name.color = color;
             Shield.color = color;
             foreach (var r in resources)

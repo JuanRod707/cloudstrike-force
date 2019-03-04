@@ -2,7 +2,7 @@
 using System.Linq;
 using Common;
 
-namespace Campaign.Environment
+namespace Campaign.Environment.Generation
 {
     public static class NameProvider
     {
@@ -26,7 +26,7 @@ namespace Campaign.Environment
             return candidate;
         }
 
-        static void ResetLists()
+        public static void ResetLists()
         {
             cityCandidates = cityNames.ToList();
             islandCandidates = islandNames.ToList();
