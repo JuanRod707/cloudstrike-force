@@ -1,4 +1,5 @@
-﻿using Campaign.Environment;
+﻿using Assets.Scripts.Campaign.Cloudstrike;
+using Campaign.Environment;
 using Campaign.UI;
 using Data;
 using Data.Dtos;
@@ -10,8 +11,10 @@ namespace Campaign.Cloudstrike
     public class CarrierInteractions : MonoBehaviour
     {
         public IslandPanel Panel;
-        private Island nearbyIsland;
+        public Carrier Carrier;
 
+        private Island nearbyIsland;
+        
         void Start() => Panel.Initialize(this);
 
         public void ArriveOnIsland(Island island)
@@ -28,14 +31,11 @@ namespace Campaign.Cloudstrike
 
         public void AttackIsland()
         {
-            StaticPersistence.GameState.Mission = new MissionData(new IslandData { Name = nearbyIsland.Name });
+            FindObjectOfType<StateHandler>().StartMission(new MissionData(new IslandData { Name = nearbyIsland.Name }));
             SceneManager.LoadScene("Mission");
         }
 
-        public void ClaimResources()
-        {
-
-        }
+        public void ClaimResources() => Carrier.AddResources(nearbyIsland.ClaimResources());
 
         public void Upgrade() => nearbyIsland.Upgrade();
     }

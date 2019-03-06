@@ -7,6 +7,7 @@ namespace Battle.Entities.Control
     {
         public Vehicle AttachedVehicle;
         public float RollFactor;
+        public float StrafeSpeed;
         public Transform Model;
         
         private float currentSpeed;
@@ -16,6 +17,10 @@ namespace Battle.Entities.Control
         public void IncreaseThrust() => currentSpeed = Mathf.Min(AttachedVehicle.Stats.MaxSpeed, currentSpeed + AttachedVehicle.Stats.Acceleration);
 
         public void DecreaseThrust() => currentSpeed = Mathf.Max(AttachedVehicle.Stats.MinSpeed, currentSpeed - AttachedVehicle.Stats.Acceleration);
+
+        public void StrafeLeft() => AttachedVehicle.transform.Translate(Vector3.left * StrafeSpeed);
+
+        public void StrafeRight() => AttachedVehicle.transform.Translate(Vector3.right * StrafeSpeed);
 
         void ThrustForward() => AttachedVehicle.transform.Translate(Vector3.forward * currentSpeed);
 

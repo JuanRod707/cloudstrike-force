@@ -4787,6 +4787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 3479038624680881862}
+  DamageMultiplier: 1
 --- !u!114 &1984390961841548220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14511,6 +14512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttachedVehicle: {fileID: 2063265128764615685}
   RollFactor: 13
+  StrafeSpeed: 0.6
   Model: {fileID: 7359355274277250096}
 --- !u!114 &3479038624680881862
 MonoBehaviour:
@@ -19395,6 +19397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 3479038624680881862}
+  DamageMultiplier: 1
 --- !u!114 &1932892124466918445
 MonoBehaviour:
   m_ObjectHideFlags: 0

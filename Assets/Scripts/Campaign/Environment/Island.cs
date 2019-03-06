@@ -67,9 +67,19 @@ namespace Campaign.Environment
 
         public void Upgrade()
         {
-            resources -= SiloCapacity;
-            level++;
-            Display.SetLevel(level);
+            if (resources >= SiloCapacity)
+            {
+                resources -= SiloCapacity;
+                level++;
+                Display.SetLevel(level);
+            }
+        }
+
+        public int ClaimResources()
+        {
+            var resourceBank = resources;
+            resources = 0;
+            return resourceBank;
         }
     }
 }

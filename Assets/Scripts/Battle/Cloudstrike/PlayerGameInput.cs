@@ -25,11 +25,16 @@ namespace Battle.Cloudstrike
             if (Input.GetButtonDown("Fire2"))
                 Ship.Weapons.FireSecondary(lockedTarget);
 
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.W))
                 Ship.Movement.IncreaseThrust();
-
-            if (Input.GetKey(KeyCode.Q))
+            else if (Input.GetKey(KeyCode.S))
                 Ship.Movement.DecreaseThrust();
+
+
+            if (Input.GetKey(KeyCode.A))
+                Ship.Movement.StrafeLeft();
+            else if (Input.GetKey(KeyCode.D))
+                Ship.Movement.StrafeRight();
 
             var mCoord = Input.mousePosition;
             var resultSteer = screenCenter - mCoord;

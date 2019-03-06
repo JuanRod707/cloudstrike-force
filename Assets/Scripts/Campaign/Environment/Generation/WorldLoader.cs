@@ -1,8 +1,5 @@
 ﻿using Data;
-using Data.Dtos;
 using UnityEngine;
-using System.Linq;
-using System;
 
 namespace Campaign.Environment.Generation
 {
@@ -10,24 +7,28 @@ namespace Campaign.Environment.Generation
     {
         public WorldGenerator Generator;
         public IslandPlacer Placer;
+        StateHandler stateHandler;
 
         void Start()
         {
+            stateHandler = FindObjectOfType<StateHandler>();
+
             NameProvider.ResetLists();
             if (StaticPersistence.GameState == null)
             {
                 Generator.GenerateIslands();
-                StaticPersistence.GameState = new GameState(
-                        Placer.Islands.Select(i => Convert(i)).ToArray(),
-                        Placer.Cities.Select(c => Convert(c)).ToArray());
+                stateHandler.SaveMapStateInMemory();
             }
             else
+            {
                 LoadMap();
+                stateHandler.LoadCarrier();
+            }
         }
 
         private void LoadMap()
         {
-            var gameState = StaticPersistence.GameState;
+            var gameState = stateHandler.LoadStateFromMemory();
 
             foreach (var i in gameState.Islands)
                 Placer.PlaceIsland(i);
@@ -35,21 +36,5 @@ namespace Campaign.Environment.Generation
             foreach (var c in gameState.Cities)
                 Placer.PlaceCity(c);
         }
-
-        IslandData Convert(Island island) => new IslandData
-        {
-            Alignment = island.Alignment,
-            Name = island.Name,
-            Position = island.transform.position,
-            SiloCount = island.SiloCount,
-            SiloCapacity = island.SiloCapacity
-        };
-
-        CityData Convert(City island) => new CityData
-        {
-            Alignment = island.Alignment,
-            Name = island.Name,
-            Position = island.transform.position
-        };
     }
 }
