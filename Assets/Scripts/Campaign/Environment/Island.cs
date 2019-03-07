@@ -21,6 +21,10 @@ namespace Campaign.Environment
         private int level;
         private int resources;
 
+        public int Level => level;
+
+        public int Resources => resources;
+
         public void Initialize()
         {
             Name = NameProvider.GetIslandName();
@@ -35,6 +39,7 @@ namespace Campaign.Environment
             Name = source.Name;
             Alignment = source.Alignment;
             level = source.Level;
+            resources = source.CurrentResources;
 
             Startup();
         }

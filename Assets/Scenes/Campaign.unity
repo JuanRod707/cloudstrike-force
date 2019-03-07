@@ -2803,16 +2803,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rings:
-  - RingDistance: 120
-    MaxIslands: 12
+  - RingDistance: 130
+    MaxIslands: 14
+    CanGenerateCities: 0
   - RingDistance: 80
     MaxIslands: 8
+    CanGenerateCities: 0
   - RingDistance: 60
-    MaxIslands: 5
-  - RingDistance: 30
     MaxIslands: 3
+    CanGenerateCities: 1
+  - RingDistance: 30
+    MaxIslands: 2
+    CanGenerateCities: 1
   MinimumSeparation: 20
-  CityChance: 15
+  CityChance: 60
   MaxCities: 4
   Placer: {fileID: 572262833}
 --- !u!114 &572262833

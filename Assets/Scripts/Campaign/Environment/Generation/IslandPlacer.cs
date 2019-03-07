@@ -18,17 +18,23 @@ namespace Campaign.Environment.Generation
 
         public Island PlaceIsland(Vector3 position)
         {
-            var island = Instantiate(IslandPrefab, position, Quaternion.identity);
-            island.transform.SetParent(IslandContainer);
-            islands.Add(island);
+            var island = CreateIsland(position);
             island.Initialize();
             return island;
         }
         
         public Island PlaceIsland(IslandData data)
         {
-            var island = PlaceIsland(data.Position);
+            var island = CreateIsland(data.Position);
             island.Initialize(data);
+            return island;
+        }
+
+        Island CreateIsland(Vector3 position)
+        {
+            var island = Instantiate(IslandPrefab, position, Quaternion.identity);
+            island.transform.SetParent(IslandContainer);
+            islands.Add(island);
             return island;
         }
 

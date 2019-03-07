@@ -27,17 +27,16 @@ namespace Campaign.Environment.Generation
         {
             foreach (var _ in Enumerable.Range(0, ring.MaxIslands))
             {
-                var position = GetPositionInRing(ring.RingDistance);
-
-                var island = RandomizeIsland(position);
+                var island = RandomizeIsland(ring);
                 CheckPosition(island.transform, ring.RingDistance);
                 Islands.Add(island.transform);
             }
         }
 
-        private GameObject RandomizeIsland(Vector2 position)
+        private GameObject RandomizeIsland(IslandRing ring)
         {
-            if (MaxCities > 0)
+            var position = GetPositionInRing(ring.RingDistance);
+            if (ring.CanGenerateCities && MaxCities > 0)
             {
                 if (RandomService.RollD100(CityChance))
                 {
@@ -71,5 +70,6 @@ namespace Campaign.Environment.Generation
     {
         public float RingDistance;
         public int MaxIslands;
+        public bool CanGenerateCities;
     }
 }

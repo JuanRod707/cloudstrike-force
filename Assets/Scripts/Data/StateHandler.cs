@@ -39,7 +39,9 @@ namespace Data
             Name = island.Name,
             Position = island.transform.position,
             SiloCount = island.SiloCount,
-            SiloCapacity = island.SiloCapacity
+            SiloCapacity = island.SiloCapacity,
+            CurrentResources = island.Resources,
+            Level = island.Level
         };
 
         CityData Convert(City island) => new CityData
