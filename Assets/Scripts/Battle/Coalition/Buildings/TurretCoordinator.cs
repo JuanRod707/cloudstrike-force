@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Battle.Cloudstrike;
 using Battle.Coalition.AI.Control;
-using Battle.Entities;
 using UnityEngine;
 
 namespace Battle.Coalition.Buildings
@@ -10,7 +9,6 @@ namespace Battle.Coalition.Buildings
     {
         public Transform TurretContainer;
    
-        
         CloudstrikeReferences cloudstrike;
         IEnumerable<TurretAI> turrets;
 

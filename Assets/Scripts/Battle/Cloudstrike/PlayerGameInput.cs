@@ -7,7 +7,7 @@ namespace Battle.Cloudstrike
 {
     public class PlayerGameInput : MonoBehaviour, Controller
     {
-        public Vehicle Ship;
+        public Vehicle ControlledPlane;
         public float DeadZone;
         public LayerMask LockingLayer;
         public LockOnCrosshair LockOnTarget;
@@ -20,21 +20,21 @@ namespace Battle.Cloudstrike
         void FixedUpdate()
         {
             if(Input.GetButton("Fire1"))
-                Ship.Weapons.FirePrimary(targetSystem.AimMouseTo(Input.mousePosition, Ship.Weapons.PrimaryStats.Range));
+                ControlledPlane.Weapons.FirePrimary(ToMouse);
 
             if (Input.GetButtonDown("Fire2"))
-                Ship.Weapons.FireSecondary(lockedTarget);
+                ControlledPlane.Weapons.FireSecondary(lockedTarget);
 
             if (Input.GetKey(KeyCode.W))
-                Ship.Movement.IncreaseThrust();
+                ControlledPlane.Movement.IncreaseThrust();
             else if (Input.GetKey(KeyCode.S))
-                Ship.Movement.DecreaseThrust();
+                ControlledPlane.Movement.DecreaseThrust();
 
 
             if (Input.GetKey(KeyCode.A))
-                Ship.Movement.StrafeLeft();
+                ControlledPlane.Movement.StrafeLeft();
             else if (Input.GetKey(KeyCode.D))
-                Ship.Movement.StrafeRight();
+                ControlledPlane.Movement.StrafeRight();
 
             var mCoord = Input.mousePosition;
             var resultSteer = screenCenter - mCoord;
@@ -42,32 +42,34 @@ namespace Battle.Cloudstrike
             if (resultSteer.magnitude > DeadZone)
             {
                 resultSteer.x *= -1;
-                Ship.Movement.Steer(resultSteer);
+                ControlledPlane.Movement.Steer(resultSteer);
             }
         }
+
+        private Vector3 ToMouse => targetSystem.AimMouseTo(Input.mousePosition, ControlledPlane.Weapons.PrimaryStats.Range);
 
         void Start()
         {
             screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
             targetSystem = new TargetSystem(Camera.main, LockingLayer);
-            Ship.Initialize(this);
+            ControlledPlane.Initialize(this);
         }
 
         public void Dock(Transform hangar)
         {
             enabled = false;
-            Ship.Dock(hangar);
+            ControlledPlane.Dock(hangar);
         }
 
         public void Undock()
         {
             enabled = true;
-            Ship.Undock();
+            ControlledPlane.Undock();
         }
 
         void Update()
         {
-            lockedTarget = targetSystem.ScanForTarget(Ship.Weapons.SecondaryStats.Range, LockingTime);
+            lockedTarget = targetSystem.ScanForTarget(ControlledPlane.Weapons.SecondaryStats.Range, LockingTime);
 
             if (lockedTarget != null)
                 LockOnTarget.LockOn(lockedTarget);
@@ -80,7 +82,7 @@ namespace Battle.Cloudstrike
         public void ShootDown()
         {
             Disable();
-            Ship.Destroy();
+            ControlledPlane.Destroy();
         }
 
         public void Enable() => enabled = true;

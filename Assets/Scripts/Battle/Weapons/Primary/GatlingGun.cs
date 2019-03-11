@@ -1,6 +1,11 @@
-﻿using Battle.Effects;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Battle.Effects;
 using Battle.Entities;
+using UnityEditorInternal;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Battle.Weapons.Primary
 {
@@ -26,7 +31,7 @@ namespace Battle.Weapons.Primary
                     impactCollider.ImpactHit(hit);
             }
             
-            Cannon.Emit(1);
+            Cannon.Play();
         }
 
         Vector3 AimAt(Vector3 target) => target + (Random.insideUnitSphere * Inaccuracy);

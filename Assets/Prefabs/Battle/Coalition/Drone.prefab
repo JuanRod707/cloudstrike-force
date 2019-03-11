@@ -4766,7 +4766,7 @@ ParticleSystem:
 --- !u!199 &8088018824782385591
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9672,7 +9672,7 @@ ParticleSystem:
 --- !u!199 &4541236427248418202
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14510,7 +14510,7 @@ ParticleSystem:
 --- !u!199 &7424979668325080537
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14675,6 +14675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttachedVehicle: {fileID: 4778812545965344959}
   RollFactor: 8
+  StrafeSpeed: 0
   Model: {fileID: 2296471619246774638}
 --- !u!1 &3531607601642509885
 GameObject:
@@ -19755,7 +19756,7 @@ ParticleSystem:
 --- !u!199 &5651249469358109836
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -24577,7 +24578,7 @@ ParticleSystem:
 --- !u!199 &5604343841001927987
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -29275,7 +29276,7 @@ ParticleSystem:
 --- !u!199 &1601868490863923294
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -34061,7 +34062,7 @@ ParticleSystem:
 --- !u!199 &7036461497223628162
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
