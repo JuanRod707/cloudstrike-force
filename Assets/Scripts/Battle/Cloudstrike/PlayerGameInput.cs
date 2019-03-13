@@ -10,9 +10,12 @@ namespace Battle.Cloudstrike
         public Vehicle ControlledPlane;
         public float DeadZone;
         public LayerMask LockingLayer;
-        public LockOnCrosshair LockOnTarget;
         public float LockingTime;
-
+        
+        [Header("UI")]
+        public LockOnCrosshair LockOnTarget;
+        public BottomHud BottomHud;
+        
         Transform lockedTarget;
         private Vector3 screenCenter;
         private TargetSystem targetSystem;
@@ -52,7 +55,9 @@ namespace Battle.Cloudstrike
         {
             screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
             targetSystem = new TargetSystem(Camera.main, LockingLayer);
-            ControlledPlane.Initialize(this);
+            
+            BottomHud.Initialize(ControlledPlane.VehicleHealth.BaseHitPoints);
+            ControlledPlane.Initialize(this, BottomHud.UpdateHp);
         }
 
         public void Dock(Transform hangar)

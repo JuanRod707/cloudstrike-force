@@ -8,21 +8,34 @@ namespace Battle.Entities
         public int BaseHitPoints;
 
         int currentHitPoints;
-        private Action doOnDestroy;
+        Action doOnDestroy;
+        Action<int> doOnUpdateHp = _ => { };
 
         public void Initialize(Action doOnDestroy)
         {
             this.doOnDestroy = doOnDestroy;
             currentHitPoints = BaseHitPoints;
         }
+        
+        public void Initialize(Action doOnDestroy, Action<int> doOnUpdateHp)
+        {
+            Initialize(doOnDestroy);
+            this.doOnUpdateHp = doOnUpdateHp;
+            
+            doOnUpdateHp(currentHitPoints);
+        }
 
         public void ReceiveDamage(int damage)
         {
             currentHitPoints -= damage;
-            Debug.Log($"{gameObject.name} Received {damage}, current hp: {currentHitPoints}");
-
+            
             if (currentHitPoints <= 0)
+            {
+                currentHitPoints = 0;
                 doOnDestroy?.Invoke();
+            }
+            
+            doOnUpdateHp(currentHitPoints);
         }
     }
 }

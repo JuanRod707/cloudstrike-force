@@ -1,4 +1,5 @@
-﻿using Battle.Entities.Control;
+﻿using System;
+using Battle.Entities.Control;
 using UnityEngine;
 
 namespace Battle.Entities.Vehicles
@@ -20,6 +21,12 @@ namespace Battle.Entities.Vehicles
             VehicleHealth.Initialize(controller.ShootDown);
             Weapons.Initialize();
             this.controller = controller;
+        }
+        
+        public void Initialize(Controller controller, Action<int> doOnUpdateHp)
+        {
+            Initialize(controller);
+            VehicleHealth.Initialize(controller.ShootDown, doOnUpdateHp);
         }
 
         public void Undock()

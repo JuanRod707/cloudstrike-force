@@ -12,69 +12,127 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AI" t="Include">
-            <e p="Control" t="Include">
-              <e p="DroneCoordinator.cs" t="Include" />
-              <e p="PatrolDroneAI.cs" t="Include" />
-              <e p="TurretAI.cs" t="Include" />
-              <e p="TurretCoordinator.cs" t="Include" />
+          <e p="Battle" t="Include">
+            <e p="Cameras" t="Include">
+              <e p="CameraAnchors.cs" t="Include" />
+              <e p="ChaseCamera.cs" t="Include" />
             </e>
-            <e p="NavigationPoints.cs" t="Include" />
+            <e p="Cloudstrike" t="Include">
+              <e p="CloudstrikeReferences.cs" t="Include" />
+              <e p="LaunchTrigger.cs" t="Include" />
+              <e p="PlayerGameInput.cs" t="Include" />
+              <e p="PlayerInitializer.cs" t="Include" />
+            </e>
+            <e p="Coalition" t="Include">
+              <e p="AI" t="Include">
+                <e p="Control" t="Include">
+                  <e p="PatrolDroneAI.cs" t="Include" />
+                  <e p="TurretAI.cs" t="Include" />
+                </e>
+                <e p="NavigationPoints.cs" t="Include" />
+              </e>
+              <e p="Buildings" t="Include">
+                <e p="AICoordinator.cs" t="Include" />
+                <e p="Building.cs" t="Include" />
+                <e p="DroneCoordinator.cs" t="Include" />
+                <e p="TurretCoordinator.cs" t="Include" />
+              </e>
+              <e p="IslandBase.cs" t="Include" />
+            </e>
+            <e p="Effects" t="Include">
+              <e p="AutoRotate.cs" t="Include" />
+              <e p="ColliderImpact.cs" t="Include" />
+            </e>
+            <e p="Entities" t="Include">
+              <e p="Control" t="Include">
+                <e p="Controller.cs" t="Include" />
+                <e p="PlaneMovement.cs" t="Include" />
+                <e p="TargetSystem.cs" t="Include" />
+                <e p="TurretAiming.cs" t="Include" />
+                <e p="WeaponSystem.cs" t="Include" />
+              </e>
+              <e p="Health.cs" t="Include" />
+              <e p="HitBox.cs" t="Include" />
+              <e p="LockableTarget.cs" t="Include" />
+              <e p="Turret.cs" t="Include" />
+              <e p="Vehicles" t="Include">
+                <e p="DestroyOnCrash.cs" t="Include" />
+                <e p="Vehicle.cs" t="Include" />
+                <e p="VehicleStats.cs" t="Include" />
+              </e>
+              <e p="VehicleStats.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="BottomHud.cs" t="Include" />
+              <e p="LockOnCrosshair.cs" t="Include" />
+            </e>
+            <e p="Weapons" t="Include">
+              <e p="Data" t="Include">
+                <e p="WeaponStats.cs" t="Include" />
+              </e>
+              <e p="Primary" t="Include">
+                <e p="HitscanCannon.cs" t="Include" />
+              </e>
+              <e p="Secondary" t="Include">
+                <e p="HomingLauncher.cs" t="Include" />
+                <e p="HomingProjectile.cs" t="Include" />
+                <e p="Rocket.cs" t="Include" />
+                <e p="Warhead.cs" t="Include" />
+              </e>
+              <e p="Weapon.cs" t="Include" />
+            </e>
           </e>
-          <e p="Camera" t="Include">
-            <e p="CameraAnchors.cs" t="Include" />
-            <e p="ChaseCamera.cs" t="Include" />
-          </e>
-          <e p="Cloudstrike" t="Include">
-            <e p="CloudstrikeReferences.cs" t="Include" />
-            <e p="LaunchTrigger.cs" t="Include" />
-            <e p="PlayerGameInput.cs" t="Include" />
-            <e p="PlayerInitializer.cs" t="Include" />
+          <e p="Campaign" t="Include">
+            <e p="Alignment.cs" t="Include" />
+            <e p="Cameras" t="Include">
+              <e p="FloatingUIAlignment.cs" t="Include" />
+              <e p="FollowObject.cs" t="Include" />
+              <e p="Zoom.cs" t="Include" />
+            </e>
+            <e p="Cloudstrike" t="Include">
+              <e p="Carrier.cs" t="Include" />
+              <e p="CarrierInteractions.cs" t="Include" />
+              <e p="CarrierProximity.cs" t="Include" />
+              <e p="PlayerInput.cs" t="Include" />
+            </e>
+            <e p="Environment" t="Include">
+              <e p="City.cs" t="Include" />
+              <e p="CityDataDisplay.cs" t="Include" />
+              <e p="CityProximity.cs" t="Include" />
+              <e p="Generation" t="Include">
+                <e p="IslandPlacer.cs" t="Include" />
+                <e p="NameProvider.cs" t="Include" />
+                <e p="WorldGenerator.cs" t="Include" />
+                <e p="WorldLoader.cs" t="Include" />
+              </e>
+              <e p="Island.cs" t="Include" />
+              <e p="IslandDataDisplay.cs" t="Include" />
+              <e p="IslandProximity.cs" t="Include" />
+              <e p="ResourceBar.cs" t="Include" />
+            </e>
+            <e p="GlobalValues.cs" t="Include" />
+            <e p="Movement" t="Include">
+              <e p="Navigator.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="IslandPanel.cs" t="Include" />
+            </e>
           </e>
           <e p="Common" t="Include">
             <e p="CursorSet.cs" t="Include" />
             <e p="ExtensionMethods.cs" t="Include" />
+            <e p="RandomService.cs" t="Include" />
           </e>
-          <e p="Effects" t="Include">
-            <e p="AutoRotate.cs" t="Include" />
-            <e p="ColliderImpact.cs" t="Include" />
-          </e>
-          <e p="Entities" t="Include">
-            <e p="Control" t="Include">
-              <e p="Controller.cs" t="Include" />
-              <e p="PlaneMovement.cs" t="Include" />
-              <e p="TargetSystem.cs" t="Include" />
-              <e p="TurretAiming.cs" t="Include" />
-              <e p="WeaponSystem.cs" t="Include" />
+          <e p="Data" t="Include">
+            <e p="Dtos" t="Include">
+              <e p="CarrierData.cs" t="Include" />
+              <e p="CityData.cs" t="Include" />
+              <e p="IslandData.cs" t="Include" />
+              <e p="MissionData.cs" t="Include" />
             </e>
-            <e p="Health.cs" t="Include" />
-            <e p="HitBox.cs" t="Include" />
-            <e p="LockableTarget.cs" t="Include" />
-            <e p="Turret.cs" t="Include" />
-            <e p="Vehicles" t="Include">
-              <e p="DestroyOnCrash.cs" t="Include" />
-              <e p="Vehicle.cs" t="Include" />
-              <e p="VehicleStats.cs" t="Include" />
-            </e>
-            <e p="VehicleStats.cs" t="Include" />
-          </e>
-          <e p="UI" t="Include">
-            <e p="LockOnCrosshair.cs" t="Include" />
-          </e>
-          <e p="Weapons" t="Include">
-            <e p="Data" t="Include">
-              <e p="WeaponStats.cs" t="Include" />
-            </e>
-            <e p="Primary" t="Include">
-              <e p="GatlingGun.cs" t="Include" />
-            </e>
-            <e p="Secondary" t="Include">
-              <e p="HomingProjectile.cs" t="Include" />
-              <e p="Rocket.cs" t="Include" />
-              <e p="Seeker.cs" t="Include" />
-              <e p="Warhead.cs" t="Include" />
-            </e>
-            <e p="Weapon.cs" t="Include" />
+            <e p="GameState.cs" t="Include" />
+            <e p="StateHandler.cs" t="Include" />
+            <e p="StaticPersistence.cs" t="Include" />
           </e>
         </e>
         <e p="Standard Assets" t="Include">
@@ -90,6 +148,178 @@
           </e>
         </e>
         <e p="Store" t="Include">
+          <e p="Crest" t="Include">
+            <e p="Crest" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BuildCommandBuffer.cs" t="Include" />
+                <e p="Collision" t="Include">
+                  <e p="CollProvider.cs" t="Include" />
+                  <e p="CollProviderCache.cs" t="Include" />
+                  <e p="CollProviderNull.cs" t="Include" />
+                </e>
+                <e p="Editor" t="Include">
+                  <e p="OceanWaveSpectrumEditor.cs" t="Include" />
+                </e>
+                <e p="GPUReadback" t="Include">
+                  <e p="GPUReadbackBase.cs" t="Include" />
+                  <e p="GPUReadbackDisps.cs" t="Include" />
+                  <e p="GPUReadbackFlow.cs" t="Include" />
+                </e>
+                <e p="Helpers" t="Include">
+                  <e p="FloatingOrigin.cs" t="Include" />
+                  <e p="PropertyWrapper.cs" t="Include" />
+                  <e p="RenderAlphaOnSurface.cs" t="Include" />
+                  <e p="SortedListCachedArrays.cs" t="Include" />
+                  <e p="UnderwaterEffect.cs" t="Include" />
+                </e>
+                <e p="LodData" t="Include">
+                  <e p="LodDataMgr.cs" t="Include" />
+                  <e p="LodDataMgrAnimWaves.cs" t="Include" />
+                  <e p="LodDataMgrDynWaves.cs" t="Include" />
+                  <e p="LodDataMgrFlow.cs" t="Include" />
+                  <e p="LodDataMgrFoam.cs" t="Include" />
+                  <e p="LodDataMgrPersistent.cs" t="Include" />
+                  <e p="LodDataMgrSeaFloorDepth.cs" t="Include" />
+                  <e p="LodDataMgrShadow.cs" t="Include" />
+                  <e p="LodTransform.cs" t="Include" />
+                  <e p="OceanDepthCache.cs" t="Include" />
+                  <e p="RegisterAnimWavesInput.cs" t="Include" />
+                  <e p="RegisterDynWavesInput.cs" t="Include" />
+                  <e p="RegisterFlowInput.cs" t="Include" />
+                  <e p="RegisterFoamInput.cs" t="Include" />
+                  <e p="RegisterLodDataInput.cs" t="Include" />
+                  <e p="RegisterMaskInput.cs" t="Include" />
+                  <e p="RegisterSeaFloorDepthInput.cs" t="Include" />
+                  <e p="Settings" t="Include">
+                    <e p="SimSettingsAnimatedWaves.cs" t="Include" />
+                    <e p="SimSettingsBase.cs" t="Include" />
+                    <e p="SimSettingsFlow.cs" t="Include" />
+                    <e p="SimSettingsFoam.cs" t="Include" />
+                    <e p="SimSettingsShadow.cs" t="Include" />
+                    <e p="SimSettingsWave.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="OceanBuilder.cs" t="Include" />
+                <e p="OceanChunkRenderer.cs" t="Include" />
+                <e p="OceanRenderer.cs" t="Include" />
+                <e p="Reflection" t="Include">
+                  <e p="OceanPlanarReflection.cs" t="Include" />
+                </e>
+                <e p="Shapes" t="Include">
+                  <e p="OceanWaveSpectrum.cs" t="Include" />
+                  <e p="ShapeGerstnerBatched.cs" t="Include" />
+                </e>
+                <e p="Time" t="Include">
+                  <e p="TimeProviderBase.cs" t="Include" />
+                  <e p="TimeProviderCustom.cs" t="Include" />
+                  <e p="TimeProviderDefault.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="GPUNoise" t="Include">
+                  <e p="GPUNoise.hlsl" t="Include" />
+                  <e p="SOURCE.txt" t="Include" />
+                </e>
+                <e p="Ocean.shader" t="Include" />
+                <e p="OceanEmission.hlsl" t="Include" />
+                <e p="OceanFoam.hlsl" t="Include" />
+                <e p="OceanInputs" t="Include">
+                  <e p="AnimWavesAddHeightFromGeometry.shader" t="Include" />
+                  <e p="AnimWavesGerstnerBatch.shader" t="Include" />
+                  <e p="AnimWavesSetHeightToGeometry.shader" t="Include" />
+                  <e p="AnimWavesSubtractGeometry.shader" t="Include" />
+                  <e p="AnimWavesWaveParticle.shader" t="Include" />
+                  <e p="DynWavesAddBump.shader" t="Include" />
+                  <e p="DynWavesObjectInteraction.shader" t="Include" />
+                  <e p="FlowFixedDirection.shader" t="Include" />
+                  <e p="FoamAddFromTex.shader" t="Include" />
+                  <e p="FoamAddFromVertCol.shader" t="Include" />
+                  <e p="Masks" t="Include">
+                    <e p="MaskUsingDepth.shader" t="Include" />
+                  </e>
+                  <e p="Resources" t="Include">
+                    <e p="DynWavesDampenCircle.shader" t="Include" />
+                    <e p="OceanDepths.shader" t="Include" />
+                    <e p="OceanDepthsCache.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="OceanLODData.hlsl" t="Include" />
+                <e p="OceanNormalMapping.hlsl" t="Include" />
+                <e p="OceanReflection.hlsl" t="Include" />
+                <e p="OceanSurfaceAlpha.shader" t="Include" />
+                <e p="Resources" t="Include">
+                  <e p="ShapeCombine.shader" t="Include" />
+                </e>
+                <e p="Simulation" t="Include">
+                  <e p="Resources" t="Include">
+                    <e p="UpdateDynWaves.shader" t="Include" />
+                    <e p="UpdateFoam.shader" t="Include" />
+                    <e p="UpdateShadow.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="TextureBombing.cginc" t="Include" />
+                <e p="Underwater" t="Include">
+                  <e p="UnderwaterCurtain.shader" t="Include" />
+                  <e p="UnderwaterMeniscus.shader" t="Include" />
+                  <e p="UnderwaterShared.hlsl" t="Include" />
+                </e>
+              </e>
+              <e p="Textures" t="Include">
+                <e p="Caustics" t="Include">
+                  <e p="SOURCE.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Crest-Examples" t="Include">
+              <e p="BoatDev" t="Include">
+                <e p="Models" t="Include">
+                  <e p="OldBoat" t="Include">
+                    <e p="SOURCE.txt" t="Include" />
+                  </e>
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="Boat.cs" t="Include" />
+                  <e p="BoatAlignNormal.cs" t="Include" />
+                  <e p="BoatProbes.cs" t="Include" />
+                  <e p="FeedVelocityToExtrude.cs" t="Include" />
+                  <e p="LerpCam.cs" t="Include" />
+                  <e p="RippleGenerator.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="ShapeGeomShaderTest.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Shared" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CamController.cs" t="Include" />
+                  <e p="Collision" t="Include">
+                    <e p="OceanSampleDisplacementDemo.cs" t="Include" />
+                    <e p="OceanSampleHeightDemo.cs" t="Include" />
+                  </e>
+                  <e p="Interaction" t="Include">
+                    <e p="InteractCapsule.cs" t="Include" />
+                  </e>
+                  <e p="OceanDebugGUI.cs" t="Include" />
+                  <e p="RandomMotion.cs" t="Include" />
+                  <e p="RenderWireFrame.cs" t="Include" />
+                  <e p="SimpleAutomation.cs" t="Include" />
+                  <e p="Sleeper.cs" t="Include" />
+                  <e p="TimedDestroy.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Whirlpool" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Whirlpool.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="Resources" t="Include">
+                    <e p="AnimWavesWhirlpool.shader" t="Include" />
+                    <e p="FlowWhirlpool.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
           <e p="JMO Assets" t="Include">
             <e p="!JMO Assets Readme.txt" t="Include" />
             <e p="Cartoon FX Easy Editor" t="Include">
@@ -150,10 +380,61 @@
               </e>
             </e>
           </e>
-        </e>
-        <e p="TerrainStratumPainter" t="Include">
-          <e p="Editor" t="Include">
-            <e p="TerrainStratumPainter.cs" t="Include" />
+          <e p="LowPolyWater_Pack" t="Include">
+            <e p="LowPoly Island" t="Include">
+              <e p="Credits.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="GeneratePlane.cs" t="Include" />
+              </e>
+              <e p="LowPolyWater.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="WaterShaded.shader" t="Include" />
+            </e>
+          </e>
+          <e p="LowPolyWaterv2" t="Include">
+            <e p="Demos" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="DemoFreeFlyCamera.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="LPWInspector.cs" t="Include" />
+              <e p="LPWShaderGUI.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="LowPolyWaterScript.cs" t="Include" />
+              <e p="src" t="Include">
+                <e p="LPWDepthEffect.cs" t="Include" />
+                <e p="LPWDisplace.cs" t="Include" />
+                <e p="LPWHiddenProps.cs" t="Include" />
+                <e p="LPWNoise.cs" t="Include" />
+                <e p="LPWNormalSolver.cs" t="Include" />
+                <e p="LPWReflection.cs" t="Include" />
+                <e p="LPWWaterChunk.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="LowPolyWaterAdvanced.shader" t="Include" />
+              <e p="LowPolyWaterLite.shader" t="Include" />
+              <e p="LPWCompatibility.cginc" t="Include" />
+              <e p="LPWLighting.cginc" t="Include" />
+              <e p="LPWLite.cginc" t="Include" />
+              <e p="LPWNoise.cginc" t="Include" />
+              <e p="LPWReflection.cginc" t="Include" />
+              <e p="LPWRenderDepth.shader" t="Include" />
+              <e p="LPWRipples.cginc" t="Include" />
+              <e p="LPWShoreBlend.cginc" t="Include" />
+              <e p="LPWStandard.cginc" t="Include" />
+              <e p="LPWWaves.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="SimpleCloudSystem by RM" t="Include">
+            <e p="Read Me.txt" t="Include" />
+            <e p="SCS Instructions.txt" t="Include" />
+            <e p="SCS.cs" t="Include" />
           </e>
         </e>
       </e>
