@@ -2,14 +2,14 @@
 
 namespace Battle.Weapons.Secondary
 {
-    public class Seeker : Weapon
+    public class HomingLauncher : Weapon
     {
         public HomingProjectile Missile;
         public ParticleSystem Muzzle;
         public LayerMask TargetLayer;
         public float LockTime;
 
-        protected override void FireRound(Transform target)
+        protected override void FireRound(Vector3 _, Transform target)
         {
             Muzzle.Play();
             var missile = Instantiate(Missile, Muzzle.transform.position, transform.rotation);

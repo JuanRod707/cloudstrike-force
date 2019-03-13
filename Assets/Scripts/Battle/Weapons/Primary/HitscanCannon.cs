@@ -1,23 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Battle.Effects;
+﻿using Battle.Effects;
 using Battle.Entities;
-using UnityEditorInternal;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Battle.Weapons.Primary
 {
-    public class GatlingGun : Weapon
+    public class HitscanCannon : Weapon
     {
         public ParticleSystem Cannon;
         public float Inaccuracy;
         public LayerMask HitLayer;
 
-        protected override void FireRound(Vector3 target)
+        protected override void FireRound(Vector3 position, Transform _)
         {
-            Cannon.transform.LookAt(AimAt(target));
+            Cannon.transform.LookAt(AimAt(position));
             RaycastHit hit;
 
             if (Physics.Raycast(Cannon.transform.position, Cannon.transform.forward, out hit, Stats.Range, HitLayer))

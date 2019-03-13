@@ -4826,7 +4826,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3351224050058115550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3695215067633423043}
@@ -14484,6 +14484,7 @@ MonoBehaviour:
   DeathExplosion: {fileID: 6869880017225604317, guid: 82c1524f0878f7e419d6ab16e8764192,
     type: 3}
   VehicleHealth: {fileID: 3479038624680881862}
+  Colliders: {fileID: 8170195483092263686}
 --- !u!114 &5133891454654639512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19622,7 +19623,7 @@ PrefabInstance:
     - target: {fileID: 3695215067633423052, guid: a5c558723ccd59f4a897167ab8806bff,
         type: 3}
       propertyPath: m_Name
-      value: Chaingun
+      value: 20mmCannon
       objectReference: {fileID: 0}
     - target: {fileID: 3695215067633423043, guid: a5c558723ccd59f4a897167ab8806bff,
         type: 3}

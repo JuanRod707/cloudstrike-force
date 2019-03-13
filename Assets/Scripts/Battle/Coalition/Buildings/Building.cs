@@ -3,22 +3,30 @@ using UnityEngine;
 
 namespace Battle.Coalition.Buildings
 {
-    public abstract class Building : MonoBehaviour
+    public class Building : MonoBehaviour
     {
         public Health Health;
         public GameObject View;
         public GameObject Colliders;
 
-        protected IslandBase islandBase;
+        private IslandBase islandBase;
+        private AICoordinator function;
 
-        public virtual void Initialize(IslandBase faction) { }
+        public void Initialize(IslandBase faction)
+        {
+            islandBase = faction;
+            Health.Initialize(Destroy);
+            function = GetComponent<AICoordinator>();
 
-        protected void Destroy()
+            function?.Initialize();
+        }
+
+        private void Destroy()
         {
             islandBase.MainBuildingDestroyed();
             View.SetActive(false);
             Colliders.SetActive(false);
-            enabled = false;
+            function?.Deactivate();
         }
     }
 }

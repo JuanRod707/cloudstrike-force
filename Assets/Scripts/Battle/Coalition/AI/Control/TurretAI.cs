@@ -30,7 +30,7 @@ namespace Battle.Coalition.AI.Control
             }
         }
 
-        void Attack(Transform target) => Turret.Weapons.FirePrimary(target.position);
+        void Attack(Transform target) => Turret.Weapons.FirePrimary(target.position, target);
 
         public void Disable() => enabled = false;
 

@@ -5001,6 +5001,7 @@ Transform:
   m_Children:
   - {fileID: 3732526508417990071}
   - {fileID: 3687653783555726359}
+  - {fileID: 8679434279693170636}
   m_Father: {fileID: 4203210144726894777}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14602,7 +14603,6 @@ Transform:
   m_Children:
   - {fileID: 2296471619246774638}
   - {fileID: 8220346921532480141}
-  - {fileID: 8679434279693170636}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14661,6 +14661,7 @@ MonoBehaviour:
   DeathExplosion: {fileID: 6869880017225604317, guid: 82c1524f0878f7e419d6ab16e8764192,
     type: 3}
   VehicleHealth: {fileID: 2060241121014487235}
+  Colliders: {fileID: 1341950745661959816}
 --- !u!114 &944095022287608508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19879,7 +19880,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4203210144726894777}
+  m_Father: {fileID: 8220346921532480141}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1091389842372301530

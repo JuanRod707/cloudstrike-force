@@ -11,21 +11,12 @@ namespace Battle.Weapons
         
         bool isCycling;
         int currentAmmo;
-
-        public void Fire(Vector3 target)
+        
+        public void Fire(Vector3 position, Transform target)
         {
             if (!isCycling)
             {
-                FireRound(target);
-                PostFire();
-            }
-        }
-
-        public void Fire(Transform target)
-        {
-            if (!isCycling)
-            {
-                FireRound(target);
+                FireRound(position, target);
                 PostFire();
             }
         }
@@ -46,10 +37,8 @@ namespace Battle.Weapons
         {
             StartCoroutine(WaitForReload());
         }
-
-        protected virtual void FireRound(Vector3 target) { }
-
-        protected virtual void FireRound(Transform target) { }
+        
+        protected virtual void FireRound(Vector3 position, Transform target) { }
 
         IEnumerator Cycle()
         {

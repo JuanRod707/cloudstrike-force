@@ -70,7 +70,7 @@ namespace Battle.Coalition.AI.Control
         private void AttackPlayer()
         {
             if (PlayerIsInAttackRange && PlayerIsInFront)
-                Vehicle.Weapons.FirePrimary(player.transform.position);
+                Vehicle.Weapons.FirePrimary(player.transform.position, player.transform);
         }
 
         private void ScanForPlayer()

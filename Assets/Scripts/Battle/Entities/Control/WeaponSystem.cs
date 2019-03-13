@@ -25,16 +25,16 @@ namespace Battle.Entities.Control
             secondaryWeapons = SecondaryWeaponSpot == null ? null : SecondaryWeaponSpot.GetComponentsInChildren<Weapon>();
         }
 
-        public void FirePrimary(Vector3 target)
+        public void FirePrimary(Vector3 position, Transform target)
         {
-            primaryWeapons[primaryIndex].Fire(target);
+            primaryWeapons[primaryIndex].Fire(position, target);
             primaryIndex++;
             primaryIndex = primaryIndex >= primaryWeapons.Length ? 0 : primaryIndex;
         }
 
-        public void FireSecondary(Transform target)
+        public void FireSecondary(Vector3 position, Transform target)
         {
-            secondaryWeapons[secondaryIndex].Fire(target);
+            secondaryWeapons[secondaryIndex].Fire(position, target);
             secondaryIndex++;
             secondaryIndex = secondaryIndex >= secondaryWeapons.Length ? 0 : secondaryIndex;
         }

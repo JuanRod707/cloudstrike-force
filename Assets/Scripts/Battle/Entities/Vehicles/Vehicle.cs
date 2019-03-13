@@ -11,6 +11,7 @@ namespace Battle.Entities.Vehicles
         public GameObject View;
         public GameObject DeathExplosion;
         public Health VehicleHealth;
+        public GameObject Colliders;
 
         private Controller controller;
 
@@ -35,6 +36,7 @@ namespace Battle.Entities.Vehicles
             View.SetActive(false);
             controller.Disable();
             Instantiate(DeathExplosion, transform.position, Quaternion.identity);
+            Colliders.SetActive(false);
         }
 
         public void Dock(Transform hangar)

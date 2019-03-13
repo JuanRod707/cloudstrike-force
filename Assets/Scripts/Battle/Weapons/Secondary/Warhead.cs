@@ -1,4 +1,5 @@
-﻿using Battle.Effects;
+﻿using System.Collections;
+using Battle.Effects;
 using Battle.Entities;
 using UnityEngine;
 
@@ -8,23 +9,34 @@ namespace Battle.Weapons.Secondary
     {
         Rocket rocket;
         private int damage;
-        
-        public void Initialize(Rocket rocket, int damage)
+        private bool isArmed;
+
+        public void Initialize(Rocket rocket, int damage, float armingTime)
         {
             this.damage = damage;
             this.rocket = rocket;
+            StartCoroutine(WaitAndArm(armingTime));
+        }
+
+        IEnumerator WaitAndArm(float time)
+        {
+            yield return new WaitForSeconds(time);
+            isArmed = true;
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            var hitBox = other.GetComponent<HitBox>();
-            if (hitBox)
+            if (isArmed)
             {
-                hitBox.Damage(damage);
-                rocket.Destroy();
+                var hitBox = other.GetComponent<HitBox>();
+                if (hitBox)
+                {
+                    hitBox.Damage(damage);
+                    rocket.Destroy();
+                }
+                else if (other.GetComponent<ColliderImpact>())
+                    rocket.Destroy();
             }
-            else if (other.GetComponent<ColliderImpact>())
-                rocket.Destroy();
         }
     }
 }

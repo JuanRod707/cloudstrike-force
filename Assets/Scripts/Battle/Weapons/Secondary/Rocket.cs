@@ -6,12 +6,14 @@ namespace Battle.Weapons.Secondary
     {
         public float Speed;
         public float Lifetime;
+        public float SafeTime;
+
         public Warhead Warhead;
         public GameObject Explosion;
         public GameObject View;
         public float ClearTime;
 
-        public void Launch(int damage) => Warhead.Initialize(this, damage);
+        public void Launch(int damage) => Warhead.Initialize(this, damage, SafeTime);
         
         public void Destroy()
         {

@@ -20,10 +20,10 @@ namespace Battle.Cloudstrike
         void FixedUpdate()
         {
             if(Input.GetButton("Fire1"))
-                ControlledPlane.Weapons.FirePrimary(ToMouse);
+                ControlledPlane.Weapons.FirePrimary(ToMouse, lockedTarget);
 
             if (Input.GetButtonDown("Fire2"))
-                ControlledPlane.Weapons.FireSecondary(lockedTarget);
+                ControlledPlane.Weapons.FireSecondary(ToMouse, lockedTarget);
 
             if (Input.GetKey(KeyCode.W))
                 ControlledPlane.Movement.IncreaseThrust();

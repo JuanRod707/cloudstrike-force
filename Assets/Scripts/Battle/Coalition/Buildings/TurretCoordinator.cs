@@ -5,23 +5,23 @@ using UnityEngine;
 
 namespace Battle.Coalition.Buildings
 {
-    public class TurretCoordinator : Building
+    public class TurretCoordinator : MonoBehaviour, AICoordinator
     {
         public Transform TurretContainer;
    
         CloudstrikeReferences cloudstrike;
         IEnumerable<TurretAI> turrets;
 
-        public override void Initialize(IslandBase faction)
+        public void Initialize()
         {
-            islandBase = faction;
             cloudstrike = FindObjectOfType<CloudstrikeReferences>();
             turrets = TurretContainer.GetComponentsInChildren<TurretAI>();
-            Health.Initialize(Destroy);
 
             foreach (var t in turrets)
                 t.Initialize();
         }
+
+        public void Deactivate() => enabled = false;
 
         void FixedUpdate()
         {
