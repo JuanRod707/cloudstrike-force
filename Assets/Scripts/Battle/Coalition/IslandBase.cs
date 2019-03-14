@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using Battle.Coalition.Buildings;
 using Campaign;
 using Data;
@@ -9,14 +11,16 @@ namespace Battle.Coalition
 {
     public class IslandBase : MonoBehaviour
     {
-        public Building[] MainBuildings;
+        public GameObject BuildingContainer;
 
+        private IEnumerable<Building> buildings;
         private int hitPoints;
 
         void Start()
         {
-            hitPoints = MainBuildings.Length;
-            foreach(var b in MainBuildings)
+            buildings = BuildingContainer.GetComponentsInChildren<Building>();
+            hitPoints = buildings.Count();
+            foreach(var b in buildings)
                 b.Initialize(this);
         }
 

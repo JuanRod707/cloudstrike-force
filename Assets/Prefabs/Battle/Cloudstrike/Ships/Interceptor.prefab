@@ -4737,9 +4737,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2474953197788470257}
-  - component: {fileID: 2364641932034677189}
   - component: {fileID: 8066790422560676408}
   - component: {fileID: 1984390961841548220}
+  - component: {fileID: 2364641932034677189}
+  - component: {fileID: 7154183970905351751}
   m_Layer: 0
   m_Name: Wings
   m_TagString: Untagged
@@ -4761,19 +4762,6 @@ Transform:
   m_Father: {fileID: 1437050794544328660}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2364641932034677189
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740922705374249712}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.5, y: 0.2, z: 1.6}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8066790422560676408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4802,6 +4790,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
+--- !u!65 &2364641932034677189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740922705374249712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.5, y: 0.2, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &7154183970905351751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740922705374249712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.5, y: 0.2, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3351224050058115550
 GameObject:
   m_ObjectHideFlags: 0
@@ -19347,9 +19361,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8299287150396558784}
-  - component: {fileID: 7691286735085004136}
   - component: {fileID: 8579513628930177430}
   - component: {fileID: 1932892124466918445}
+  - component: {fileID: 7691286735085004136}
+  - component: {fileID: 2498721869543938401}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -19371,20 +19386,6 @@ Transform:
   m_Father: {fileID: 1437050794544328660}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7691286735085004136
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8018342739956945765}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.6
-  m_Height: 5.13
-  m_Direction: 2
-  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!114 &8579513628930177430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19413,6 +19414,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
+--- !u!136 &7691286735085004136
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8018342739956945765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 5.13
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!136 &2498721869543938401
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8018342739956945765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 5.13
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1 &8160878764450905044
 GameObject:
   m_ObjectHideFlags: 0

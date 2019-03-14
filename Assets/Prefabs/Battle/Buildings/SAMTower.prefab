@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 8518393729347957134}
   - component: {fileID: 3400921547937730717}
   - component: {fileID: 5734954011910292861}
+  - component: {fileID: 754410341}
   m_Layer: 0
   m_Name: SAMTower
   m_TagString: Untagged
@@ -108,6 +109,21 @@ MonoBehaviour:
   Health: {fileID: 3400921547937730717}
   View: {fileID: 2487547668211204244}
   Colliders: {fileID: 3013514135651418871}
+--- !u!114 &754410341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730662728721874870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2065b60c08245e08711d8aa611677cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LockingRange: 800
+  TimeToLock: 5
+  TurretContainer: {fileID: 0}
 --- !u!1 &2487547668211204244
 GameObject:
   m_ObjectHideFlags: 0
