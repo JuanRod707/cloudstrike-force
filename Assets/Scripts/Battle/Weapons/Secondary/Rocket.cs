@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Battle.Weapons;
+using UnityEngine;
 
 namespace Battle.Weapons.Secondary
 {
@@ -13,7 +14,7 @@ namespace Battle.Weapons.Secondary
         public GameObject View;
         public float ClearTime;
 
-        public void Launch(int damage) => Warhead.Initialize(this, damage, SafeTime);
+        public void Launch(DamageMessage damage) => Warhead.Initialize(this, damage, SafeTime);
         
         public void Destroy()
         {

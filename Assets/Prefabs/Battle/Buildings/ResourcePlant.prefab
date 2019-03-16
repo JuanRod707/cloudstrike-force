@@ -60,6 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 1609760762604583365}
   DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!114 &6304544686909223027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +234,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e637702096e49f8bf135baee1be6537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseHitPoints: 120
+  BaseHitPoints: 420
+  DamageEffects:
+  - DamageType: 0
+    Multiplier: 0
+  - DamageType: 3
+    Multiplier: 1.5
 --- !u!114 &2574666283116003522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 1609760762604583365}
   DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!114 &2943781150122526055
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using Battle.Effects;
+﻿using Assets.Scripts.Battle.Weapons;
+using Battle.Effects;
 using Battle.Entities;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -20,7 +21,7 @@ namespace Battle.Weapons.Primary
             {
                 var hitBox = hit.collider.GetComponent<HitBox>();
                 if (hitBox)
-                    hitBox.Damage(Stats.Damage);
+                    hitBox.Damage(DamageMessage.Create(Stats.Damage, Stats.DamageTypes));
 
                 var impactCollider = hit.collider.GetComponent<ColliderImpact>();
                 if (impactCollider)

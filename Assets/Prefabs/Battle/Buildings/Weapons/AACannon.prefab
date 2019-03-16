@@ -51,6 +51,7 @@ MonoBehaviour:
     Ammo: 500
     Damage: 6
     Range: 900
+    DamageTypes: 00000000
   FireSfx: {fileID: 7257172863780470604}
   Cannon: {fileID: 1883552780788887679}
   Inaccuracy: 6

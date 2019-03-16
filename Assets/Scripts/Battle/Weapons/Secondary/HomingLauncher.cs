@@ -1,4 +1,5 @@
-﻿using Common;
+﻿using Assets.Scripts.Battle.Weapons;
+using Common;
 using UnityEngine;
 
 namespace Battle.Weapons.Secondary
@@ -13,7 +14,7 @@ namespace Battle.Weapons.Secondary
         protected override void FireRound(Vector3 _, Transform target)
         {
             var missile = Instantiate(Missile, FiringPositions.PickOne().position, transform.rotation);
-            missile.Launch(target, Stats.Damage);
+            missile.Launch(target, DamageMessage.Create(Stats.Damage, Stats.DamageTypes));
         }
         
        

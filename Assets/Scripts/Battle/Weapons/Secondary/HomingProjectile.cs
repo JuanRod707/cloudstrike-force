@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Battle.Weapons;
+using UnityEngine;
 
 namespace Battle.Weapons.Secondary
 {
@@ -10,7 +11,7 @@ namespace Battle.Weapons.Secondary
 
         private Vector3 SteeringToTarget => transform.InverseTransformPoint(target.position);
 
-        public void Launch(Transform lockedTarget, int damage)
+        public void Launch(Transform lockedTarget, DamageMessage damage)
         {
             base.Launch(damage);
             target = lockedTarget;

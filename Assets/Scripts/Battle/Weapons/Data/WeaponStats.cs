@@ -10,5 +10,6 @@ namespace Battle.Weapons.Data
         public int Ammo;
         public int Damage;
         public float Range;
+        public DamageType[] DamageTypes;
     }
 }

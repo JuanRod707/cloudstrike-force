@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Assets.Scripts.Battle.Weapons;
 using Battle.Effects;
 using Battle.Entities;
 using UnityEngine;
@@ -8,10 +9,10 @@ namespace Battle.Weapons.Secondary
     public class Warhead : MonoBehaviour
     {
         Rocket rocket;
-        private int damage;
+        private DamageMessage damage;
         private bool isArmed;
 
-        public void Initialize(Rocket rocket, int damage, float armingTime)
+        public void Initialize(Rocket rocket, DamageMessage damage, float armingTime)
         {
             this.damage = damage;
             this.rocket = rocket;

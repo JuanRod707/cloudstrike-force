@@ -1,4 +1,7 @@
 using System;
+using System.Linq;
+using Assets.Scripts.Battle.Weapons;
+using Battle.Weapons;
 using UnityEngine;
 
 namespace Battle.Entities
@@ -6,6 +9,7 @@ namespace Battle.Entities
     public class Health : MonoBehaviour
     {
         public int BaseHitPoints;
+        public DamageMultiplier[] DamageEffects;
 
         int currentHitPoints;
         Action doOnDestroy;
@@ -25,9 +29,9 @@ namespace Battle.Entities
             doOnUpdateHp(currentHitPoints);
         }
 
-        public void ReceiveDamage(int damage)
+        public void ReceiveDamage(DamageMessage damage)
         {
-            currentHitPoints -= damage;
+            currentHitPoints -= CalculateTotalDamage(damage);
             
             if (currentHitPoints <= 0)
             {
@@ -36,6 +40,20 @@ namespace Battle.Entities
             }
             
             doOnUpdateHp(currentHitPoints);
+        }
+
+        int CalculateTotalDamage(DamageMessage damage)
+        {
+            var applicableEffects = DamageEffects.Where(i => damage.Types.Contains(i.DamageType)).ToArray();
+            var multiplier = applicableEffects.Any() ? applicableEffects.Max(x => x.Multiplier) : 1f;
+            var bestDamage = applicableEffects.Any() ? 
+                applicableEffects.OrderByDescending(x => x.Multiplier).First().DamageType
+                : damage.Types.First();
+
+            Debug.Log(multiplier > 0 ? $"Entity recieves {damage.Value * multiplier} {bestDamage} damage" 
+                : $"Entity is imune to {bestDamage} damage");
+
+            return (int)(damage.Value * multiplier);
         }
     }
 }

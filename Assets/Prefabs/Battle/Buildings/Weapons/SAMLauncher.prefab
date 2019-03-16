@@ -178,6 +178,7 @@ MonoBehaviour:
     Ammo: 60
     Damage: 15
     Range: 800
+    DamageTypes: 01000000
   FireSfx: {fileID: 4783314842253664560}
   Missile: {fileID: 7236927757530227759, guid: 094d9718f62ed44fd8e91a75a0d29edf, type: 3}
   FiringPositions:
