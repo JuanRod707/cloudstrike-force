@@ -1,10 +1,9 @@
 ﻿using System.Collections;
-using Assets.Scripts.Battle.Weapons;
-using Battle.Effects;
-using Battle.Entities;
+using Assets.Scripts.Battle.Effects;
+using Assets.Scripts.Battle.Entities;
 using UnityEngine;
 
-namespace Battle.Weapons.Secondary
+namespace Assets.Scripts.Battle.Weapons.Secondary
 {
     public class Warhead : MonoBehaviour
     {

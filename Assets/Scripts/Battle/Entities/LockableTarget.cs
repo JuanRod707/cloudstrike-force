@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Battle.Entities
+namespace Assets.Scripts.Battle.Entities
 {
     public class LockableTarget : MonoBehaviour
     {

@@ -1,7 +1,7 @@
-﻿using Battle.Entities;
+﻿using Assets.Scripts.Battle.Entities;
 using UnityEngine;
 
-namespace Battle.Coalition.Buildings
+namespace Assets.Scripts.Battle.AI.Buildings
 {
     public class Building : MonoBehaviour
     {
@@ -18,7 +18,7 @@ namespace Battle.Coalition.Buildings
             Health.Initialize(Destroy);
             function = GetComponent<AICoordinator>();
 
-            function?.Initialize();
+            function?.Initialize(faction.TargetProvider);
         }
 
         private void Destroy()

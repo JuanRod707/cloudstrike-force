@@ -3,7 +3,7 @@ using System.Linq;
 using Common;
 using UnityEngine;
 
-namespace Battle.Coalition.AI
+namespace Assets.Scripts.Battle.AI
 {
     public class NavigationPoints : MonoBehaviour
     {

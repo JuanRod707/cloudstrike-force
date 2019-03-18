@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Battle.Coalition.Buildings;
+using Assets.Scripts.Battle.AI.Buildings;
+using Assets.Scripts.Battle.Coalition;
 using Campaign;
 using Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Battle.Coalition
+namespace Assets.Scripts.Battle.AI
 {
     public class IslandBase : MonoBehaviour
     {
         public GameObject BuildingContainer;
+        public TargetProvider TargetProvider;
 
         private IEnumerable<Building> buildings;
         private int hitPoints;
@@ -20,6 +22,8 @@ namespace Battle.Coalition
         {
             buildings = BuildingContainer.GetComponentsInChildren<Building>();
             hitPoints = buildings.Count();
+            TargetProvider = new CoalitionTargetProvider();
+
             foreach(var b in buildings)
                 b.Initialize(this);
         }

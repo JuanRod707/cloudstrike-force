@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Battle.UI
+namespace Assets.Scripts.Battle.UI
 {
     public class LockOnCrosshair : MonoBehaviour
     {

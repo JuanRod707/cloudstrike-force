@@ -1,10 +1,9 @@
 using System;
 using System.Linq;
 using Assets.Scripts.Battle.Weapons;
-using Battle.Weapons;
 using UnityEngine;
 
-namespace Battle.Entities
+namespace Assets.Scripts.Battle.Entities
 {
     public class Health : MonoBehaviour
     {

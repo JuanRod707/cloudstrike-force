@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Battle.Weapons.Data
+namespace Assets.Scripts.Battle.Weapons.Data
 {
     [Serializable]
     public class WeaponStats

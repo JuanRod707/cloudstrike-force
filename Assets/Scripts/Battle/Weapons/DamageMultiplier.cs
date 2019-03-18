@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Battle.Weapons
+namespace Assets.Scripts.Battle.Weapons
 {
     [Serializable]
     public class DamageMultiplier

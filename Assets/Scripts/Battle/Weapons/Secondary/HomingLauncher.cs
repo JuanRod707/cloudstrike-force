@@ -1,8 +1,7 @@
-﻿using Assets.Scripts.Battle.Weapons;
-using Common;
+﻿using Common;
 using UnityEngine;
 
-namespace Battle.Weapons.Secondary
+namespace Assets.Scripts.Battle.Weapons.Secondary
 {
     public class HomingLauncher : Weapon
     {

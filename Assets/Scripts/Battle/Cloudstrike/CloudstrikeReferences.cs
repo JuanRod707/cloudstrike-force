@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Battle.Cloudstrike
+namespace Assets.Scripts.Battle.Cloudstrike
 {
     public class CloudstrikeReferences : MonoBehaviour
     {

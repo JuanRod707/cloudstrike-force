@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Battle.Weapons;
 
 namespace Assets.Scripts.Battle.Weapons
 {

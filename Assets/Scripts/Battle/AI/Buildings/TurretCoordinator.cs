@@ -1,20 +1,19 @@
 ﻿using System.Collections.Generic;
-using Battle.Cloudstrike;
-using Battle.Coalition.AI.Control;
+using Assets.Scripts.Battle.AI.Control;
+using Assets.Scripts.Battle.Cloudstrike;
 using UnityEngine;
 
-namespace Battle.Coalition.Buildings
+namespace Assets.Scripts.Battle.AI.Buildings
 {
     public class TurretCoordinator : MonoBehaviour, AICoordinator
     {
         public Transform TurretContainer;
-   
-        CloudstrikeReferences cloudstrike;
         IEnumerable<TurretAI> turrets;
+        IEnumerable<Transform> targets;
 
-        public void Initialize()
+        public void Initialize(TargetProvider targetProvider)
         {
-            cloudstrike = FindObjectOfType<CloudstrikeReferences>();
+            targetProvider.RegisterController(this);
             turrets = TurretContainer.GetComponentsInChildren<TurretAI>();
 
             foreach (var t in turrets)
@@ -26,7 +25,10 @@ namespace Battle.Coalition.Buildings
         void FixedUpdate()
         {
             foreach (var t in turrets)
-                t.AimToTarget(cloudstrike.ControlledPlane);
+                t.AimToClosestTarget(targets);
         }
+
+        public void UpdateTargets(IEnumerable<Transform> possibleTargets) => targets = possibleTargets;
+
     }
 }

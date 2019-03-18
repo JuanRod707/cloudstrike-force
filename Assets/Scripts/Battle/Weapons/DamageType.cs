@@ -1,4 +1,4 @@
-﻿namespace Battle.Weapons
+﻿namespace Assets.Scripts.Battle.Weapons
 {
     public enum DamageType
     {

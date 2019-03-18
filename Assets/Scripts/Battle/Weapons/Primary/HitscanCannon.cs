@@ -1,10 +1,9 @@
-﻿using Assets.Scripts.Battle.Weapons;
-using Battle.Effects;
-using Battle.Entities;
+﻿using Assets.Scripts.Battle.Effects;
+using Assets.Scripts.Battle.Entities;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Battle.Weapons.Primary
+namespace Assets.Scripts.Battle.Weapons.Primary
 {
     public class HitscanCannon : Weapon
     {

@@ -1,7 +1,7 @@
-﻿using Battle.Entities.Control;
+﻿using Assets.Scripts.Battle.Entities.Control;
 using UnityEngine;
 
-namespace Battle.Entities
+namespace Assets.Scripts.Battle.Entities
 {
     public class Turret : MonoBehaviour
     {

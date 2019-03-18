@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Battle.Cameras
+namespace Assets.Scripts.Battle.Cameras
 {
     public class ChaseCamera : MonoBehaviour
     {

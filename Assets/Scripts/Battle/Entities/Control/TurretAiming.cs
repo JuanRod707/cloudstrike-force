@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Battle.Entities.Control
+namespace Assets.Scripts.Battle.Entities.Control
 {
     public class TurretAiming : MonoBehaviour
     {

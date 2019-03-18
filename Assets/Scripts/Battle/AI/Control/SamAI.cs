@@ -1,8 +1,8 @@
-﻿using Battle.Entities;
-using Battle.Entities.Control;
+﻿using Assets.Scripts.Battle.Entities;
+using Assets.Scripts.Battle.Entities.Control;
 using UnityEngine;
 
-namespace Battle.Coalition.AI.Control
+namespace Assets.Scripts.Battle.AI.Control
 {
     public class SamAI : MonoBehaviour, Controller
     {

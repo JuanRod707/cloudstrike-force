@@ -1,7 +1,6 @@
-﻿using Assets.Scripts.Battle.Weapons;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Battle.Weapons.Secondary
+namespace Assets.Scripts.Battle.Weapons.Secondary
 {
     public class HomingProjectile : Rocket
     {

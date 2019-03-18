@@ -1,8 +1,10 @@
-﻿using Battle.Entities;
-using Battle.Entities.Control;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Assets.Scripts.Battle.Entities;
+using Assets.Scripts.Battle.Entities.Control;
 using UnityEngine;
 
-namespace Battle.Coalition.AI.Control
+namespace Assets.Scripts.Battle.AI.Control
 {
     public class TurretAI : MonoBehaviour, Controller
     {
@@ -18,10 +20,12 @@ namespace Battle.Coalition.AI.Control
 
         public void Initialize() => Turret.Initialize(this);
 
-        public void AimToTarget(Transform target)
+        public void AimToClosestTarget(IEnumerable<Transform> targets)
         {
             if (enabled)
             {
+                var target = targets.OrderBy(t => Vector3.Distance(transform.position, t.position)).FirstOrDefault();
+
                 if (TargetIsNearby(target))
                     Turret.Aiming.AimTo(target);
 

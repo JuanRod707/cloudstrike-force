@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Battle.Effects
+namespace Assets.Scripts.Battle.Effects
 {
     public class ColliderImpact : MonoBehaviour
     {
