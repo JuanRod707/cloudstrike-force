@@ -13,6 +13,25 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Battle" t="Include">
+            <e p="AI" t="Include">
+              <e p="BuildingPrefabs.cs" t="Include" />
+              <e p="Buildings" t="Include">
+                <e p="AICoordinator.cs" t="Include" />
+                <e p="Building.cs" t="Include" />
+                <e p="DroneCoordinator.cs" t="Include" />
+                <e p="SamCoordinator.cs" t="Include" />
+                <e p="TurretCoordinator.cs" t="Include" />
+              </e>
+              <e p="Control" t="Include">
+                <e p="PatrolDroneAI.cs" t="Include" />
+                <e p="SamAI.cs" t="Include" />
+                <e p="TurretAI.cs" t="Include" />
+              </e>
+              <e p="DefensePlacer.cs" t="Include" />
+              <e p="IslandBase.cs" t="Include" />
+              <e p="NavigationPoints.cs" t="Include" />
+              <e p="TargetProvider.cs" t="Include" />
+            </e>
             <e p="Cameras" t="Include">
               <e p="CameraAnchors.cs" t="Include" />
               <e p="ChaseCamera.cs" t="Include" />
@@ -24,20 +43,8 @@
               <e p="PlayerInitializer.cs" t="Include" />
             </e>
             <e p="Coalition" t="Include">
-              <e p="AI" t="Include">
-                <e p="Control" t="Include">
-                  <e p="PatrolDroneAI.cs" t="Include" />
-                  <e p="TurretAI.cs" t="Include" />
-                </e>
-                <e p="NavigationPoints.cs" t="Include" />
-              </e>
-              <e p="Buildings" t="Include">
-                <e p="AICoordinator.cs" t="Include" />
-                <e p="Building.cs" t="Include" />
-                <e p="DroneCoordinator.cs" t="Include" />
-                <e p="TurretCoordinator.cs" t="Include" />
-              </e>
-              <e p="IslandBase.cs" t="Include" />
+              <e p="CoalitionTargetProvider.cs" t="Include" />
+              <e p="DefenseController.cs" t="Include" />
             </e>
             <e p="Effects" t="Include">
               <e p="AutoRotate.cs" t="Include" />
@@ -67,6 +74,9 @@
               <e p="LockOnCrosshair.cs" t="Include" />
             </e>
             <e p="Weapons" t="Include">
+              <e p="DamageMessage.cs" t="Include" />
+              <e p="DamageMultiplier.cs" t="Include" />
+              <e p="DamageType.cs" t="Include" />
               <e p="Data" t="Include">
                 <e p="WeaponStats.cs" t="Include" />
               </e>
@@ -122,6 +132,7 @@
             <e p="CursorSet.cs" t="Include" />
             <e p="ExtensionMethods.cs" t="Include" />
             <e p="RandomService.cs" t="Include" />
+            <e p="SpotProvider.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
             <e p="Dtos" t="Include">
@@ -133,6 +144,13 @@
             <e p="GameState.cs" t="Include" />
             <e p="StateHandler.cs" t="Include" />
             <e p="StaticPersistence.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="ForceFieldFX" t="Include">
+            <e p="Shader" t="Include">
+              <e p="ShieldFX.shader" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Standard Assets" t="Include">
@@ -446,7 +464,7 @@
         <e p="bin" t="ExcludeRecursive" />
       </e>
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_cloudstrike-force.-71576152.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_cloudstrike-force.-71576152.00" t="ExcludeRecursive" />
   </component>
 </project>
