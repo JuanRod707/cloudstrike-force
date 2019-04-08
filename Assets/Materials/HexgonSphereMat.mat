@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 9484435b2c565422ebaeccab4aa9b395, type: 3}
-        m_Scale: {x: 0.6, y: 0.6}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -67,9 +67,9 @@ Material:
     - _DstBlend: 0
     - _Float1: 2
     - _Float2: 3
-    - _Fresnel: 98.6
+    - _Fresnel: 75
     - _FresnelIntensity: 61
-    - _FresnelWidth: 0.946
+    - _FresnelWidth: 0.91
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -86,7 +86,7 @@ Material:
     - _RimPower: 51
     - _RimWidth: 0.82
     - _ScrollSpeed: 2
-    - _ScrollSpeedU: 2
+    - _ScrollSpeedU: 1
     - _ScrollSpeedV: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -104,7 +104,7 @@ Material:
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.32876015, g: 0.14509806, b: 0.4392157, a: 0.8235294}
+    - _MainColor: {r: 0.32876015, g: 0.14509806, b: 0.4392157, a: 1}
     - _intersectColor: {r: 1, g: 0, b: 0, a: 1}
     - _node_4016: {r: 0.034482475, g: 0, b: 1, a: 1}
     - _node_5050: {r: 0, g: 0, b: 0, a: 0}
