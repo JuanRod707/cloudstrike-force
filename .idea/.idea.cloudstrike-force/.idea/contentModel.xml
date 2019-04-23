@@ -8,13 +8,17 @@
       <e p="Assets" t="Include">
         <e p="Materials" t="Include">
           <e p="Shaders" t="Include">
+            <e p="ForceFieldFX" t="Include">
+              <e p="Shader" t="Include">
+                <e p="ShieldFX.shader" t="Include" />
+              </e>
+            </e>
             <e p="Water.shader" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Battle" t="Include">
             <e p="AI" t="Include">
-              <e p="BuildingPrefabs.cs" t="Include" />
               <e p="Buildings" t="Include">
                 <e p="AICoordinator.cs" t="Include" />
                 <e p="Building.cs" t="Include" />
@@ -28,6 +32,7 @@
                 <e p="TurretAI.cs" t="Include" />
               </e>
               <e p="DefensePlacer.cs" t="Include" />
+              <e p="DefensePrefabs.cs" t="Include" />
               <e p="IslandBase.cs" t="Include" />
               <e p="NavigationPoints.cs" t="Include" />
               <e p="TargetProvider.cs" t="Include" />
@@ -49,6 +54,7 @@
             <e p="Effects" t="Include">
               <e p="AutoRotate.cs" t="Include" />
               <e p="ColliderImpact.cs" t="Include" />
+              <e p="Oscillate.cs" t="Include" />
             </e>
             <e p="Entities" t="Include">
               <e p="Control" t="Include">
@@ -144,13 +150,6 @@
             <e p="GameState.cs" t="Include" />
             <e p="StateHandler.cs" t="Include" />
             <e p="StaticPersistence.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Shaders" t="Include">
-          <e p="ForceFieldFX" t="Include">
-            <e p="Shader" t="Include">
-              <e p="ShieldFX.shader" t="Include" />
-            </e>
           </e>
         </e>
         <e p="Standard Assets" t="Include">
