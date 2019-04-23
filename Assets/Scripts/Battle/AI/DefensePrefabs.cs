@@ -4,18 +4,27 @@ using UnityEngine;
 namespace Assets.Scripts.Battle.AI
 {
     [Serializable]
-    public class BuildingPrefabs
+    public class DefensePrefabs
     {
+        [Header("Big Buildings")]
         public GameObject Refinery;
         public GameObject DroneTower;
         public GameObject TurretControl;
         public GameObject SAMTower;
         public GameObject Bunker;
         public GameObject MassDriver;
-        public GameObject Shipyard;
-        public GameObject ShieldDome;
-        public GameObject ShieldGenerator;
+        public GameObject InterceptorBase;
+        public GameObject Factory;
+
+        [Header("Small Buildings")]
+        public GameObject ShieldBattery;
         public GameObject SAMTurret;
         public GameObject Turret;
+
+        [Header("Units")]
+        public GameObject Tank;
+        public GameObject Drone;
+        public GameObject Interceptor;
+        public GameObject Cruiser;
     }
 }

@@ -6,52 +6,68 @@ namespace Battle.AI
 {
     public class DefensePlacer : MonoBehaviour
     {
-        public BuildingPrefabs Prefabs;
+        public DefensePrefabs Prefabs;
 
-        public SpotProvider MainBuildingSpots;
-        public SpotProvider TurretSpots;
+        public SpotProvider BigSpots;
+        public SpotProvider SmallSpots;
 
         public Transform BuildingContainer;
         public Transform TurretContainer;
 
-        void AddRefinery() => CreateBuilding(Prefabs.Refinery, BuildingContainer, MainBuildingSpots.ConsumeSpot());
+        public void PlaceDefenses(int islandLevel)
+        {
+            AddRefinery();
+        }
+
+        void AddRefinery() => CreateBuilding(Prefabs.Refinery, BuildingContainer, BigSpots.ConsumeSpot());
+
+        void AddFactory() => CreateBuilding(Prefabs.Factory, BuildingContainer, BigSpots.ConsumeSpot());
         
-        void AddShieldGenerator() => CreateBuilding(Prefabs.Refinery, BuildingContainer, MainBuildingSpots.ConsumeSpot());
+        void AddMassDriver() => CreateBuilding(Prefabs.MassDriver, BuildingContainer, BigSpots.ConsumeSpot());
         
-        void AddShipyard() => CreateBuilding(Prefabs.Refinery, BuildingContainer, MainBuildingSpots.ConsumeSpot());
-        
-        void AddMassDriver() => CreateBuilding(Prefabs.Refinery, BuildingContainer, MainBuildingSpots.ConsumeSpot());
-        
-        void AddBunker() => CreateBuilding(Prefabs.Refinery, BuildingContainer, MainBuildingSpots.ConsumeSpot());
-        
-        void AddCruisers(int count)
+        void AddBunker() => CreateBuilding(Prefabs.Bunker, BuildingContainer, BigSpots.ConsumeSpot());
+
+        void AddDroneBase() => CreateBuilding(Prefabs.DroneTower, BuildingContainer, BigSpots.ConsumeSpot());
+
+        void AddInterceptorBase() => CreateBuilding(Prefabs.InterceptorBase, BuildingContainer, BigSpots.ConsumeSpot());
+
+        void AddTurretControl() => CreateBuilding(Prefabs.TurretControl, BuildingContainer, BigSpots.ConsumeSpot());
+
+        void AddSAMTower() => CreateBuilding(Prefabs.SAMTower, BuildingContainer, BigSpots.ConsumeSpot());
+
+        void AddShields()
+        {
+
+        }
+
+        void AddDrone(int count)
+        {
+            
+        }
+
+        void AddInterceptor(int count)
+        {
+            
+        }
+
+        void AddTurret(int count)
+        {
+            
+        }
+
+        void AddSAM(int count)
+        {
+            
+        }
+
+        void AddCruiser(int count)
         {
             
         }
         
-        void AddTanks(int count)
+        void AddTank(int count)
         {
             
-        }
-        
-        void AddDrones(int count)
-        {
-            CreateBuilding(Prefabs.DroneTower, BuildingContainer, MainBuildingSpots.ConsumeSpot());
-        }
-        
-        void AddInterceptors(int count)
-        {
-            CreateBuilding(Prefabs.DroneTower, BuildingContainer, MainBuildingSpots.ConsumeSpot());
-        }
-        
-        void AddTurrets(int count)
-        {
-            CreateBuilding(Prefabs.TurretControl, BuildingContainer, MainBuildingSpots.ConsumeSpot());
-        }
-        
-        void AddSAMs(int count)
-        {
-            CreateBuilding(Prefabs.SAMTower, BuildingContainer, MainBuildingSpots.ConsumeSpot());
         }
 
         GameObject CreateBuilding(GameObject prefab, Transform container, Transform position)
