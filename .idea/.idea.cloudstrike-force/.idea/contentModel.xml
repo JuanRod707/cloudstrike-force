@@ -35,6 +35,7 @@
               <e p="DefensePrefabs.cs" t="Include" />
               <e p="IslandBase.cs" t="Include" />
               <e p="NavigationPoints.cs" t="Include" />
+              <e p="SecurityLevel.cs" t="Include" />
               <e p="TargetProvider.cs" t="Include" />
             </e>
             <e p="Cameras" t="Include">
@@ -78,6 +79,7 @@
             <e p="UI" t="Include">
               <e p="BottomHud.cs" t="Include" />
               <e p="LockOnCrosshair.cs" t="Include" />
+              <e p="TopHud.cs" t="Include" />
             </e>
             <e p="Weapons" t="Include">
               <e p="DamageMessage.cs" t="Include" />

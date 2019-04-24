@@ -10,7 +10,7 @@ namespace Assets.Scripts.Common
         List<Transform> positions;
         Transform[] allPositions;
 
-        void Start()
+        void Awake()
         {
             allPositions = GetComponentsInChildren<Transform>().Where(t => t != transform).ToArray();
             positions = allPositions.ToList();

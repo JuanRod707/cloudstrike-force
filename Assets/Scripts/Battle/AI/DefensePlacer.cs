@@ -1,5 +1,8 @@
-﻿using Assets.Scripts.Battle.AI;
+﻿using System.Linq;
+using Assets.Scripts.Battle.AI;
 using Assets.Scripts.Common;
+using Common;
+using Data;
 using UnityEngine;
 
 namespace Battle.AI
@@ -14,65 +17,41 @@ namespace Battle.AI
         public Transform BuildingContainer;
         public Transform TurretContainer;
 
+        SecurityLevel[] securityRules;
+
+        void SetRules()
+        {
+            securityRules = new[]
+            {
+                new SecurityLevel(1, Prefabs.Refinery, 1),
+                new SecurityLevel(2, Prefabs.DroneTower, 1),
+                new SecurityLevel(3, Prefabs.TurretControl, 1),
+                new SecurityLevel(4, Prefabs.SAMTower, 1),
+                new SecurityLevel(5, Prefabs.MassDriver, 1),
+                new SecurityLevel(6, Prefabs.Refinery, 1),
+                new SecurityLevel(6, Prefabs.Bunker, 1),
+                new SecurityLevel(7, Prefabs.InterceptorBase, 1),
+                new SecurityLevel(8, Prefabs.MassDriver, 1),
+                new SecurityLevel(9, Prefabs.Factory, 1),
+                new SecurityLevel(10, Prefabs.ShieldBattery, 3),
+                new SecurityLevel(10, Prefabs.MassDriver, 1),
+            };
+        }
+        
         public void PlaceDefenses(int islandLevel)
         {
-            AddRefinery();
-        }
-
-        void AddRefinery() => CreateBuilding(Prefabs.Refinery, BuildingContainer, BigSpots.ConsumeSpot());
-
-        void AddFactory() => CreateBuilding(Prefabs.Factory, BuildingContainer, BigSpots.ConsumeSpot());
-        
-        void AddMassDriver() => CreateBuilding(Prefabs.MassDriver, BuildingContainer, BigSpots.ConsumeSpot());
-        
-        void AddBunker() => CreateBuilding(Prefabs.Bunker, BuildingContainer, BigSpots.ConsumeSpot());
-
-        void AddDroneBase() => CreateBuilding(Prefabs.DroneTower, BuildingContainer, BigSpots.ConsumeSpot());
-
-        void AddInterceptorBase() => CreateBuilding(Prefabs.InterceptorBase, BuildingContainer, BigSpots.ConsumeSpot());
-
-        void AddTurretControl() => CreateBuilding(Prefabs.TurretControl, BuildingContainer, BigSpots.ConsumeSpot());
-
-        void AddSAMTower() => CreateBuilding(Prefabs.SAMTower, BuildingContainer, BigSpots.ConsumeSpot());
-
-        void AddShields()
-        {
-
-        }
-
-        void AddDrone(int count)
-        {
-            
-        }
-
-        void AddInterceptor(int count)
-        {
-            
-        }
-
-        void AddTurret(int count)
-        {
-            
-        }
-
-        void AddSAM(int count)
-        {
-            
-        }
-
-        void AddCruiser(int count)
-        {
-            
-        }
-        
-        void AddTank(int count)
-        {
-            
+            SetRules();
+            foreach (var rule in securityRules.Where(r => r.Level <= islandLevel))
+            {
+                foreach(var _ in Enumerable.Range(0, rule.Count))
+                    CreateBuilding(rule.Building, BuildingContainer, BigSpots.ConsumeSpot());
+            }
         }
 
         GameObject CreateBuilding(GameObject prefab, Transform container, Transform position)
         {
-            var building = Instantiate(prefab, position.position, position.rotation);
+            var rotation = new Vector3(0f, RandomService.GetRandom(0, 360), 0f);
+            var building = Instantiate(prefab, position.position, Quaternion.Euler(rotation));
             building.transform.SetParent(container);
 
             return building;
