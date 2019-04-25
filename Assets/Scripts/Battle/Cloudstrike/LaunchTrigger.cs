@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Battle.Cloudstrike
+namespace Battle.Cloudstrike
 {
     public class LaunchTrigger : MonoBehaviour
     {

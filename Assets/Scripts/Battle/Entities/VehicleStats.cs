@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Assets.Scripts.Battle.Entities
+namespace Battle.Entities
 {
     [Serializable]
     public class TurretStats

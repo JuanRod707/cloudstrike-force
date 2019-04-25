@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using Assets.Scripts.Battle.Weapons;
-using Assets.Scripts.Battle.Weapons.Data;
+using Battle.Weapons;
+using Battle.Weapons.Data;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.Entities.Control
+namespace Battle.Entities.Control
 {
     public class WeaponSystem : MonoBehaviour
     {

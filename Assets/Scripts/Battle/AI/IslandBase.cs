@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Battle.AI.Buildings;
-using Assets.Scripts.Battle.Coalition;
-using Battle.AI;
+using Battle.AI.Buildings;
+using Battle.AI.Control;
+using Battle.Coalition;
 using Battle.UI;
 using Campaign;
 using Campaign.Environment.Generation;
@@ -12,7 +12,7 @@ using Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Assets.Scripts.Battle.AI
+namespace Battle.AI
 {
     public class IslandBase : MonoBehaviour
     {
@@ -20,6 +20,10 @@ namespace Assets.Scripts.Battle.AI
 
         public DefensePlacer DefensePlacer;
         public GameObject BuildingContainer;
+        public Transform VehicleContainer;
+        public Transform TurretContainer;
+        public PatrolContainer Patrols;
+        
         public TargetProvider TargetProvider;
 
         private IEnumerable<Building> buildings;
@@ -27,10 +31,10 @@ namespace Assets.Scripts.Battle.AI
 
         void Start()
         {
-            var islandLevel = 10;
-//                 StaticPersistence.GameState != null
-//                ? StaticPersistence.GameState.Mission.MissionIsland.Level
-//                : RandomService.GetRandom(1, 10);
+            var islandLevel = 
+                 StaticPersistence.GameState != null
+                ? StaticPersistence.GameState.Mission.MissionIsland.Level
+                : RandomService.GetRandom(1, 10);
 
             var islandName = StaticPersistence.GameState != null
                 ? StaticPersistence.GameState.Mission.MissionIsland.Name
@@ -44,7 +48,7 @@ namespace Assets.Scripts.Battle.AI
             TargetProvider = new CoalitionTargetProvider();
 
             foreach(var b in buildings)
-                b.Initialize(this);
+                b.Initialize(this, VehicleContainer, TurretContainer, Patrols);
         }
 
         void Update()

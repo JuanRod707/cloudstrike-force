@@ -1,27 +1,29 @@
 ﻿using System.Collections.Generic;
-using Assets.Scripts.Battle.AI.Control;
-using Assets.Scripts.Battle.Cloudstrike;
+using Battle.AI.Control;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI.Buildings
+namespace Battle.AI.Buildings
 {
     public class DroneCoordinator : MonoBehaviour, AICoordinator
     {
-        public Transform DroneContainer;
-        public NavigationPoints DronePatrol;
+        Transform droneContainer;
+        NavigationPoints dronePatrol;
 
         private IEnumerable<PatrolDroneAI> drones;
         IEnumerable<Transform> targets;
 
-        public void Initialize(TargetProvider targetProvider)
+        public void Initialize(TargetProvider targetProvider, Transform vehicles, Transform turrets, PatrolContainer patrols)
         {
+            dronePatrol = patrols.DronePatrol;
+            droneContainer = vehicles;
+            
             targetProvider.RegisterController(this);
             InitializeDrones();
         }
 
         void RefreshDrones()
         {
-            drones = DroneContainer.GetComponentsInChildren<PatrolDroneAI>();
+            drones = droneContainer.GetComponentsInChildren<PatrolDroneAI>();
 
             foreach (var d in drones)
                 d.UpdateTargets(targets);
@@ -29,10 +31,10 @@ namespace Assets.Scripts.Battle.AI.Buildings
 
         void InitializeDrones()
         {
-            drones = DroneContainer.GetComponentsInChildren<PatrolDroneAI>();
+            drones = droneContainer.GetComponentsInChildren<PatrolDroneAI>();
 
             foreach (var d in drones)
-                d.Initialize(DronePatrol, targets);
+                d.Initialize(dronePatrol, targets);
         }
 
         public void UpdateTargets(IEnumerable<Transform> possibleTargets)

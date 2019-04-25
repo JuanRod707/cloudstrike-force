@@ -27,6 +27,7 @@
                 <e p="TurretCoordinator.cs" t="Include" />
               </e>
               <e p="Control" t="Include">
+                <e p="PatrolContainer.cs" t="Include" />
                 <e p="PatrolDroneAI.cs" t="Include" />
                 <e p="SamAI.cs" t="Include" />
                 <e p="TurretAI.cs" t="Include" />

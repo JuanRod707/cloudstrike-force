@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using Assets.Scripts.Battle.Weapons.Data;
+using Battle.Weapons.Data;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.Weapons
+namespace Battle.Weapons
 {
     public class Weapon : MonoBehaviour
     {

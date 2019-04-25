@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.Battle.UI
+namespace Battle.UI
 {
     public class BottomHud : MonoBehaviour
     {

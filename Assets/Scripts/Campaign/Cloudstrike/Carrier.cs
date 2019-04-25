@@ -1,7 +1,7 @@
 ﻿using Data.Dtos;
 using UnityEngine;
 
-namespace Assets.Scripts.Campaign.Cloudstrike
+namespace Campaign.Cloudstrike
 {
     public class Carrier : MonoBehaviour
     {

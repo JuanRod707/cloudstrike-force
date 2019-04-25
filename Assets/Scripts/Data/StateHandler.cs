@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Assets.Scripts.Campaign.Cloudstrike;
+using Campaign.Cloudstrike;
 using Campaign.Environment;
 using Campaign.Environment.Generation;
 using Data.Dtos;

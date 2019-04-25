@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Common;
 using UnityEngine;
 
-namespace Assets.Scripts.Common
+namespace Common
 {
     public class SpotProvider : MonoBehaviour
     {

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Battle.Entities.Control;
-using Assets.Scripts.Battle.Entities.Vehicles;
+using Battle.Entities.Control;
+using Battle.Entities.Vehicles;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI.Control
+namespace Battle.AI.Control
 {
     public class PatrolDroneAI : MonoBehaviour, Controller
     {

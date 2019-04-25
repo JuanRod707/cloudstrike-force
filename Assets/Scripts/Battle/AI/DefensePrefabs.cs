@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI
+namespace Battle.AI
 {
     [Serializable]
     public class DefensePrefabs

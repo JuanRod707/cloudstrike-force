@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using Assets.Scripts.Battle.AI;
-using Assets.Scripts.Battle.AI.Buildings;
-using Assets.Scripts.Battle.Cloudstrike;
+using Battle.AI;
+using Battle.AI.Buildings;
+using Battle.Cloudstrike;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Assets.Scripts.Battle.Coalition
+namespace Battle.Coalition
 {
     public class CoalitionTargetProvider : TargetProvider
     {

@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Campaign.Cloudstrike;
-using Campaign.Environment;
+﻿using Campaign.Environment;
 using Campaign.UI;
 using Data;
 using Data.Dtos;

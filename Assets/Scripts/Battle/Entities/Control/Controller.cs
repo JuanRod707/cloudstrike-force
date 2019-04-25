@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Battle.Entities.Control
+﻿namespace Battle.Entities.Control
 {
     public interface Controller
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Battle.Cameras
+namespace Battle.Cameras
 {
     public class CameraAnchors : MonoBehaviour
     {

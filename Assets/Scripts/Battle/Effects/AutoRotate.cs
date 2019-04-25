@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Battle.Effects
+namespace Battle.Effects
 {
     public class AutoRotate : MonoBehaviour
     {

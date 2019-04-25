@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Battle.Cameras;
+﻿using Battle.Cameras;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.Cloudstrike
+namespace Battle.Cloudstrike
 {
     public class PlayerInitializer: MonoBehaviour
     {

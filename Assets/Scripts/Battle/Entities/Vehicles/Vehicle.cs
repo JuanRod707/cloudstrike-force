@@ -1,8 +1,8 @@
 ﻿using System;
-using Assets.Scripts.Battle.Entities.Control;
+using Battle.Entities.Control;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.Entities.Vehicles
+namespace Battle.Entities.Vehicles
 {
     public class Vehicle : MonoBehaviour
     {

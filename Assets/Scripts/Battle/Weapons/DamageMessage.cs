@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Assets.Scripts.Battle.Weapons
+namespace Battle.Weapons
 {
     public struct DamageMessage
     {

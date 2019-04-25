@@ -1,7 +1,8 @@
-﻿using Assets.Scripts.Battle.Entities;
+﻿using Battle.AI.Control;
+using Battle.Entities;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI.Buildings
+namespace Battle.AI.Buildings
 {
     public class Building : MonoBehaviour
     {
@@ -12,13 +13,13 @@ namespace Assets.Scripts.Battle.AI.Buildings
         private IslandBase islandBase;
         private AICoordinator function;
 
-        public void Initialize(IslandBase faction)
+        public void Initialize(IslandBase faction, Transform vehicles, Transform turrets, PatrolContainer patrols)
         {
             islandBase = faction;
             Health.Initialize(Destroy);
             function = GetComponent<AICoordinator>();
 
-            function?.Initialize(faction.TargetProvider);
+            function?.Initialize(faction.TargetProvider, vehicles, turrets, patrols);
         }
 
         private void Destroy()

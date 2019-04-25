@@ -1,20 +1,18 @@
 ﻿using System.Collections.Generic;
-using Assets.Scripts.Battle.AI.Control;
-using Assets.Scripts.Battle.Cloudstrike;
+using Battle.AI.Control;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI.Buildings
+namespace Battle.AI.Buildings
 {
     public class TurretCoordinator : MonoBehaviour, AICoordinator
     {
-        public Transform TurretContainer;
         IEnumerable<TurretAI> turrets;
         IEnumerable<Transform> targets;
 
-        public void Initialize(TargetProvider targetProvider)
+        public void Initialize(TargetProvider targetProvider, Transform vehicles, Transform turretContainer, PatrolContainer patrols)
         {
             targetProvider.RegisterController(this);
-            turrets = TurretContainer.GetComponentsInChildren<TurretAI>();
+            turrets = turretContainer.GetComponentsInChildren<TurretAI>();
 
             foreach (var t in turrets)
                 t.Initialize();

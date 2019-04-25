@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Assets.Scripts.Battle.AI.Buildings;
+using Battle.AI.Buildings;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI
+namespace Battle.AI
 {
     public interface TargetProvider
     {

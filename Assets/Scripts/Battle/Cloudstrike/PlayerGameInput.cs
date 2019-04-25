@@ -1,9 +1,9 @@
-﻿using Assets.Scripts.Battle.Entities.Control;
-using Assets.Scripts.Battle.Entities.Vehicles;
-using Assets.Scripts.Battle.UI;
+﻿using Battle.Entities.Control;
+using Battle.Entities.Vehicles;
+using Battle.UI;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.Cloudstrike
+namespace Battle.Cloudstrike
 {
     public class PlayerGameInput : MonoBehaviour, Controller
     {

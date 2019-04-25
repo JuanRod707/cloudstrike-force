@@ -1,7 +1,7 @@
-﻿using Assets.Scripts.Battle.Effects;
+﻿using Battle.Effects;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.Entities.Vehicles
+namespace Battle.Entities.Vehicles
 {
     public class DestroyOnCrash : MonoBehaviour
     {

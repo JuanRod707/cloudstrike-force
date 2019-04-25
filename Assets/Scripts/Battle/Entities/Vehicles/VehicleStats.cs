@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Assets.Scripts.Battle.Entities.Vehicles
+namespace Battle.Entities.Vehicles
 {
     [Serializable]
     public class VehicleStats

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts.Battle.Entities;
-using Assets.Scripts.Battle.Entities.Control;
+using Battle.Entities;
+using Battle.Entities.Control;
 using UnityEngine;
 
-namespace Assets.Scripts.Battle.AI.Control
+namespace Battle.AI.Control
 {
     public class TurretAI : MonoBehaviour, Controller
     {
