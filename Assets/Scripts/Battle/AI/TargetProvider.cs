@@ -6,7 +6,8 @@ namespace Battle.AI
 {
     public interface TargetProvider
     {
-        IEnumerable<Transform> PossibleTargets { get; }
+        IEnumerable<Transform> PossibleSmallTargets { get; }
+        IEnumerable<Transform> PossibleBigTargets { get; }
 
         void RegisterController(AICoordinator coordinator);
         void UpdateTargets(IEnumerable<Transform> possibleTargets);

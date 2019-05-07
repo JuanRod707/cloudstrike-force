@@ -26,7 +26,7 @@ namespace Battle.AI.Buildings
                 t.AimToClosestTarget(targets);
         }
 
-        public void UpdateTargets(IEnumerable<Transform> possibleTargets) => targets = possibleTargets;
+        public void UpdateTargets(TargetProvider targetProvider) => targets = targetProvider.PossibleSmallTargets;
 
     }
 }

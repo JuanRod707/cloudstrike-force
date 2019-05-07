@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseHitPoints: 100
+  DamageEffects: []
 --- !u!114 &390756792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +371,7 @@ MonoBehaviour:
     Ammo: 500
     Damage: 6
     Range: 300
+    DamageTypes: 
   FireSfx: {fileID: 1455341019}
   Cannon: {fileID: 2088668862}
   Inaccuracy: 1
@@ -1022,6 +1024,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Turret: {fileID: 390756792}
   FrontAngleThreshold: 25
+  TurnPivot: {fileID: 950178137}
+  PitchPivot: {fileID: 950178137}
 --- !u!114 &950178138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6980,6 +6984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 390756791}
   DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!1 &1878418309
 GameObject:
   m_ObjectHideFlags: 0

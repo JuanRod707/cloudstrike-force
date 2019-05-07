@@ -31,10 +31,10 @@ namespace Battle.AI
 
         void Start()
         {
-            var islandLevel = 
-                 StaticPersistence.GameState != null
-                ? StaticPersistence.GameState.Mission.MissionIsland.Level
-                : RandomService.GetRandom(1, 10);
+            var islandLevel = 7;
+//                 StaticPersistence.GameState != null
+//                ? StaticPersistence.GameState.Mission.MissionIsland.Level
+//                : RandomService.GetRandom(1, 10);
 
             var islandName = StaticPersistence.GameState != null
                 ? StaticPersistence.GameState.Mission.MissionIsland.Name

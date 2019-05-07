@@ -7,7 +7,7 @@ namespace Battle.AI.Buildings
     public interface AICoordinator
     {
         void Initialize(TargetProvider targetProvider, Transform vehicleContainer, Transform turretContainer, PatrolContainer patrolContainer);
-        void UpdateTargets(IEnumerable<Transform> possibleTargets);
+        void UpdateTargets(TargetProvider targetProvider);
         void Deactivate();
     }
 }

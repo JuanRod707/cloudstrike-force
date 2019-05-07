@@ -37,9 +37,9 @@ namespace Battle.AI.Buildings
                 d.Initialize(dronePatrol, targets);
         }
 
-        public void UpdateTargets(IEnumerable<Transform> possibleTargets)
+        public void UpdateTargets(TargetProvider targetProvider)
         {
-            targets = possibleTargets;
+            targets = targetProvider.PossibleSmallTargets;
             RefreshDrones();
         }
 

@@ -30,7 +30,7 @@ namespace Battle.AI.Buildings
                 t.Initialize();
         }
 
-        public void UpdateTargets(IEnumerable<Transform> possibleTargets) => targets = possibleTargets;
+        public void UpdateTargets(TargetProvider targetProvider) => targets = targetProvider.PossibleSmallTargets;
 
         public void Deactivate() => enabled = false;
 

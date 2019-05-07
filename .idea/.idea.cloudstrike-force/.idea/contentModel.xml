@@ -23,10 +23,12 @@
                 <e p="AICoordinator.cs" t="Include" />
                 <e p="Building.cs" t="Include" />
                 <e p="DroneCoordinator.cs" t="Include" />
+                <e p="MassDriverTargetter.cs" t="Include" />
                 <e p="SamCoordinator.cs" t="Include" />
                 <e p="TurretCoordinator.cs" t="Include" />
               </e>
               <e p="Control" t="Include">
+                <e p="MassDriverAI.cs" t="Include" />
                 <e p="PatrolContainer.cs" t="Include" />
                 <e p="PatrolDroneAI.cs" t="Include" />
                 <e p="SamAI.cs" t="Include" />

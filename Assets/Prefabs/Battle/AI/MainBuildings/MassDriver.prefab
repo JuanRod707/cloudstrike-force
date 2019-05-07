@@ -3000,6 +3000,10 @@ GameObject:
   - component: {fileID: 1090384649}
   - component: {fileID: 1609760762604583365}
   - component: {fileID: 2574666283116003522}
+  - component: {fileID: 3747149949002421504}
+  - component: {fileID: 5579651894738157219}
+  - component: {fileID: 4190923968056711765}
+  - component: {fileID: 7128830900287055535}
   m_Layer: 0
   m_Name: MassDriver
   m_TagString: Untagged
@@ -3056,6 +3060,70 @@ MonoBehaviour:
   Health: {fileID: 1609760762604583365}
   View: {fileID: 2454685305001035743}
   Colliders: {fileID: 216544164846708281}
+--- !u!114 &3747149949002421504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134148085396293762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf4765101d748538ccbec2b389bc03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Turret: {fileID: 4190923968056711765}
+--- !u!114 &5579651894738157219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134148085396293762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f016bfe9cd340c7be267246fb098d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RateOfFire: 5
+--- !u!114 &4190923968056711765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134148085396293762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d042f399ee3463b9d037fa8a8a8e167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapons: {fileID: 8478655248986381949}
+  Stats:
+    TurnRate: 0.1
+    MaxPitch: 5
+    MinPitch: -30
+  Aiming: {fileID: 7128830900287055535}
+  View: {fileID: 2454685305001035743}
+  DeathExplosion: {fileID: 6869880017225604317, guid: 82c1524f0878f7e419d6ab16e8764192,
+    type: 3}
+  Health: {fileID: 1609760762604583365}
+--- !u!114 &7128830900287055535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134148085396293762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b4400630034600a9a792ef358d365c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Turret: {fileID: 4190923968056711765}
+  FrontAngleThreshold: 5
+  TurnPivot: {fileID: 170715060210385785}
+  PitchPivot: {fileID: 1539741752143640346}
 --- !u!1 &3337308281317814388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,6 +3133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1539741752143640346}
+  - component: {fileID: 8478655248986381949}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -3088,6 +3157,20 @@ Transform:
   m_Father: {fileID: 170715060210385785}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8478655248986381949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3337308281317814388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6221261d4343c5240bb285f34c0ab900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrimaryWeaponSpot: {fileID: 3337308281317814388}
+  SecondaryWeaponSpot: {fileID: 0}
 --- !u!1 &4223475753494242610
 GameObject:
   m_ObjectHideFlags: 0

@@ -81,6 +81,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Turret: {fileID: 2152877122664916179}
   FrontAngleThreshold: 25
+  TurnPivot: {fileID: 7788223888068033577}
+  PitchPivot: {fileID: 7788223888068033577}
 --- !u!114 &8853484056667292098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,6 +4943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttachedHealth: {fileID: 7057246503636744491}
   DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!1 &5967694349893214707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5005,6 +5008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseHitPoints: 100
+  DamageEffects: []
 --- !u!114 &2152877122664916179
 MonoBehaviour:
   m_ObjectHideFlags: 0
