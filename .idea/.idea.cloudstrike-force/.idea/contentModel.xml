@@ -93,6 +93,7 @@
               </e>
               <e p="Primary" t="Include">
                 <e p="HitscanCannon.cs" t="Include" />
+                <e p="MassDriverCannon.cs" t="Include" />
               </e>
               <e p="Secondary" t="Include">
                 <e p="HomingLauncher.cs" t="Include" />
@@ -470,5 +471,6 @@
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_cloudstrike-force.-71576152.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
   </component>
 </project>

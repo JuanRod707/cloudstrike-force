@@ -10,7 +10,6 @@ namespace Battle.AI.Control
 {
     public class MassDriverAI : MonoBehaviour, Controller
     {
-        
         public Turret Turret;
 
         float rateOfFire;
@@ -46,18 +45,17 @@ namespace Battle.AI.Control
 
         void Attack()
         {
-            Debug.Log("BOOM");
+            Turret.Weapons.FirePrimary(Vector3.zero, transform);
             StartCoroutine(Reload());
         }
 
         public void Disable()
         {
-            throw new System.NotImplementedException();
         }
 
         public void ShootDown()
         {
-            throw new System.NotImplementedException();
+         
         }
     }
 }
