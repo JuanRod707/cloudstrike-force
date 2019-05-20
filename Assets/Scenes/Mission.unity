@@ -6535,6 +6535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 665919196}
   - component: {fileID: 665919197}
+  - component: {fileID: 665919198}
   m_Layer: 5
   m_Name: CarrierStatus
   m_TagString: Untagged
@@ -6586,6 +6587,20 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &665919198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665919195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4729215b9e0841479173c4153636ba87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HPValue: {fileID: 1627967798}
+  HPBar: {fileID: 1676003661}
 --- !u!1 &666892622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6616,6 +6631,38 @@ Transform:
   m_Father: {fileID: 484515412}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &688776361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7409859716818064067, guid: d53bade0a5e8c614e82f3d6922f68e42,
+    type: 3}
+  m_PrefabInstance: {fileID: 7409859717455674800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &688776362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8727413883632588157, guid: d53bade0a5e8c614e82f3d6922f68e42,
+    type: 3}
+  m_PrefabInstance: {fileID: 7409859717455674800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688776361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e637702096e49f8bf135baee1be6537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &688776363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688776361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a550607543f756541a790a318458c324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: {fileID: 688776362}
+  HealthBarUI: {fileID: 665919198}
 --- !u!1 &750245664
 GameObject:
   m_ObjectHideFlags: 0

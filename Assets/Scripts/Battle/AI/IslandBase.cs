@@ -31,17 +31,19 @@ namespace Battle.AI
 
         void Start()
         {
-            var islandLevel = 7;
-//                 StaticPersistence.GameState != null
-//                ? StaticPersistence.GameState.Mission.MissionIsland.Level
-//                : RandomService.GetRandom(1, 10);
+            var islandLevel = StaticPersistence.GameState != null
+                ? StaticPersistence.GameState.Mission.MissionIsland.Level
+                : RandomService.GetRandom(1, 10);
 
             var islandName = StaticPersistence.GameState != null
                 ? StaticPersistence.GameState.Mission.MissionIsland.Name
                 : NameProvider.GetIslandName();
             
             StatusUI.Initialize(islandName, islandLevel);
-            DefensePlacer.PlaceDefenses(islandLevel);
+            DefensePlacer.Initialize(islandLevel);
+            DefensePlacer.PlaceTurrets();
+            DefensePlacer.PlaceSAMTurrets();
+            DefensePlacer.PlaceDefenses();
             
             buildings = BuildingContainer.GetComponentsInChildren<Building>();
             hitPoints = buildings.Count();

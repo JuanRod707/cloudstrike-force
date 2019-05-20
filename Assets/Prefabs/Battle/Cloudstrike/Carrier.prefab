@@ -4640,7 +4640,7 @@ ParticleSystem:
 --- !u!199 &2986500958149867149
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9338,7 +9338,7 @@ ParticleSystem:
 --- !u!199 &5393213059164296894
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -9497,6 +9497,7 @@ GameObject:
   - component: {fileID: 9134693052055185868}
   - component: {fileID: 4190028172753885639}
   - component: {fileID: 4239299915812027983}
+  - component: {fileID: 6906906354492085358}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -9545,6 +9546,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
+--- !u!114 &6906906354492085358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078600158258185722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb04352c21eb456194cd44e8ddd23df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttachedHealth: {fileID: 8727413883632588157}
+  DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!1 &2346217914806437470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9556,6 +9572,7 @@ GameObject:
   - component: {fileID: 8916170620647317356}
   - component: {fileID: 4727486960866244145}
   - component: {fileID: 9167489952796359746}
+  - component: {fileID: 1102802248200947900}
   m_Layer: 0
   m_Name: Wings
   m_TagString: Untagged
@@ -9604,6 +9621,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
+--- !u!114 &1102802248200947900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2346217914806437470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb04352c21eb456194cd44e8ddd23df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttachedHealth: {fileID: 8727413883632588157}
+  DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!1 &2542514668057573458
 GameObject:
   m_ObjectHideFlags: 0
@@ -9664,6 +9696,7 @@ GameObject:
   - component: {fileID: 4566784108732891033}
   - component: {fileID: 6867400205048297633}
   - component: {fileID: 8834922786610215998}
+  - component: {fileID: 6897473625993242430}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -9713,6 +9746,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImpactPrefab: {fileID: 8045230479833403421, guid: f07df80dda029438882039e2ca17ed78,
     type: 3}
+--- !u!114 &6897473625993242430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887536905673859591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb04352c21eb456194cd44e8ddd23df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttachedHealth: {fileID: 8727413883632588157}
+  DamageMultiplier: 1
+  FgramentationDamageMultiplier: 1
 --- !u!1 &2935209911941429122
 GameObject:
   m_ObjectHideFlags: 0
@@ -14412,7 +14460,7 @@ ParticleSystem:
 --- !u!199 &1877926193230015069
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19110,7 +19158,7 @@ ParticleSystem:
 --- !u!199 &9205829301982894009
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19281,6 +19329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7409859716818064068}
+  - component: {fileID: 8727413883632588157}
   m_Layer: 0
   m_Name: Carrier
   m_TagString: Untagged
@@ -19306,6 +19355,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8727413883632588157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409859716818064067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e637702096e49f8bf135baee1be6537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseHitPoints: 600
+  DamageEffects:
+  - DamageType: 1
+    Multiplier: 1
 --- !u!1 &7409859717394885211
 GameObject:
   m_ObjectHideFlags: 0
