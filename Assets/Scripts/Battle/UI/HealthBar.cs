@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Battle.UI
 {
-    public class BottomHud : MonoBehaviour
+    public class HealthBar : MonoBehaviour
     {
         public Text HPValue;
         public Image HPBar;
@@ -14,8 +14,11 @@ namespace Battle.UI
 
         public void UpdateHp(int hp)
         {
-            HPValue.text = hp.ToString();
-            HPBar.fillAmount = (float) hp / baseHp;
+            if(HPValue!= null)
+                HPValue.text = hp.ToString();
+            
+            if(HPBar!= null)
+                HPBar.fillAmount = (float) hp / baseHp;
         }
     }
 }

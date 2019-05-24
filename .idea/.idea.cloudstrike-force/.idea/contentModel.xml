@@ -73,6 +73,7 @@
               <e p="LockableTarget.cs" t="Include" />
               <e p="Turret.cs" t="Include" />
               <e p="Vehicles" t="Include">
+                <e p="Carrier.cs" t="Include" />
                 <e p="DestroyOnCrash.cs" t="Include" />
                 <e p="Vehicle.cs" t="Include" />
                 <e p="VehicleStats.cs" t="Include" />
@@ -80,7 +81,8 @@
               <e p="VehicleStats.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
-              <e p="BottomHud.cs" t="Include" />
+              <e p="BuildingItem.cs" t="Include" />
+              <e p="HealthBar.cs" t="Include" />
               <e p="LockOnCrosshair.cs" t="Include" />
               <e p="TopHud.cs" t="Include" />
             </e>
@@ -465,9 +467,7 @@
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_cloudstrike-force.-71576152.00" t="ExcludeRecursive" />

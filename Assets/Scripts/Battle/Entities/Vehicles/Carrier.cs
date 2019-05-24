@@ -7,7 +7,7 @@ namespace Assets.Scripts.Battle.Entities.Vehicles
     public class Carrier : MonoBehaviour
     {
         public Health Health;
-        public BottomHud HealthBarUI;
+        public HealthBar HealthBarUI;
 
         void Start()
         {

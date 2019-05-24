@@ -14,7 +14,7 @@ namespace Battle.Cloudstrike
         
         [Header("UI")]
         public LockOnCrosshair LockOnTarget;
-        public BottomHud BottomHud;
+        public HealthBar healthBar;
         
         Transform lockedTarget;
         private Vector3 screenCenter;
@@ -56,8 +56,8 @@ namespace Battle.Cloudstrike
             screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
             targetSystem = new TargetSystem(Camera.main, LockingLayer);
             
-            BottomHud.Initialize(ControlledPlane.VehicleHealth.BaseHitPoints);
-            ControlledPlane.Initialize(this, BottomHud.UpdateHp);
+            healthBar.Initialize(ControlledPlane.VehicleHealth.BaseHitPoints);
+            ControlledPlane.Initialize(this, healthBar.UpdateHp);
         }
 
         public void Dock(Transform hangar)
