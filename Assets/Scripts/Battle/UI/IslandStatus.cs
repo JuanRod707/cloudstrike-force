@@ -6,9 +6,11 @@ namespace Battle.UI
     {
         public BuildingItem BuildingItemPrefab;
 
-        public void AddBuilding()
+        public BuildingItem AddBuilding(string buildingName)
         {
-            Instantiate(BuildingItemPrefab, transform);
+            var item = Instantiate(BuildingItemPrefab, transform);
+            item.SetName(buildingName);
+            return item;
         }
     }
 }

@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Battle.UI
 {
     public class BuildingItem : MonoBehaviour
     {
         public HealthBar HealthBar;
+        public Text BuildingName;
 
         public void Initialize(int baseHp) => HealthBar.Initialize(baseHp);
 
@@ -14,5 +16,7 @@ namespace Battle.UI
             if(hp <= 0)
                 Destroy(gameObject, 1f);
         }
+
+        public void SetName(string buildingName) => BuildingName.text = buildingName;
     }
 }

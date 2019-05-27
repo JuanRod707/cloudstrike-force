@@ -23,6 +23,7 @@ namespace Battle.AI
         public Transform VehicleContainer;
         public Transform TurretContainer;
         public PatrolContainer Patrols;
+        public IslandStatus IslandStatus;
         
         public TargetProvider TargetProvider;
 
@@ -49,8 +50,12 @@ namespace Battle.AI
             hitPoints = buildings.Count();
             TargetProvider = new CoalitionTargetProvider();
 
-            foreach(var b in buildings)
-                b.Initialize(this, VehicleContainer, TurretContainer, Patrols);
+            foreach (var b in buildings)
+            {
+                var healthBar = IslandStatus.AddBuilding(b.Name);
+                healthBar.Initialize(b.Health.BaseHitPoints);
+                b.Initialize(this, VehicleContainer, TurretContainer, Patrols, healthBar.UpdateHp);
+            }
         }
 
         void Update()

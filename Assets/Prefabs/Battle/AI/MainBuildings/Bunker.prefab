@@ -64,6 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16dc25b301c3c6c4eab1af61289ea5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Bunker
   Health: {fileID: 3400921547937730717}
   View: {fileID: 2487547668211204244}
   Colliders: {fileID: 3013514135651418871}

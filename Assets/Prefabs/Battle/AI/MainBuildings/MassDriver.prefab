@@ -7952,6 +7952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16dc25b301c3c6c4eab1af61289ea5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Mass Driver
   Health: {fileID: 1609760762604583365}
   View: {fileID: 2454685305001035743}
   Colliders: {fileID: 216544164846708281}

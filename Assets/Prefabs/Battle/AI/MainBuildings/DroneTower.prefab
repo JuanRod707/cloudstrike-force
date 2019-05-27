@@ -172,8 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227712abc87484b4da3f14b8d2ef2da0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DroneContainer: {fileID: 0}
-  DronePatrol: {fileID: 0}
 --- !u!114 &376417424653220813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16dc25b301c3c6c4eab1af61289ea5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Drone Tower
   Health: {fileID: 3400921547937730717}
   View: {fileID: 2487547668211204244}
   Colliders: {fileID: 716289237171784395}

@@ -1,4 +1,5 @@
-﻿using Battle.AI.Control;
+﻿using System;
+using Battle.AI.Control;
 using Battle.Entities;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ namespace Battle.AI.Buildings
 {
     public class Building : MonoBehaviour
     {
+        public string Name;
         public Health Health;
         public GameObject View;
         public GameObject Colliders;
@@ -17,6 +19,15 @@ namespace Battle.AI.Buildings
         {
             islandBase = faction;
             Health.Initialize(Destroy);
+            function = GetComponent<AICoordinator>();
+
+            function?.Initialize(faction.TargetProvider, vehicles, turrets, patrols);
+        }
+        
+        public void Initialize(IslandBase faction, Transform vehicles, Transform turrets, PatrolContainer patrols, Action<int> onHealthUpdate)
+        {
+            islandBase = faction;
+            Health.Initialize(Destroy, onHealthUpdate);
             function = GetComponent<AICoordinator>();
 
             function?.Initialize(faction.TargetProvider, vehicles, turrets, patrols);
