@@ -11,9 +11,11 @@ namespace Battle.AI
 
         public SpotProvider BigSpots;
         public SpotProvider SmallSpots;
+        public SpotProvider AirSpawnPoints;
 
         public Transform BuildingContainer;
         public Transform TurretContainer;
+        public Transform VehicleContainer;
 
         SecurityLevel[] mainBuildingRules;
         SecurityLevel[] droneRules;
@@ -105,41 +107,34 @@ namespace Battle.AI
         {
             foreach (var rule in mainBuildingRules.Where(r => r.Level <= islandLevel))
             foreach (var _ in Enumerable.Range(0, rule.Count))
-                CreateBuilding(rule.Building, BuildingContainer, BigSpots.ConsumeSpot());
+                SpawnEntity(rule.Building, BuildingContainer, BigSpots.ConsumeSpot());
         }
 
+        public void PlaceDrones()
+        {
+            foreach (var rule in droneRules.Where(r => r.Level <= islandLevel))
+            foreach (var _ in Enumerable.Range(0, rule.Count))
+                SpawnEntity(Prefabs.Drone, VehicleContainer, AirSpawnPoints.ConsumeSpot());
+        }
+        
         public void PlaceTurrets()
         {
             foreach (var rule in turretRules.Where(r => r.Level <= islandLevel))
             foreach (var _ in Enumerable.Range(0, rule.Count))
-                CreateTurret(TurretContainer, SmallSpots.ConsumeSpot());
+                SpawnEntity(Prefabs.Turret, TurretContainer, SmallSpots.ConsumeSpot());
         }
 
         public void PlaceSAMTurrets()
         {
             foreach (var rule in samRules.Where(r => r.Level <= islandLevel))
             foreach (var _ in Enumerable.Range(0, rule.Count))
-                CreateSAMTurret(TurretContainer, SmallSpots.ConsumeSpot());
+                SpawnEntity(Prefabs.SAMTurret, TurretContainer, SmallSpots.ConsumeSpot());
         }
 
-        void CreateBuilding(GameObject prefab, Transform container, Transform position)
+        void SpawnEntity(GameObject prefab, Transform container, Transform position)
         {
             var rotation = new Vector3(0f, RandomService.GetRandom(0, 360), 0f);
             var building = Instantiate(prefab, position.position, Quaternion.Euler(rotation));
-            building.transform.SetParent(container);
-        }
-
-        void CreateTurret(Transform container, Transform position)
-        {
-            var rotation = new Vector3(0f, RandomService.GetRandom(0, 360), 0f);
-            var building = Instantiate(Prefabs.Turret, position.position, Quaternion.Euler(rotation));
-            building.transform.SetParent(container);
-        }
-
-        void CreateSAMTurret(Transform container, Transform position)
-        {
-            var rotation = new Vector3(0f, RandomService.GetRandom(0, 360), 0f);
-            var building = Instantiate(Prefabs.SAMTurret, position.position, Quaternion.Euler(rotation));
             building.transform.SetParent(container);
         }
     }

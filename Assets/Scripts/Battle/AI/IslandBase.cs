@@ -42,6 +42,7 @@ namespace Battle.AI
             
             StatusUI.Initialize(islandName, islandLevel);
             DefensePlacer.Initialize(islandLevel);
+            DefensePlacer.PlaceDrones();
             DefensePlacer.PlaceTurrets();
             DefensePlacer.PlaceSAMTurrets();
             DefensePlacer.PlaceDefenses();
