@@ -3,21 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="df53423f-75a0-48af-b1b4-3f72532c63fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/Bunker.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/Bunker.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/DroneTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/DroneTower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/Factory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/Factory.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/InterceptorBase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/InterceptorBase.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/MassDriver.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/MassDriver.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/ResourcePlant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/ResourcePlant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/SAMTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/SAMTower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/TurretTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/MainBuildings/TurretTower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/BuildingItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/BuildingItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mission.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mission.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Screenshots.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/Building.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/UI/BuildingItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/UI/BuildingItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/UI/IslandStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/UI/IslandStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/BuildingItem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/BuildingItem.prefab.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +16,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/MassDriverAI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="-148">
               <folding>
                 <marker date="1557768903770" expanded="false" signature="6:178" ph="..." />
                 <marker date="1557768903770" expanded="true" signature="207:1463" ph="{...}" />
@@ -43,110 +31,6 @@
                 <marker date="1557768903770" expanded="true" signature="1218:1341" ph="{...}" />
                 <marker date="1557768903770" expanded="true" signature="1372:1392" ph="{...}" />
                 <marker date="1557768903770" expanded="true" signature="1425:1455" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="32" />
-              <folding>
-                <marker date="1558716791956" expanded="false" signature="6:98" ph="..." />
-                <marker date="1558716791956" expanded="true" signature="128:2819" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="191:2817" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="604:1561" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="1425:1551" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="1709:2039" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="2083:2174" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="2204:2290" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="2313:2596" ph="{...}" />
-                <marker date="1558716791956" expanded="true" signature="2680:2762" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/UI/HealthBar.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-              <folding>
-                <marker date="1558716845642" expanded="false" signature="6:40" ph="..." />
-                <marker date="1558716845642" expanded="true" signature="61:500" ph="{...}" />
-                <marker date="1558716845642" expanded="true" signature="106:498" ph="{...}" />
-                <marker date="1558716845642" expanded="true" signature="297:492" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/Building.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-              <folding>
-                <marker date="1558977640591" expanded="true" signature="6:80" ph="..." />
-                <marker date="1558977640591" expanded="true" signature="111:1341" ph="{...}" />
-                <marker date="1558977640591" expanded="true" signature="155:1339" ph="{...}" />
-                <marker date="1558977640591" expanded="true" signature="484:719" ph="{...}" />
-                <marker date="1558977640591" expanded="true" signature="871:1122" ph="{...}" />
-                <marker date="1558977640591" expanded="true" signature="1154:1333" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-              <folding>
-                <marker date="1558977869733" expanded="false" signature="6:306" ph="..." />
-                <marker date="1558977869733" expanded="true" signature="327:2665" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="373:2663" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="826:1968" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="1702:1958" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="1991:2088" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="2133:2243" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="2281:2490" ph="{...}" />
-                <marker date="1558977869733" expanded="true" signature="2540:2657" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/HitscanCannon.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <marker date="1556209776862" expanded="false" signature="6:98" ph="..." />
-                <marker date="1556209776862" expanded="true" signature="132:1102" ph="{...}" />
-                <marker date="1556209776862" expanded="true" signature="174:1100" ph="{...}" />
-                <marker date="1556209776862" expanded="true" signature="360:1003" ph="{...}" />
-                <marker date="1556209776862" expanded="true" signature="571:953" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/MassDriverCannon.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <marker date="1558112101706" expanded="false" signature="6:50" ph="..." />
-                <marker date="1558112101706" expanded="true" signature="84:620" ph="{...}" />
-                <marker date="1558112101706" expanded="true" signature="129:618" ph="{...}" />
-                <marker date="1558112101706" expanded="true" signature="315:612" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -242,11 +126,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -256,10 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -313,7 +192,11 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,11 +258,12 @@
       <workItem from="1558630523859" duration="512000" />
       <workItem from="1558715360539" duration="1425000" />
       <workItem from="1558975848259" duration="1471000" />
+      <workItem from="1559063312188" duration="1251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25044000" />
+    <option name="totallyTimeSpent" value="26295000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -391,10 +275,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13897763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16056167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -704,21 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/WeaponSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <marker date="1556209776818" expanded="false" signature="6:86" ph="..." />
-            <marker date="1556209776818" expanded="true" signature="121:1392" ph="{...}" />
-            <marker date="1556209776818" expanded="true" signature="169:1390" ph="{...}" />
-            <marker date="1556209776818" expanded="true" signature="609:834" ph="{...}" />
-            <marker date="1556209776818" expanded="true" signature="903:1101" ph="{...}" />
-            <marker date="1556209776818" expanded="true" signature="1172:1384" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Weapon.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -734,65 +603,6 @@
             <marker date="1556209776894" expanded="true" signature="813:878" ph="{...}" />
             <marker date="1556209776894" expanded="true" signature="997:1141" ph="{...}" />
             <marker date="1556209776894" expanded="true" signature="1178:1389" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/HitscanCannon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <marker date="1556209776862" expanded="false" signature="6:98" ph="..." />
-            <marker date="1556209776862" expanded="true" signature="132:1102" ph="{...}" />
-            <marker date="1556209776862" expanded="true" signature="174:1100" ph="{...}" />
-            <marker date="1556209776862" expanded="true" signature="360:1003" ph="{...}" />
-            <marker date="1556209776862" expanded="true" signature="571:953" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/MassDriverCannon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <marker date="1558112101706" expanded="false" signature="6:50" ph="..." />
-            <marker date="1558112101706" expanded="true" signature="84:620" ph="{...}" />
-            <marker date="1558112101706" expanded="true" signature="129:618" ph="{...}" />
-            <marker date="1558112101706" expanded="true" signature="315:612" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Health.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <marker date="1556209776832" expanded="false" signature="6:73" ph="..." />
-            <marker date="1556209776832" expanded="true" signature="100:1801" ph="{...}" />
-            <marker date="1556209776832" expanded="true" signature="142:1799" ph="{...}" />
-            <marker date="1556209776832" expanded="true" signature="387:497" ph="{...}" />
-            <marker date="1556209776832" expanded="true" signature="583:743" ph="{...}" />
-            <marker date="1556209776832" expanded="true" signature="800:1096" ph="{...}" />
-            <marker date="1556209776832" expanded="true" signature="924:1029" ph="{...}" />
-            <marker date="1556209776832" expanded="true" signature="1152:1793" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/Building.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <marker date="1558977640591" expanded="true" signature="6:80" ph="..." />
-            <marker date="1558977640591" expanded="true" signature="111:1341" ph="{...}" />
-            <marker date="1558977640591" expanded="true" signature="155:1339" ph="{...}" />
-            <marker date="1558977640591" expanded="true" signature="484:719" ph="{...}" />
-            <marker date="1558977640591" expanded="true" signature="871:1122" ph="{...}" />
-            <marker date="1558977640591" expanded="true" signature="1154:1333" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -835,46 +645,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding>
-            <marker date="1558977869733" expanded="false" signature="6:306" ph="..." />
-            <marker date="1558977869733" expanded="true" signature="327:2665" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="373:2663" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="826:1968" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="1702:1958" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="1991:2088" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="2133:2243" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="2281:2490" ph="{...}" />
-            <marker date="1558977869733" expanded="true" signature="2540:2657" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/MassDriverAI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding>
-            <marker date="1557768903770" expanded="false" signature="6:178" ph="..." />
-            <marker date="1557768903770" expanded="true" signature="207:1463" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="267:1461" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="414:551" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="581:723" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="795:1138" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="830:1128" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="1218:1341" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="1372:1392" ph="{...}" />
-            <marker date="1557768903770" expanded="true" signature="1425:1455" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
+        <state relative-caret-position="816">
           <caret line="58" column="32" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="32" />
           <folding>
             <marker date="1558716791956" expanded="false" signature="6:98" ph="..." />
@@ -900,6 +673,115 @@
             <marker date="1558716845642" expanded="true" signature="61:500" ph="{...}" />
             <marker date="1558716845642" expanded="true" signature="106:498" ph="{...}" />
             <marker date="1558716845642" expanded="true" signature="297:492" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/Building.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <marker date="1558977640591" expanded="false" signature="6:80" ph="..." />
+            <marker date="1558977640591" expanded="true" signature="111:1341" ph="{...}" />
+            <marker date="1558977640591" expanded="true" signature="155:1339" ph="{...}" />
+            <marker date="1558977640591" expanded="true" signature="484:719" ph="{...}" />
+            <marker date="1558977640591" expanded="true" signature="871:1122" ph="{...}" />
+            <marker date="1558977640591" expanded="true" signature="1154:1333" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+          <folding>
+            <marker date="1558977869733" expanded="false" signature="6:306" ph="..." />
+            <marker date="1558977869733" expanded="true" signature="327:2665" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="373:2663" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="826:1968" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="1702:1958" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="1991:2088" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="2133:2243" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="2281:2490" ph="{...}" />
+            <marker date="1558977869733" expanded="true" signature="2540:2657" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/HitscanCannon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <marker date="1556209776862" expanded="false" signature="6:98" ph="..." />
+            <marker date="1556209776862" expanded="true" signature="132:1102" ph="{...}" />
+            <marker date="1556209776862" expanded="true" signature="174:1100" ph="{...}" />
+            <marker date="1556209776862" expanded="true" signature="360:1003" ph="{...}" />
+            <marker date="1556209776862" expanded="true" signature="571:953" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/MassDriverCannon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1558112101706" expanded="false" signature="6:50" ph="..." />
+            <marker date="1558112101706" expanded="true" signature="84:620" ph="{...}" />
+            <marker date="1558112101706" expanded="true" signature="129:618" ph="{...}" />
+            <marker date="1558112101706" expanded="true" signature="315:612" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/WeaponSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1556209776818" expanded="false" signature="6:86" ph="..." />
+            <marker date="1556209776818" expanded="true" signature="121:1392" ph="{...}" />
+            <marker date="1556209776818" expanded="true" signature="169:1390" ph="{...}" />
+            <marker date="1556209776818" expanded="true" signature="609:834" ph="{...}" />
+            <marker date="1556209776818" expanded="true" signature="903:1101" ph="{...}" />
+            <marker date="1556209776818" expanded="true" signature="1172:1384" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Health.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="47" selection-start-line="47" selection-end-line="49" selection-end-column="39" />
+          <folding>
+            <marker date="1556209776832" expanded="false" signature="6:73" ph="..." />
+            <marker date="1556209776832" expanded="true" signature="100:1801" ph="{...}" />
+            <marker date="1556209776832" expanded="true" signature="142:1799" ph="{...}" />
+            <marker date="1556209776832" expanded="true" signature="387:497" ph="{...}" />
+            <marker date="1556209776832" expanded="true" signature="583:743" ph="{...}" />
+            <marker date="1556209776832" expanded="true" signature="800:1096" ph="{...}" />
+            <marker date="1556209776832" expanded="true" signature="924:1029" ph="{...}" />
+            <marker date="1556209776832" expanded="true" signature="1152:1793" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/MassDriverAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <folding>
+            <marker date="1557768903770" expanded="false" signature="6:178" ph="..." />
+            <marker date="1557768903770" expanded="true" signature="207:1463" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="267:1461" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="414:551" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="581:723" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="795:1138" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="830:1128" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="1218:1341" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="1372:1392" ph="{...}" />
+            <marker date="1557768903770" expanded="true" signature="1425:1455" ph="{...}" />
           </folding>
         </state>
       </provider>

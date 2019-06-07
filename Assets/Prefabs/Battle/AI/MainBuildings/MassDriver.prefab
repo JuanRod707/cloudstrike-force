@@ -8087,7 +8087,7 @@ MonoBehaviour:
     Ammo: 1000
     Damage: 80
     Range: 2000
-    DamageTypes: 
+    DamageTypes: 02000000
   FireSfx: {fileID: 6229515278459559006}
   ProjectilePrefab: {fileID: 1085606798077995545, guid: da34598adc8bf744f9d6cadb27c4a0a4,
     type: 3}
