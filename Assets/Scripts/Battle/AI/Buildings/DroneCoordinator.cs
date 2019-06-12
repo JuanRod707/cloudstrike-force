@@ -46,7 +46,7 @@ namespace Battle.AI.Buildings
         public void Deactivate()
         {
             foreach (var d in drones)
-                d.Vehicle.Destroy();
+                d.airVehicle.Destroy();
         }
     }
 }

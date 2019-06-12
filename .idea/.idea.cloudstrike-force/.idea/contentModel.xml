@@ -63,6 +63,7 @@
             <e p="Entities" t="Include">
               <e p="Control" t="Include">
                 <e p="Controller.cs" t="Include" />
+                <e p="LandMovement.cs" t="Include" />
                 <e p="PlaneMovement.cs" t="Include" />
                 <e p="TargetSystem.cs" t="Include" />
                 <e p="TurretAiming.cs" t="Include" />
@@ -73,9 +74,10 @@
               <e p="LockableTarget.cs" t="Include" />
               <e p="Turret.cs" t="Include" />
               <e p="Vehicles" t="Include">
+                <e p="AirVehicle.cs" t="Include" />
                 <e p="Carrier.cs" t="Include" />
                 <e p="DestroyOnCrash.cs" t="Include" />
-                <e p="Vehicle.cs" t="Include" />
+                <e p="LandVehicle.cs" t="Include" />
                 <e p="VehicleStats.cs" t="Include" />
               </e>
               <e p="VehicleStats.cs" t="Include" />

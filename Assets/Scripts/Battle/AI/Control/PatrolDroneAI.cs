@@ -8,7 +8,7 @@ namespace Battle.AI.Control
 {
     public class PatrolDroneAI : MonoBehaviour, Controller
     {
-        public Vehicle Vehicle;
+        public AirVehicle airVehicle;
      
         public float DistanceToReachNavPoint;
         public float DistanceToEngage;
@@ -44,8 +44,8 @@ namespace Battle.AI.Control
         {
             patrolPoints = patrol;
             GetNewNavPoint();
-            Vehicle.Initialize(this);
-            Vehicle.Launch();
+            airVehicle.Initialize(this);
+            airVehicle.Launch();
         }
 
         private void GetNewNavPoint() => currentTarget = patrolPoints.GetRandomNavPoint;
@@ -55,7 +55,7 @@ namespace Battle.AI.Control
             if (currentTarget != null)
             {
                 var steerVector = NormalizeSteering(SteeringToTarget);
-                Vehicle.Movement.Steer(steerVector);
+                airVehicle.Movement.Steer(steerVector);
 
                 if (ReachedDestination)
                     GetNewNavPoint();
@@ -68,13 +68,13 @@ namespace Battle.AI.Control
         private Vector3 NormalizeSteering(Vector3 steering)
         {
             steering.y *= -1;
-            return steering * Vehicle.Stats.TurnRate;
+            return steering * airVehicle.Stats.TurnRate;
         }
 
         private void AttackPlayer()
         {
             if (TargetIsInAttackRange && PlayerIsInFront)
-                Vehicle.Weapons.FirePrimary(ClosestTarget.position, ClosestTarget);
+                airVehicle.Weapons.FirePrimary(ClosestTarget.position, ClosestTarget);
         }
 
         private void ScanForPlayer()
@@ -95,7 +95,7 @@ namespace Battle.AI.Control
         public void ShootDown()
         {
             Disable();
-            Vehicle.Destroy();
+            airVehicle.Destroy();
         }
 
         public void Enable() => enabled = true;

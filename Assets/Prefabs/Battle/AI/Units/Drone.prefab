@@ -4965,6 +4965,7 @@ MonoBehaviour:
     Ammo: 500
     Damage: 2
     Range: 200
+    DamageTypes: 
   FireSfx: {fileID: 2185214574061796330}
   Cannon: {fileID: 5463486647823772670}
   Inaccuracy: 5
@@ -5034,7 +5035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e9a36332bf90247a2901a757e82eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttachedVehicle: {fileID: 4778812545965344959}
+  attachedAirVehicle: {fileID: 0}
 --- !u!1 &1522652810473836778
 GameObject:
   m_ObjectHideFlags: 0
@@ -14619,7 +14620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f7ca401cbe4dd4e99f722b68e40ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vehicle: {fileID: 4778812545965344959}
+  airVehicle: {fileID: 4778812545965344959}
   DistanceToReachNavPoint: 10
   DistanceToEngage: 400
   DistanceToDisengage: 500
@@ -14678,7 +14679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ff194a0668b284a9fad4e07e6f7007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttachedVehicle: {fileID: 4778812545965344959}
+  attachedAirVehicle: {fileID: 4778812545965344959}
   RollFactor: 8
   StrafeSpeed: 0
   Model: {fileID: 2296471619246774638}
@@ -29392,6 +29393,7 @@ MonoBehaviour:
     Ammo: 500
     Damage: 2
     Range: 200
+    DamageTypes: 
   FireSfx: {fileID: 1210710360809453971}
   Cannon: {fileID: 7957424981864227515}
   Inaccuracy: 5

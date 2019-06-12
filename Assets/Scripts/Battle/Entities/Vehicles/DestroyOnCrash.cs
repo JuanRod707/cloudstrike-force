@@ -5,12 +5,12 @@ namespace Battle.Entities.Vehicles
 {
     public class DestroyOnCrash : MonoBehaviour
     {
-        public Vehicle AttachedVehicle;
+        public AirVehicle attachedAirVehicle;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.GetComponent<ColliderImpact>() != null)
-                AttachedVehicle.Destroy();
+                attachedAirVehicle.Destroy();
         }
     }
 }

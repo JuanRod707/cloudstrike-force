@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df53423f-75a0-48af-b1b4-3f72532c63fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/LandMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/LandMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/AirVehicle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/LandVehicle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cloudstrike-force/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/Units/Drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Battle/AI/Units/Drone.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Mission.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Mission.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/DefensePlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/DefensePlacer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/DroneCoordinator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/DroneCoordinator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/PatrolDroneAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/PatrolDroneAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/PlaneMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/PlaneMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/DestroyOnCrash.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/DestroyOnCrash.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/LandVehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/Vehicle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/AirVehicle.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,68 +27,112 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/MassDriverAI.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/AirVehicle.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="53">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="34" />
               <folding>
-                <marker date="1557768903770" expanded="false" signature="6:178" ph="..." />
-                <marker date="1557768903770" expanded="true" signature="207:1463" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="267:1461" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="414:551" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="581:723" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="795:1138" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="830:1128" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="1218:1341" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="1372:1392" ph="{...}" />
-                <marker date="1557768903770" expanded="true" signature="1425:1455" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/DefensePlacer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1808">
-              <caret line="116" column="75" selection-start-line="116" selection-start-column="75" selection-end-line="116" selection-end-column="75" />
-              <folding>
-                <marker date="1559944815944" expanded="false" signature="6:63" ph="..." />
-                <marker date="1559944815944" expanded="true" signature="84:5164" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="133:5162" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="748:3513" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="801:1202" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="1248:1544" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="1591:1949" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="1993:2253" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="2301:2434" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="2486:2691" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="2756:3502" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="3562:3650" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="3687:3944" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="3979:4234" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="4278:4530" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="4569:4821" ph="{...}" />
-                <marker date="1559944815944" expanded="true" signature="4907:5156" ph="{...}" />
+                <marker date="1560358279196" expanded="false" signature="6:63" ph="..." />
+                <marker date="1560358279196" expanded="true" signature="99:1577" ph="{...}" />
+                <marker date="1560358279196" expanded="true" signature="145:1575" ph="{...}" />
+                <marker date="1560358279196" expanded="true" signature="505:661" ph="{...}" />
+                <marker date="1560358279196" expanded="true" signature="750:880" ph="{...}" />
+                <marker date="1560358279196" expanded="true" signature="910:1000" ph="{...}" />
+                <marker date="1560358279196" expanded="true" signature="1083:1323" ph="{...}" />
+                <marker date="1560358279196" expanded="true" signature="1367:1569" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/PlaneMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+            <state relative-caret-position="306">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="46" />
               <folding>
-                <marker date="1559944183995" expanded="false" signature="6:306" ph="..." />
-                <marker date="1559944183995" expanded="true" signature="327:2706" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="373:2704" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="826:2009" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="1743:1999" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="2032:2129" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="2174:2284" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="2322:2531" ph="{...}" />
-                <marker date="1559944183995" expanded="true" signature="2581:2698" ph="{...}" />
+                <marker date="1560358279202" expanded="false" signature="6:50" ph="..." />
+                <marker date="1560358279202" expanded="true" signature="85:2164" ph="{...}" />
+                <marker date="1560358279202" expanded="true" signature="134:2162" ph="{...}" />
+                <marker date="1560358279202" expanded="true" signature="1121:1850" ph="{...}" />
+                <marker date="1560358279202" expanded="true" signature="1356:1493" ph="{...}" />
+                <marker date="1560358279202" expanded="true" signature="1590:1727" ph="{...}" />
+                <marker date="1560358279202" expanded="true" signature="1876:2016" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/LandVehicle.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding>
+                <marker date="1560358568563" expanded="false" signature="6:63" ph="..." />
+                <marker date="1560358568563" expanded="true" signature="99:1159" ph="{...}" />
+                <marker date="1560358568563" expanded="true" signature="146:1157" ph="{...}" />
+                <marker date="1560358568563" expanded="true" signature="505:661" ph="{...}" />
+                <marker date="1560358568563" expanded="true" signature="750:880" ph="{...}" />
+                <marker date="1560358568563" expanded="true" signature="911:1151" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/LandMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+              <folding>
+                <marker date="1560359576437" expanded="false" signature="6:50" ph="..." />
+                <marker date="1560359576437" expanded="true" signature="85:960" ph="{...}" />
+                <marker date="1560359576437" expanded="true" signature="133:958" ph="{...}" />
+                <marker date="1560359576437" expanded="true" signature="248:444" ph="{...}" />
+                <marker date="1560359576437" expanded="true" signature="919:952" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/PatrolDroneAI.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <marker date="1560358279102" expanded="false" signature="6:134" ph="..." />
+                <marker date="1560358279102" expanded="true" signature="163:3216" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="224:3214" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="1584:1743" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="1861:2212" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="1910:2144" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="2273:2380" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="2417:2582" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="2620:2788" ph="{...}" />
+                <marker date="1560358279102" expanded="true" signature="2988:3065" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+              <folding>
+                <marker date="1560358279224" expanded="false" signature="6:98" ph="..." />
+                <marker date="1560358279224" expanded="true" signature="128:2822" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="191:2820" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="607:1564" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="1428:1554" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="1712:2042" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="2086:2177" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="2207:2293" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="2316:2599" ph="{...}" />
+                <marker date="1560358279224" expanded="true" signature="2683:2765" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -99,8 +154,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Weapons/Primary/MassDriverCannon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/SamCoordinator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/Vehicle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/AirVehicle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/UI/IslandStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/VehicleStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Coalition/DefenseController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/MassDriverTargetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Coalition/CoalitionTargetProvider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,14 +174,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/DefensePlacer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/UI/TopHud.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/LandMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/NavigationPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/SamAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Turret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/PatrolDroneAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/TurretAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/AICoordinator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/WeaponSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/TurretCoordinator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/PlaneMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/LandVehicle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Buildings/Building.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -143,7 +203,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Control/TurretAiming.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Control/TurretCoordinator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Control/TurretAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Battle/UI/BottomHud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs" />
@@ -170,13 +229,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Battle/UI/BuildingItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Battle/AI/DefensePlacer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/PlaneMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/Vehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/AirVehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/LandVehicle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/LandMovement.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -186,9 +252,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
@@ -228,7 +292,30 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Cloudstrike" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
               <item name="Entities" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Entities" type="1045f7f1:UnityExplorerNode" />
+              <item name="Control" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Entities" type="1045f7f1:UnityExplorerNode" />
+              <item name="Vehicles" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -243,7 +330,9 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,12 +395,13 @@
       <workItem from="1558715360539" duration="1425000" />
       <workItem from="1558975848259" duration="1471000" />
       <workItem from="1559063312188" duration="1251000" />
-      <workItem from="1559942119380" duration="1957000" />
+      <workItem from="1559942119380" duration="2115000" />
+      <workItem from="1560357311511" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28252000" />
+    <option name="totallyTimeSpent" value="30899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,10 +413,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16239317" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14323749" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -365,8 +455,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/LockOnSystem.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Health.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/LockableTarget.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Secondary/Seeker.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Vehicles/DestroyOnCrash.cs" />
@@ -380,13 +468,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Control/TurretAiming.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Entities/VehicleStats.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AI/Control/TurretAI.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/Vehicle.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerInitializer.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -498,16 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="58" />
-          <folding>
-            <marker date="1557248766756" expanded="false" signature="6:77" ph="..." />
-            <marker date="1557248766756" expanded="true" signature="108:1418" ph="{...}" />
-            <marker date="1557248766756" expanded="true" signature="175:1416" ph="{...}" />
-            <marker date="1557248766756" expanded="true" signature="472:676" ph="{...}" />
-            <marker date="1557248766756" expanded="true" signature="706:885" ph="{...}" />
-            <marker date="1557248766756" expanded="true" signature="918:1107" ph="{...}" />
-            <marker date="1557248766756" expanded="true" signature="1173:1281" ph="{...}" />
-            <marker date="1557248766756" expanded="true" signature="1315:1410" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,25 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="32" />
-          <folding>
-            <marker date="1558716791956" expanded="false" signature="6:98" ph="..." />
-            <marker date="1558716791956" expanded="true" signature="128:2819" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="191:2817" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="604:1561" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="1425:1551" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="1709:2039" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="2083:2174" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="2204:2290" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="2313:2596" ph="{...}" />
-            <marker date="1558716791956" expanded="true" signature="2680:2762" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/UI/HealthBar.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -793,28 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-          <folding>
-            <marker date="1559944183995" expanded="false" signature="6:306" ph="..." />
-            <marker date="1559944183995" expanded="true" signature="327:2706" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="373:2704" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="826:2009" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="1743:1999" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="2032:2129" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="2174:2284" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="2322:2531" ph="{...}" />
-            <marker date="1559944183995" expanded="true" signature="2581:2698" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/DefensePlacer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1808">
-          <caret line="116" column="75" selection-start-line="116" selection-start-column="75" selection-end-line="116" selection-end-column="75" />
+        <state relative-caret-position="2000">
+          <caret line="136" column="38" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="38" />
           <folding>
             <marker date="1559944815944" expanded="false" signature="6:63" ph="..." />
             <marker date="1559944815944" expanded="true" signature="84:5164" ph="{...}" />
@@ -833,6 +867,135 @@
             <marker date="1559944815944" expanded="true" signature="4278:4530" ph="{...}" />
             <marker date="1559944815944" expanded="true" signature="4569:4821" ph="{...}" />
             <marker date="1559944815944" expanded="true" signature="4907:5156" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/IslandBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+          <folding>
+            <marker date="1559944183995" expanded="false" signature="6:306" ph="..." />
+            <marker date="1559944183995" expanded="true" signature="327:2706" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="373:2704" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="826:2009" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="1743:1999" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="2032:2129" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="2174:2284" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="2322:2531" ph="{...}" />
+            <marker date="1559944183995" expanded="true" signature="2581:2698" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Cloudstrike/PlayerGameInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <marker date="1560358279224" expanded="false" signature="6:98" ph="..." />
+            <marker date="1560358279224" expanded="true" signature="128:2822" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="191:2820" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="607:1564" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="1428:1554" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="1712:2042" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="2086:2177" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="2207:2293" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="2316:2599" ph="{...}" />
+            <marker date="1560358279224" expanded="true" signature="2683:2765" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/AirVehicle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <marker date="1560358279196" expanded="false" signature="6:63" ph="..." />
+            <marker date="1560358279196" expanded="true" signature="99:1577" ph="{...}" />
+            <marker date="1560358279196" expanded="true" signature="145:1575" ph="{...}" />
+            <marker date="1560358279196" expanded="true" signature="505:661" ph="{...}" />
+            <marker date="1560358279196" expanded="true" signature="750:880" ph="{...}" />
+            <marker date="1560358279196" expanded="true" signature="910:1000" ph="{...}" />
+            <marker date="1560358279196" expanded="true" signature="1083:1323" ph="{...}" />
+            <marker date="1560358279196" expanded="true" signature="1367:1569" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/PlaneMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="46" />
+          <folding>
+            <marker date="1560358279202" expanded="false" signature="6:50" ph="..." />
+            <marker date="1560358279202" expanded="true" signature="85:2164" ph="{...}" />
+            <marker date="1560358279202" expanded="true" signature="134:2162" ph="{...}" />
+            <marker date="1560358279202" expanded="true" signature="1121:1850" ph="{...}" />
+            <marker date="1560358279202" expanded="true" signature="1356:1493" ph="{...}" />
+            <marker date="1560358279202" expanded="true" signature="1590:1727" ph="{...}" />
+            <marker date="1560358279202" expanded="true" signature="1876:2016" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/VehicleStats.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1556209776829" expanded="true" signature="49:314" ph="{...}" />
+            <marker date="1556209776829" expanded="true" signature="100:312" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Vehicles/LandVehicle.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <marker date="1560358568563" expanded="false" signature="6:63" ph="..." />
+            <marker date="1560358568563" expanded="true" signature="99:1159" ph="{...}" />
+            <marker date="1560358568563" expanded="true" signature="146:1157" ph="{...}" />
+            <marker date="1560358568563" expanded="true" signature="505:661" ph="{...}" />
+            <marker date="1560358568563" expanded="true" signature="750:880" ph="{...}" />
+            <marker date="1560358568563" expanded="true" signature="911:1151" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/Entities/Control/LandMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding>
+            <marker date="1560359576437" expanded="false" signature="6:50" ph="..." />
+            <marker date="1560359576437" expanded="true" signature="85:960" ph="{...}" />
+            <marker date="1560359576437" expanded="true" signature="133:958" ph="{...}" />
+            <marker date="1560359576437" expanded="true" signature="248:444" ph="{...}" />
+            <marker date="1560359576437" expanded="true" signature="919:952" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Battle/AI/Control/PatrolDroneAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <marker date="1560358279102" expanded="false" signature="6:134" ph="..." />
+            <marker date="1560358279102" expanded="true" signature="163:3216" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="224:3214" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="1584:1743" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="1861:2212" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="1910:2144" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="2273:2380" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="2417:2582" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="2620:2788" ph="{...}" />
+            <marker date="1560358279102" expanded="true" signature="2988:3065" ph="{...}" />
           </folding>
         </state>
       </provider>

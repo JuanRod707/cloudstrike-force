@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Battle.Entities.Vehicles
 {
-    public class Vehicle : MonoBehaviour
+    public class AirVehicle : MonoBehaviour
     {
         public WeaponSystem Weapons;
         public PlaneMovement Movement;

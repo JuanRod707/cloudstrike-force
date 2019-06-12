@@ -7,7 +7,7 @@ namespace Battle.Cloudstrike
 {
     public class PlayerGameInput : MonoBehaviour, Controller
     {
-        public Vehicle ControlledPlane;
+        public AirVehicle ControlledPlane;
         public float DeadZone;
         public LayerMask LockingLayer;
         public float LockingTime;
